@@ -1,0 +1,65 @@
+# Environment files (including local overrides).
+.env
+.env.*
+*.env
+*.env.*
+.envrc
+
+# Credentials and secret files.
+.aws/
+.ssh/
+.secrets/
+secrets/
+credentials/
+credentials.json
+credentials.yaml
+credentials.yml
+credentials.toml
+secrets.json
+secrets.yaml
+secrets.yml
+secrets.toml
+*.secret
+*.secrets
+service-account*.json
+*-service-account.json
+
+# Private keys and certificate stores.
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+id_ecdsa
+id_ecdsa.*
+id_dsa
+id_dsa.*
+
+# Local authentication and tool configuration.
+.netrc
+.npmrc
+.pypirc
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+*.tfvars.json
+# Markdown: keep only these filenames at any directory depth.
+*.[mM][dD]
+!INFORME.md
+!README.md
+
+# Entorno y archivos temporales del notebook serial.
+.venv-oracle/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Capturas distribuidas por GitHub Releases; conservar metadatos y esquemas.
+/dist/dataset/
+/dataset/**/*.parquet
