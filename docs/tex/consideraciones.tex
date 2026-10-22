@@ -1,0 +1,131 @@
+\section{Consideraciones}
+\label{sec:consideraciones}
+
+\subsection{Problema y alcance}
+
+El sistema propuesto analiza conjuntos de artículos de Wikipedia en inglés y
+francés para obtener información sobre sus fechas, secciones, imágenes y
+vocabulario. La entrada proviene de un dataset en formato Parquet disponible
+en Kaggle. Cada artículo contiene datos estructurados y un \emph{abstract},
+es decir, el texto introductorio que resume su contenido.
+
+El problema consiste en procesar un corpus potencialmente mayor que la memoria
+disponible y atender a varios clientes concurrentemente. El diseño distribuye
+el trabajo entre computadoras y procesa los datos incrementalmente, preservando
+la exactitud de las agregaciones y el aislamiento de cada ejecución.
+Agregar recursos debe permitir aumentar tanto la cantidad de clientes
+atendidos como el volumen de entrada por cliente.
+
+El cliente dispone de los artículos y los envía incrementalmente al sistema;
+la ingesta, la selección de campos y el cálculo de las consultas quedan a cargo
+del servicio. Las cinco consultas comparten la entrada de una ejecución.
+El cliente también recibe resultados durante el envío y comunica explícitamente
+el fin de la entrada. El alcance admite una única ejecución por cliente;
+cada ejecución tiene una identidad que permite separar sus datos, estado y
+resultados de los de otros clientes.
+
+\subsection{Resultados requeridos}
+
+Para los artículos recibidos en cada ejecución se deben resolver las siguientes
+consultas. Sus actores y escenarios se desarrollan en la
+sección~\ref{sec:casos-de-uso}.
+
+\begin{description}
+    \item[Q1.] URL y fecha de modificación de los artículos en inglés cuya
+    fecha de última modificación corresponde a 2020 o a un año anterior.
+
+    \item[Q2.] Nombre, URL del artículo y bytes de su imagen para los artículos
+    hasta 2020 inclusive que contienen una sección denominada
+    \texttt{biography} o \texttt{biographie}. La búsqueda comprende ambos
+    idiomas y compara el nombre completo de la sección en minúsculas.
+    El sistema obtiene el contenido de las imágenes referenciadas mediante
+    Wikimedia.
+
+    \item[Q3.] Palabras únicas compartidas entre los abstracts de ambos idiomas:
+    cada palabra debe aparecer en al menos un artículo en inglés y en al menos
+    uno en francés.
+
+    \item[Q4.] Hasta 20 pares de palabra y cantidad, correspondientes a las
+    palabras con mayor conteo entre todos los abstracts de la ejecución.
+
+    \item[Q5.] URL y cantidad de palabras del abstract de los artículos desde
+    2021 cuyo conteo supera estrictamente el promedio de los abstracts de los
+    artículos hasta 2020 inclusive.
+\end{description}
+
+Los cortes temporales utilizan la fecha de última modificación
+(\texttt{date\_modified}). Para el análisis de vocabulario se normalizan las
+palabras a minúsculas y se excluyen tokens numéricos y \emph{stopwords},
+palabras triviales de las listas de inglés y francés utilizadas por el sistema.
+En Q4 y Q5 cada palabra distinta se cuenta una sola vez por abstract; esta
+regla no elimina registros repetidos de la entrada. Por ejemplo, dos apariciones
+de una misma palabra válida en un abstract aportan una unidad a Q4 y al conteo
+de ese abstract en Q5.
+
+Q1, Q2 y Q3 permiten entregar resultados parciales. Q4 y Q5 requieren haber
+procesado toda la entrada del cliente: el top global y el promedio histórico
+dependen del conjunto completo. Las respuestas pueden transmitirse en lotes
+acotados, acompañados de una finalización explícita de cada consulta, incluso
+cuando el resultado sea vacío.
+
+\subsection{Requisitos que condicionan el diseño}
+
+\begin{itemize}
+    \item \textbf{Concurrencia y aislamiento.} Cada ejecución conserva entradas,
+    estado y resultados aislados al atender varios clientes concurrentemente.
+    No se exige paralelismo.
+
+    \item \textbf{Determinismo.} Entradas iguales, bajo el mismo contrato de
+    procesamiento, deben producir los mismos resultados aunque cambien el
+    orden de llegada o la intercalación entre clientes. En Q4 se ordena por
+    cantidad descendente y se desempata por palabra normalizada en orden
+    lexicográfico ascendente.
+
+    \item \textbf{Escalabilidad entre computadoras.} El trabajo debe poder
+    distribuirse entre más elementos de cómputo. No se exige elasticidad durante
+    una ejecución; la propuesta fija las particiones y sus propietarios antes
+    de iniciarla, como se explica en la
+    sección~\ref{subsec:particionado-aislamiento}.
+
+    \item \textbf{Recursos acotados.} El procesamiento debe limitar memoria,
+    lotes y operaciones pendientes. Se permiten archivos temporales locales
+    para conservar estado que exceda la RAM y se prohíbe utilizar una base de
+    datos.
+
+    \item \textbf{Tecnología y comunicación.} La implementación se realizará
+    en Go y utilizará un middleware sobre RabbitMQ que abstraiga la comunicación
+    basada en grupos mediante colas y exchanges. La propuesta utiliza TCP entre
+    el cliente y Gateway, AMQP para los mensajes internos y HTTPS para obtener
+    metadatos y bytes de imágenes de Wikimedia.
+\end{itemize}
+
+\subsection{Finalización y fallos}
+
+El fin de entrada del cliente indica que no enviará más artículos. Cada etapa
+debe completar su trabajo pendiente antes de propagar la finalización a sus
+destinos. Recibir el EOF de un productor no implica haber recibido el de todos
+los productores esperados ni haber procesado todos sus datos. Esta distinción
+permite que las agregaciones se cierren con resultados completos.
+
+Se requiere un apagado ordenado ante SIGTERM: coordinar el trabajo pendiente,
+las confirmaciones y el cierre de archivos y conexiones, o informar una
+cancelación explícita si no se puede completar la ejecución. Ante una caída
+abrupta, el alcance confirmado es abortar las ejecuciones afectadas. Un nuevo
+intento utiliza otra identidad de ejecución y retransmite toda la entrada;
+reiniciar un contenedor no recupera por sí solo el trabajo anterior.
+La propuesta no ofrece recuperación transparente ni alta disponibilidad.
+
+\subsection{Validación y alcance del documento}
+
+La corrección se verificará mediante un notebook serial de referencia,
+adaptado a las mismas listas de stopwords y reglas de conteo del sistema,
+incluida la deduplicación por abstract de Q5 y el desempate de Q4.
+Sobre un subconjunto fijo del dataset se compararán los resultados esperados
+con ejecuciones de un solo cliente y de varios clientes concurrentes.
+Variar el orden de entrada permitirá comprobar que el resultado no depende
+del orden de procesamiento; las pruebas de Q2 deben utilizar imágenes de
+referencia reproducibles para comparar también sus bytes.
+
+Este informe presenta una propuesta de arquitectura mediante vistas $4+1$ y
+diagramas de responsabilidades, interacción y despliegue.
+

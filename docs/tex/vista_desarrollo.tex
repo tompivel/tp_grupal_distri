@@ -1,0 +1,27 @@
+\section{Vista de desarrollo}
+\subsection{Diagrama de paquetes}
+A la hora de metenernos con la implementación, dividiremos el código en los siguientes módulos:
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth,height=0.82\textheight,keepaspectratio]{img/diagrama_paquetes.drawio}
+    \caption{Organización del proyecto}
+    \label{fig:paquetes}
+\end{figure}
+
+Donde, en particular cada uno representa:
+
+\begin{itemize}
+    \item \textbf{Gateway}: Es el servidor central del sistema, y es el único punto de entrada y salida para la información de todos los clientes y repsuestas a emitir.
+    \item \textbf{Client}: Posee la lógica de conexión de los clientes y de extracción de la información del datset, como así también el \textit{batching} de la misma.
+    \item \textbf{Worker}: Es una abstracción de cada uno de los workers representados como nodos en el \textit{DAG} (ver~\ref{subsec:dag}).
+
+    \item \textbf{Model}: Contiene los objetos del dominio del problema, que se usarán en el protocolo y por ende en los workers para hacer el manejo de datos del dataset.
+
+    \item \textbf{Sender-Receiver-Logic}: En este módulo se tienen los componentes necesarios para la comunicación entre nodos, esto es la implementación del middleware,el protocolo de mensajes entre workers, cliente-servidor y por último la implementación del socket seguro.
+
+    \item \textbf{Sender-Receiver-Logic}: En este módulo se tienen los componentes necesarios para la comunicación entre nodos, esto es la implementación del middleware,el protocolo de mensajes entre workers, cliente-servidor y por último la implementación del socket seguro.
+
+    \item \textbf{Middleware Node}: Este nodo permite el uso del middleware de RabbitMQ, para usar dicho framework.
+
+
+\end{itemize}

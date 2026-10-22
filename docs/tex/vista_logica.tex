@@ -1,0 +1,17 @@
+\section{Vista Lógica}
+Con el fin de visualizar qué compoenentes existirán en el sistema y de qué se encargarán, realizamos un \textit{Dyrected Acyclic Graph} de ahí sus sigas \emph{DAG}: 
+\subsection{DAG}
+\label{subsec:dag}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth,height=0.82\textheight,keepaspectratio]{img/dag.drawio}
+    \caption{DAG del flujo de resolución de cada consulta del sistema}
+    \label{fig:dag}
+\end{figure}
+
+A continuación detallamos algunas funcionalidades:
+\begin{itemize}
+    \item \textbf{Project}: Recibe las filas del dataset tal cual el cliente las envía, y se encarga de filtrar las columnas que no serán necesarias para resolver alguna de las cinco consultas.
+    \item \textbf{Date Filter y Word Tokenizer}: Dado a que hay queries que comparten este preprocesamiento, aprovechamos en usar los mismos nodos y no hacer el mismo procesamiento para cada flujo.
+    \item \textbf{Result Collector}: Si bien, las primeras 3 consultas envían resultados parciales es necesario llevar cuenta de si la petición inicial del cliente terminó, esto es cuando las cinco consultas finalizan, este nodo se encargará de notificar el fin de los clientes.
+\end{itemize}
