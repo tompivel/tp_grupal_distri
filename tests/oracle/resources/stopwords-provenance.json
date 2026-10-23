@@ -1,0 +1,15 @@
+{
+  "source_url": "https://raw.githubusercontent.com/nltk/nltk_data/gh-pages/packages/corpora/stopwords.zip",
+  "downloaded_at": "2026-10-22T12:33:40.790996+00:00",
+  "archive_sha256": "48c0e52d8b52546e827f53761fb30300c0ab94f70660d28bd65ba0a86270946b",
+  "files": {
+    "english.txt": {
+      "sha256": "f6d005956f407dbc6ea32e5ff0c7e8e6f71488d3239b9023efdc7fc139d6375b",
+      "lines": 198
+    },
+    "french.txt": {
+      "sha256": "58ac7f7c074b70dc0fc86f6fcf40b2c227e9f95627e90e57971d5cce1e30e2e9",
+      "lines": 157
+    }
+  }
+}
