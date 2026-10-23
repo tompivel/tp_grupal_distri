@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "version": "test-data-v1",
+  "repository": "tompivel/tp_grupal_distri",
+  "archive": {
+    "name": "dataset-test-data-v1.tar",
+    "bytes": 467394560,
+    "sha256": "1f8658749032a632b7cd66a79b48cf128b77efda88e0a8cd6d580cac4339a63b"
+  },
+  "files": [
+    {
+      "path": "enwiki/data/enwiki_namespace_0_00000.parquet",
+      "bytes": 59780794,
+      "sha256": "447bc19043362c033e6550c0d3cd3a1dd395b71c8b816efa6f83da4d1b854831"
+    },
+    {
+      "path": "enwiki/data/enwiki_namespace_0_00001.parquet",
+      "bytes": 60235879,
+      "sha256": "a21c9eb62596018084dc55a800bbcaf10603a749623c9134ab0e343f210eb513"
+    },
+    {
+      "path": "enwiki/data/enwiki_namespace_0_00002.parquet",
+      "bytes": 56790159,
+      "sha256": "3b125e332042fabd8f4774eb34e2465236154888e82c6cf122dc00b2b5db7820"
+    },
+    {
+      "path": "enwiki/data/enwiki_namespace_0_00003.parquet",
+      "bytes": 49985194,
+      "sha256": "8fa80621cbdad2e1d5420a6d1ad450d59fb3ed6a9caa29404ca1e2a25844f519"
+    },
+    {
+      "path": "enwiki/data/enwiki_namespace_0_00004.parquet",
+      "bytes": 47252556,
+      "sha256": "449b5a03576e5001a23920119daff091f31296f2e34c5a308612c6916c05c9c7"
+    },
+    {
+      "path": "enwiki/schema.json",
+      "bytes": 9509,
+      "sha256": "b48fbd777b10e2f34a9638426db3061a9afc58ba5246eac4ea1d808c360d559a"
+    },
+    {
+      "path": "frwiki/data/frwiki_namespace_0_00000.parquet",
+      "bytes": 19837597,
+      "sha256": "976b2b4fdfca8fee886365aac790ff4d23903b430be63191aec8f60a910307f9"
+    },
+    {
+      "path": "frwiki/data/frwiki_namespace_0_00001.parquet",
+      "bytes": 38286596,
+      "sha256": "dd97529a9a2bac592ee136f4cc8303727a357ac615f2aaa918995a017527b2ab"
+    },
+    {
+      "path": "frwiki/data/frwiki_namespace_0_00002.parquet",
+      "bytes": 45650619,
+      "sha256": "25b45cb57d3bfbae5d12124a4bb66e9f8f0f2fc2221f7183ed13950dfd84bd5b"
+    },
+    {
+      "path": "frwiki/data/frwiki_namespace_0_00003.parquet",
+      "bytes": 44439429,
+      "sha256": "905ffa4a5568e39542fb260989e9e24e291d52b64331d3cf37f81b8d7527fab9"
+    },
+    {
+      "path": "frwiki/data/frwiki_namespace_0_00004.parquet",
+      "bytes": 45104994,
+      "sha256": "ddc06cf7412e3465b056a068f0a7dcb8f37fac92ccd73f49461787de2529368a"
+    },
+    {
+      "path": "frwiki/schema.json",
+      "bytes": 9205,
+      "sha256": "75c5587fa686add179e3713237e5866d8cfc4eeff37760c4c68d5bfa5fb2466c"
+    }
+  ]
+}
