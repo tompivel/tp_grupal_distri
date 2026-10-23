@@ -1,0 +1,401 @@
+{
+  "format_version": 1,
+  "status": "incomplete_images",
+  "input": {
+    "assignment": "global_ordinal_modulo_clients_v1",
+    "clients": 5,
+    "rows_per_file": null,
+    "selected_rows": 250000,
+    "source_parquet_bytes": 467363817,
+    "files": [
+      {
+        "path": "enwiki/data/enwiki_namespace_0_00000.parquet",
+        "sha256": "447bc19043362c033e6550c0d3cd3a1dd395b71c8b816efa6f83da4d1b854831",
+        "bytes": 59780794,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 0,
+        "schema_sha256": "bf6a1aaea3e947b3b07057592d834376ba2be5c28eed4b3cd11a18a0dd24678f"
+      },
+      {
+        "path": "frwiki/data/frwiki_namespace_0_00000.parquet",
+        "sha256": "976b2b4fdfca8fee886365aac790ff4d23903b430be63191aec8f60a910307f9",
+        "bytes": 19837597,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 25000,
+        "schema_sha256": "a9b21192f8482e945fc22566a0552f6db6638f46ecde0945536e8144772dec95"
+      },
+      {
+        "path": "enwiki/data/enwiki_namespace_0_00001.parquet",
+        "sha256": "a21c9eb62596018084dc55a800bbcaf10603a749623c9134ab0e343f210eb513",
+        "bytes": 60235879,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 50000,
+        "schema_sha256": "bf6a1aaea3e947b3b07057592d834376ba2be5c28eed4b3cd11a18a0dd24678f"
+      },
+      {
+        "path": "frwiki/data/frwiki_namespace_0_00001.parquet",
+        "sha256": "dd97529a9a2bac592ee136f4cc8303727a357ac615f2aaa918995a017527b2ab",
+        "bytes": 38286596,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 75000,
+        "schema_sha256": "a9b21192f8482e945fc22566a0552f6db6638f46ecde0945536e8144772dec95"
+      },
+      {
+        "path": "enwiki/data/enwiki_namespace_0_00002.parquet",
+        "sha256": "3b125e332042fabd8f4774eb34e2465236154888e82c6cf122dc00b2b5db7820",
+        "bytes": 56790159,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 100000,
+        "schema_sha256": "bf6a1aaea3e947b3b07057592d834376ba2be5c28eed4b3cd11a18a0dd24678f"
+      },
+      {
+        "path": "frwiki/data/frwiki_namespace_0_00002.parquet",
+        "sha256": "25b45cb57d3bfbae5d12124a4bb66e9f8f0f2fc2221f7183ed13950dfd84bd5b",
+        "bytes": 45650619,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 125000,
+        "schema_sha256": "a9b21192f8482e945fc22566a0552f6db6638f46ecde0945536e8144772dec95"
+      },
+      {
+        "path": "enwiki/data/enwiki_namespace_0_00003.parquet",
+        "sha256": "8fa80621cbdad2e1d5420a6d1ad450d59fb3ed6a9caa29404ca1e2a25844f519",
+        "bytes": 49985194,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 150000,
+        "schema_sha256": "bf6a1aaea3e947b3b07057592d834376ba2be5c28eed4b3cd11a18a0dd24678f"
+      },
+      {
+        "path": "frwiki/data/frwiki_namespace_0_00003.parquet",
+        "sha256": "905ffa4a5568e39542fb260989e9e24e291d52b64331d3cf37f81b8d7527fab9",
+        "bytes": 44439429,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 175000,
+        "schema_sha256": "a9b21192f8482e945fc22566a0552f6db6638f46ecde0945536e8144772dec95"
+      },
+      {
+        "path": "enwiki/data/enwiki_namespace_0_00004.parquet",
+        "sha256": "449b5a03576e5001a23920119daff091f31296f2e34c5a308612c6916c05c9c7",
+        "bytes": 47252556,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 200000,
+        "schema_sha256": "bf6a1aaea3e947b3b07057592d834376ba2be5c28eed4b3cd11a18a0dd24678f"
+      },
+      {
+        "path": "frwiki/data/frwiki_namespace_0_00004.parquet",
+        "sha256": "ddc06cf7412e3465b056a068f0a7dcb8f37fac92ccd73f49461787de2529368a",
+        "bytes": 45104994,
+        "rows": 25000,
+        "selected_rows": 25000,
+        "global_offset": 225000,
+        "schema_sha256": "a9b21192f8482e945fc22566a0552f6db6638f46ecde0945536e8144772dec95"
+      }
+    ]
+  },
+  "semantics": {
+    "version": "wiki-serial-v1",
+    "lowercase": "Python str.lower; sin quitar acentos ni aplicar stemming",
+    "word_regex": "\\b\\w+\\b",
+    "number_regex": "[+-]?((\\d+\\.?\\d*)|(\\.\\d+))",
+    "unicode_version": "16.0.0",
+    "stopwords_sha256": "6b0dfa01e971692e31e8b3d50ddffee255db8ba6ac0a06bc87a796322aa5f818",
+    "stopwords_count": 346,
+    "q2": "name, article url, original image bytes; explicit null if absent",
+    "q3": "unique intersection en/fr, excluding stopwords and numeric tokens",
+    "q4": "distinct tokens per abstract; sort by (-count, word); limit 20",
+    "q5": "occurrences; historical null abstracts excluded; count*N>S",
+    "no_history": "empty result with no_historical_base state",
+    "timestamps": "ISO 8601 milliseconds; preserve input timezone (none in sample)"
+  },
+  "created_at": "2026-10-22T12:43:35.656011+00:00",
+  "generator": {
+    "notebook_source_sha256": "63473afb38c9c7ebefb1a419e140cddbc808c4b1e4d8782934f53b49aadc771a",
+    "reference_sha256": "9e187812d03979216a1adee8ca1e56353c8895df6d218b604985fc9c9bb7eff7",
+    "python": "3.14.8",
+    "packages": {
+      "pyarrow": "26.0.0",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0"
+    },
+    "reference_snapshot_path": "generator/reference.py"
+  },
+  "clients": [
+    {
+      "id": "client-0",
+      "input_rows": 50000,
+      "languages": {
+        "en": 25000,
+        "fr": 25000
+      },
+      "input_occurrences_sha256": "a1b29774a46b1d82dbc0a508aeb732c7cec23786985d2646f37015ffc7c9115d",
+      "historical_sum": 100315,
+      "historical_count": 4248,
+      "q5_state": "complete",
+      "queries": {
+        "q1": {
+          "path": "client-0/q1.jsonl",
+          "sha256": "55fc81055cec072e3c3ba761a8dd7e9f88ee7604830f3a8b94cbb2f016d5bcf6",
+          "rows": 1634,
+          "status": "complete"
+        },
+        "q2": {
+          "path": "client-0/q2.jsonl",
+          "sha256": "2bc2ed73dddf32dabffe3a0385c61170e9f883f24b6e8164ecd82ad112757466",
+          "rows": 143,
+          "status": "complete"
+        },
+        "q3": {
+          "path": "client-0/q3.jsonl",
+          "sha256": "9aefa386e134c9870a8e660d21fa3c3910cb4551217fa193072eaa02a1352c19",
+          "rows": 16672,
+          "status": "complete"
+        },
+        "q4": {
+          "path": "client-0/q4.jsonl",
+          "sha256": "ca101af17a572c082e35c0dfbea2bc64cdad8e650dd10b7654ed868aa9b356f4",
+          "rows": 20,
+          "status": "complete"
+        },
+        "q5": {
+          "path": "client-0/q5.jsonl",
+          "sha256": "d888c1945059c9bc064abcd85a988fec6ecc46b2425f78a24fc7847298760252",
+          "rows": 16851,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "id": "client-1",
+      "input_rows": 50000,
+      "languages": {
+        "en": 25000,
+        "fr": 25000
+      },
+      "input_occurrences_sha256": "783bafa10c4880444c9e4454b1322a0a8dcc65c184682a8bf9c4e35abaacf829",
+      "historical_sum": 95779,
+      "historical_count": 4052,
+      "q5_state": "complete",
+      "queries": {
+        "q1": {
+          "path": "client-1/q1.jsonl",
+          "sha256": "b0b09e7123292bd05fbd974bd133a263927dd1fe366fc1df11190fd1dd6e45a4",
+          "rows": 1582,
+          "status": "complete"
+        },
+        "q2": {
+          "path": "client-1/q2.jsonl",
+          "sha256": "94a3df65480de50418c5e313f5d3671fa0910fc15bf6bfee802732b3423c652e",
+          "rows": 116,
+          "status": "complete"
+        },
+        "q3": {
+          "path": "client-1/q3.jsonl",
+          "sha256": "b11dc9cb1d04dad8567162943608a7727fc8b7cad43bc0bc14594d170e74969c",
+          "rows": 17020,
+          "status": "complete"
+        },
+        "q4": {
+          "path": "client-1/q4.jsonl",
+          "sha256": "23871d8c476f7d290ae0fb6f4e0c02545f04d82ad17e978a5bf2fdd84ccc4416",
+          "rows": 20,
+          "status": "complete"
+        },
+        "q5": {
+          "path": "client-1/q5.jsonl",
+          "sha256": "63aba038f6e9430e60dc1da8d33b70d800b74219e6268c4db54ce7961c3eb4c4",
+          "rows": 17106,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "id": "client-2",
+      "input_rows": 50000,
+      "languages": {
+        "en": 25000,
+        "fr": 25000
+      },
+      "input_occurrences_sha256": "f6381c78b959962505bba3394dfa316516a7e9fe8a625ec6947ca729a905fba2",
+      "historical_sum": 96805,
+      "historical_count": 4195,
+      "q5_state": "complete",
+      "queries": {
+        "q1": {
+          "path": "client-2/q1.jsonl",
+          "sha256": "8914f19353c6b68115208ed484a29feb21143f601815c2036935985faac5168a",
+          "rows": 1618,
+          "status": "complete"
+        },
+        "q2": {
+          "path": "client-2/q2.jsonl",
+          "sha256": "166eaf31deb92753a3841f27379d5888a5d51cbec5325a9a92cac3eb99c5e486",
+          "rows": 140,
+          "status": "incomplete_images"
+        },
+        "q3": {
+          "path": "client-2/q3.jsonl",
+          "sha256": "76834f5e2a02acaf712de1a6a6d0cdd7e850ad4ad74f08278d569ad1d3952074",
+          "rows": 16615,
+          "status": "complete"
+        },
+        "q4": {
+          "path": "client-2/q4.jsonl",
+          "sha256": "a4725a5555de996bbc5a57737eb4fd137e2730d9f4af1dd65153f519009df84f",
+          "rows": 20,
+          "status": "complete"
+        },
+        "q5": {
+          "path": "client-2/q5.jsonl",
+          "sha256": "ea10c5810b939c12348b924c3fb8c890a9df69133188c35f0793dfbc8be6856a",
+          "rows": 16798,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "id": "client-3",
+      "input_rows": 50000,
+      "languages": {
+        "en": 25000,
+        "fr": 25000
+      },
+      "input_occurrences_sha256": "f8dfaac682942c71af59bddbe1c9a6d14e12ce9daf3bf6bcac8e4bd7ef5cf72a",
+      "historical_sum": 93513,
+      "historical_count": 4168,
+      "q5_state": "complete",
+      "queries": {
+        "q1": {
+          "path": "client-3/q1.jsonl",
+          "sha256": "fc5b6f2568411ac0c49028ed95941ace13d950c15ad5f355417cfffd7b6f7205",
+          "rows": 1602,
+          "status": "complete"
+        },
+        "q2": {
+          "path": "client-3/q2.jsonl",
+          "sha256": "919b3c814b0ffba686eaec3c54d2a1ee65aa571e61131f4c17498b766a85ae76",
+          "rows": 145,
+          "status": "complete"
+        },
+        "q3": {
+          "path": "client-3/q3.jsonl",
+          "sha256": "998a7a82aeff56aa408569c091e2abb11b5f8932565978e740591d081755cece",
+          "rows": 16615,
+          "status": "complete"
+        },
+        "q4": {
+          "path": "client-3/q4.jsonl",
+          "sha256": "9793729bc51b151a90a6304f8b50c5b967c2c8ca272cef9f362a88a034dc78e4",
+          "rows": 20,
+          "status": "complete"
+        },
+        "q5": {
+          "path": "client-3/q5.jsonl",
+          "sha256": "0c1d474e3e5825be3b068c9ad8e89de632e238ef3976339dc7eccbac613ea24a",
+          "rows": 17580,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "id": "client-4",
+      "input_rows": 50000,
+      "languages": {
+        "en": 25000,
+        "fr": 25000
+      },
+      "input_occurrences_sha256": "9ea0e927fdf952710aa29056721b173cefa52663b8c21e0e9c7368051183e354",
+      "historical_sum": 92267,
+      "historical_count": 3966,
+      "q5_state": "complete",
+      "queries": {
+        "q1": {
+          "path": "client-4/q1.jsonl",
+          "sha256": "941ca2d3d65cdaf98eff84a1052bb9042cd4793aa0c1eb7cd69077b703043213",
+          "rows": 1559,
+          "status": "complete"
+        },
+        "q2": {
+          "path": "client-4/q2.jsonl",
+          "sha256": "e5d425e418384b548885b8875cfbcc4f7aff4c6a8157e9df3f768dac1ff090fc",
+          "rows": 143,
+          "status": "complete"
+        },
+        "q3": {
+          "path": "client-4/q3.jsonl",
+          "sha256": "05439676efe5982244f74bb8734f25f0581d0ae9b8e209e7891d96bbdc929c31",
+          "rows": 16815,
+          "status": "complete"
+        },
+        "q4": {
+          "path": "client-4/q4.jsonl",
+          "sha256": "9b6d1b6b89d3b56cf82c1fb1ca1a55d28259f24624fa0b80574e43b24bf97e8a",
+          "rows": 20,
+          "status": "complete"
+        },
+        "q5": {
+          "path": "client-4/q5.jsonl",
+          "sha256": "fb550412316cf17827626b391382b9a4e3defc12428e6957bd83618d3fc9a790",
+          "rows": 16978,
+          "status": "complete"
+        }
+      }
+    }
+  ],
+  "image_capture_error": null,
+  "image_capture_sessions": [
+    {
+      "started_at": "2026-10-22T13:41:08.032467+00:00",
+      "attempted": 96,
+      "downloaded": 95,
+      "timeout_seconds": 30.0,
+      "interval_seconds": 3.0,
+      "source_sha256": "8af84e248a3f51611260f428e7ada7a6916df5cf865b4ed53a28dde3d441452c",
+      "uv_lock_sha256": "dbb478dd6bf2abdb67e3c05790b680cccbbf02f441cbc61c783ba9bb9cbd252a",
+      "previously_available_urls": 2,
+      "updated_at": "2026-10-22T13:47:24.860901+00:00",
+      "error": {
+        "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Amelie_Rivat%2C_Giro_Rosa_2016.jpg",
+        "error": "HTTP Error 404: Not Found",
+        "at": "2026-10-22T13:47:24.859543+00:00",
+        "http_status": 404,
+        "retry_after": null
+      },
+      "finished_at": "2026-10-22T13:47:24.860901+00:00"
+    },
+    {
+      "started_at": "2026-10-22T14:04:25.012188+00:00",
+      "attempted": 122,
+      "downloaded": 121,
+      "not_found": 1,
+      "timeout_seconds": 30.0,
+      "interval_seconds": 3.0,
+      "source_sha256": "40b09dab0076f01d18b754a1827433815d79afb08efe110d1dc42404a4f60fd6",
+      "uv_lock_sha256": "dbb478dd6bf2abdb67e3c05790b680cccbbf02f441cbc61c783ba9bb9cbd252a",
+      "previously_available_urls": 97,
+      "updated_at": "2026-10-22T14:12:23.244928+00:00",
+      "finished_at": "2026-10-22T14:12:23.244928+00:00"
+    }
+  ],
+  "image_404_errors": [
+    {
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Amelie_Rivat%2C_Giro_Rosa_2016.jpg",
+      "error": "HTTP Error 404: Not Found",
+      "at": "2026-10-22T14:04:30.353235+00:00",
+      "http_status": 404,
+      "retry_after": null
+    }
+  ],
+  "image_404_log": {
+    "path": "image-404-errors.jsonl",
+    "sha256": "1e1984129f5e02fcfb1681878e11d0264ab457a88f68b45c42bf9de406de416b"
+  }
+}
