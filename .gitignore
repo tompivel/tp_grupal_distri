@@ -48,10 +48,11 @@ terraform.tfstate
 terraform.tfstate.*
 *.tfvars
 *.tfvars.json
-# Markdown: keep only these filenames at any directory depth.
+# Markdown: keep shared READMEs, INFORME.md and the system requirements.
 *.[mM][dD]
 !INFORME.md
 !README.md
+!/docs/requisitos.md
 
 # Entorno y archivos temporales del notebook serial.
 .venv-oracle/
