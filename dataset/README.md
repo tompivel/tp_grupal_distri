@@ -1,8 +1,5 @@
 # Muestra local de Wikipedia
 
-Inventario verificado el 20 de octubre de 2026 mediante metadatos de los diez
-Parquet y lectura por lotes de sus campos relevantes para las consultas.
-Se utilizó PyArrow 26.0.0 en un entorno temporal, sin modificar los datos.
 Los números siguientes describen **la captura `test-data-v1`**, no el dataset
 completo ni necesariamente una captura futura fijada en el manifiesto activo.
 
@@ -12,38 +9,17 @@ identificador de versión de descarga en esta carpeta: no inferirlo a partir de
 las fechas de los artículos ni del campo `version` de `schema.json`. Para
 reproducir exactamente la entrada, conservar estos archivos y verificar sus hashes.
 
-## Obtener y publicar los archivos exactos
+## Obtener los archivos
 
-La captura se distribuye como asset de una GitHub Release. El pin de versión y
-los hashes de todos los archivos están en [manifest.json](manifest.json),
-versionado en Git. Una vez publicada la release correspondiente:
+La [guía de distribución](../scripts/README.md) documenta la descarga,
+verificación, selección de release, empaquetado y publicación. El
+[manifiesto activo](manifest.json) selecciona la captura del checkout.
 
-```sh
-python3 scripts/dataset.py fetch
-python3 scripts/dataset.py verify
-```
-
-Para seleccionar otra release sin modificar el manifiesto del checkout:
-
-```sh
-python3 scripts/dataset.py fetch --release test-data-v2
-python3 scripts/dataset.py verify --manifest dist/dataset/test-data-v2/manifest.json
-```
-
-Se obtiene primero el manifiesto pequeño de esa release y se comprueban los datos
-locales; el paquete sólo se descarga si faltan archivos y no está en caché. Si hay
-archivos locales distintos o sobrantes, se conserva el rechazo a sobrescribirlos;
-usar otro destino con `--dataset` para una captura incompatible.
-
-Para añadir Parquet y preparar una nueva captura completa:
-
-```sh
-python3 scripts/dataset.py pack --version test-data-v2
-```
-
-La [guía de distribución](../scripts/README.md) detalla requisitos, instalación
-desde un tar local, actualización de expectativas y publicación de la release.
-Los Parquet se excluyen de Git; README, esquemas y manifiesto se versionan.
+Los hashes de los diez Parquet de **`test-data-v1`** inventariados aquí quedan
+conservados en `input.files` del
+[manifiesto del escenario v1](../tests/expected/full-5clients-v1/manifest.json),
+aunque cambie la captura activa. No se presupone que descargar nuevamente desde
+Kaggle permita reconstruir los mismos archivos.
 
 ## Organización y volumen
 
@@ -64,8 +40,9 @@ dataset/
 Hay cinco archivos por idioma, todos con **25.000 filas**. En total son
 **250.000 registros**, mitad ingleses y mitad franceses. Cada archivo tiene 13
 grupos de filas: doce de 2.048 y uno de 424. La compresión observada es ZSTD.
-Cada fila representa un registro de artículo; no debe asumirse que un artículo
-o URL aparece una sola vez, ni eliminar registros repetidos al preparar tests.
+Cada fila representa una ocurrencia de artículo. Conservar los registros
+repetidos e identificar cada ocurrencia por captura, ruta relativa e índice de
+fila; el título o la URL no son identidades únicas de ocurrencia.
 
 | Idioma / índice de archivo | Bytes de Parquet | Filas |
 |---|---:|---:|
@@ -122,8 +99,7 @@ ni elegir una imagen de una sección.
 
 `sections` no es directamente una lista de diccionarios al leer el Parquet.
 En los valores no nulos inspeccionados se pudo decodificar el texto con
-`json.loads`; las secciones contienen el campo `name`. Q2 compara ese nombre
-completo en minúsculas con `biography` o `biographie`, sin búsqueda de subcadenas.
+`json.loads`; las secciones contienen el campo `name`.
 La validez del resto de los campos serializados no se auditó exhaustivamente.
 
 ### Diferencias entre inglés y francés
@@ -137,11 +113,7 @@ está en `version`:
 - `version.scores.referencerisk.reference_risk_score` es `double` en inglés e
   `int64` en francés.
 
-`enwiki/schema.json` tiene `version: 1`, `num_fields: 19`, `field_names` y
-`arrow_ipc_hex`, que codifica el esquema Arrow completo. Coincide con los cinco
-archivos ingleses, ignorando metadatos adicionales. **No describe exactamente
-los archivos franceses**. Se agregó `frwiki/schema.json`, que coincide con el esquema
-francés verificado el 22 de octubre de 2026. Leer el footer de cada Parquet y el
+Leer el footer de cada Parquet y el
 esquema auxiliar de su idioma; no imponer el inglés a todos los archivos.
 
 Para decodificar el esquema auxiliar con PyArrow:
@@ -157,7 +129,7 @@ schema = pa.ipc.read_schema(
 )
 ```
 
-Si se materializan particiones de clientes, conservar archivos separados por
+Si se materializan particiones de clientes, se debe conservar archivos separados por
 esquema/origen. Unificar estructuras o convertir enteros a flotantes requiere
 una decisión explícita y puede perder información. El cliente debe enviar
 registros completos: la proyección de columnas corresponde al rol `Project`.
@@ -199,23 +171,15 @@ casos pequeños de ambos idiomas, imágenes presentes/ausentes y descarga fallid
 No modificar fechas o registros originales para fabricar esos casos: mantener
 los ejemplos sintéticos como escenarios independientes y explícitos.
 
-## Contrato de las consultas
+## Consultas y referencias
 
-Los [requisitos funcionales](../docs/requisitos.md#requerimientos-funcionales)
-definen las salidas y reglas de conteo de Q1–Q5. El
-[mapa de documentación](../docs/README.md#precedencia-de-fuentes) indica qué
-fuente prevalece ante diferencias con el informe o propuestas históricas.
-El [oráculo serial](../tests/oracle/README.md) documenta la generación de
-referencias, las stopwords versionadas y la comparación de resultados.
-
-La tokenización del diseño excluye tokens numéricos y normaliza a minúsculas.
-Antes de generar referencias, fijar el contrato de tokenización y la lista de
-stopwords que compartirá el sistema con el oráculo.
-
-La deduplicación de palabras de Q4 no autoriza deduplicar filas. Identificar cada
-ocurrencia por snapshot, ruta relativa e índice de fila; no por título o URL.
-No hay listas de stopwords, imágenes binarias ni resultados esperados en esta
-muestra.
+Las salidas de Q1–Q5 están definidas en los
+[requisitos funcionales](../docs/requisitos.md#requerimientos-funcionales).
+El [contrato serial](../tests/oracle/README.md#contrato-serial) documenta las
+reglas de tokenización y conteo usadas al generar referencias. La
+[partición de la entrada](../tests/oracle/README.md#partición-exacta-de-la-entrada)
+se documenta junto al oráculo; la estrategia de integración está en
+[tests/README.md](../tests/README.md).
 
 ## Reproducción del inventario
 
@@ -242,25 +206,3 @@ Para inspeccionar contenido
 usar `parquet.iter_batches(batch_size=256, columns=[...])`; no tratar Parquet como
 un archivo de líneas ni depender del tamaño de lote para identificar las filas.
 Un límite de filas por lote no es un límite estricto de memoria en bytes.
-
-Hashes SHA-256 de la muestra inspeccionada; los índices corresponden a los nombres
-completos de archivos del árbol anterior:
-
-| Idioma / índice | SHA-256 |
-|---|---|
-| en / 00000 | `447bc19043362c033e6550c0d3cd3a1dd395b71c8b816efa6f83da4d1b854831` |
-| en / 00001 | `a21c9eb62596018084dc55a800bbcaf10603a749623c9134ab0e343f210eb513` |
-| en / 00002 | `3b125e332042fabd8f4774eb34e2465236154888e82c6cf122dc00b2b5db7820` |
-| en / 00003 | `8fa80621cbdad2e1d5420a6d1ad450d59fb3ed6a9caa29404ca1e2a25844f519` |
-| en / 00004 | `449b5a03576e5001a23920119daff091f31296f2e34c5a308612c6916c05c9c7` |
-| fr / 00000 | `976b2b4fdfca8fee886365aac790ff4d23903b430be63191aec8f60a910307f9` |
-| fr / 00001 | `dd97529a9a2bac592ee136f4cc8303727a357ac615f2aaa918995a017527b2ab` |
-| fr / 00002 | `25b45cb57d3bfbae5d12124a4bb66e9f8f0f2fc2221f7183ed13950dfd84bd5b` |
-| fr / 00003 | `905ffa4a5568e39542fb260989e9e24e291d52b64331d3cf37f81b8d7527fab9` |
-| fr / 00004 | `ddc06cf7412e3465b056a068f0a7dcb8f37fac92ccd73f49461787de2529368a` |
-
-El reparto propuesto para cinco clientes y la estrategia de validación están en
-[tests/README.md](../tests/README.md). La receta de descarga está en la
-[guía de distribución](../scripts/README.md). Esta captura se conserva en una
-release propia; no se presupone que se pueda reconstruir el mismo snapshot
-descargando nuevamente desde Kaggle.

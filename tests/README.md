@@ -7,27 +7,13 @@ no hay runner integral ni Compose de pruebas, y en este checkout tampoco están
 los paquetes Go ni sus comandos de arranque. La primera integración debe permitir
 una prueba pequeña de punta a punta apenas estén disponibles esos contratos.
 
-Las [referencias de la muestra completa](expected/full-5clients-v1/README.md) ya
-se calcularon para los cinco clientes. Q1/Q3/Q4/Q5 están exportadas; Q2 conserva
-218 referencias con bytes y una con HTTP 404, sin URLs pendientes de procesar.
-La última captura registró el 404 y continuó: obtuvo 121 imágenes adicionales,
-sin recibir 429. El diagnóstico está en
-[image-404-errors.jsonl](expected/full-5clients-v1/image-404-errors.jsonl).
-El paquete sigue incompleto por esos bytes faltantes. Esto no constituye todavía
-una prueba del sistema Go.
-
-Las imágenes se comparten en `tests/expected/images/`, con un archivo por SHA-256
-y un índice de URLs exitosas para reutilizar descargas entre escenarios. Los
-resultados Q2 fijan sus propios hashes. Ver la
-[organización de las referencias](expected/README.md).
+El estado de las [referencias de la muestra completa](expected/full-5clients-v1/README.md)
+y la [organización de los artefactos](expected/README.md) se documentan por separado.
 
 ## Alcance inicial
 
-La entrada completa se prepara con `python3 scripts/dataset.py fetch` una vez
-publicada la release fijada en `dataset/manifest.json`. La
-[guía de distribución](../scripts/README.md) explica cómo descargarla, verificarla
-y publicar una captura nueva al añadir Parquet. Cambiar la entrada exige nuevas
-referencias; no sobrescribir `full-5clients-v1`.
+Para obtener la entrada completa, consultar la
+[guía de distribución](../scripts/README.md#obtener-los-datos-como-developer).
 
 El escenario por defecto será **`tiny`: dos clientes y entre 20 y 40 registros
 sintéticos en total**, con el sistema y RabbitMQ reales. El volumen completo del
@@ -154,10 +140,9 @@ la ejecución cotidiana utiliza los archivos ya preparados.
    ante diferencias, error de proceso, cierre faltante o timeout.
 
 No comprobar únicamente que el comando termine o que las colas estén vacías.
-Q1/Q2/Q5 se comparan sin importar el orden, respetando la cantidad de apariciones de cada resultado; Q3 como vocabulario único, rechazando
-duplicados de salida; Q4 como lista ordenada exacta. Reconstruir los fragmentos de
-imagen antes de comparar sus bytes. Se ignoran IDs e instantes propios de la
-ejecución, no registros repetidos ni estados de fallo.
+Comparar según los [formatos de salida](expected/README.md#formatos-de-salida),
+reconstruyendo los fragmentos de imagen antes de comparar sus bytes. Se ignoran
+IDs e instantes propios de la ejecución, no registros repetidos ni estados de fallo.
 
 Un nombre fijo y exclusivo de proyecto Compose es suficiente si el runner admite
 una sola corrida a la vez y rechaza otra activa. El broker (RabbitMQ) y los archivos temporales deben
@@ -178,9 +163,10 @@ comparación incremental (leer y comparar los resultados por partes) o externa (
 no implementarla como prerrequisito de `tiny`. La integración contra Wikimedia
 real y las mediciones de recursos se ejecutan aparte y de forma explícita, en lugar de ejecutarse automáticamente en cada corrida habitual.
 
-Para datos reales, reutilizar el reparto determinista documentado por el oráculo y registrado en el manifiesto del escenario. Conservar todas las filas originales, incluso las repetidas. El manifiesto permite reconstruir la asignación por archivo e índice de fila, sin registrar cada fila en un log ni agregar un servicio de catálogo.
-
-`tiny` utiliza la misma regla de reparto determinista, registrada en su manifiesto. Sus registros sintéticos se organizan para garantizar la cobertura requerida por cliente. Si cambia la entrada asignada a un cliente o la semántica, se genera manualmente una nueva referencia. Cambiar sólo la concurrencia, el orden de envío posterior a la asignación o las réplicas permite reutilizarla.
+Los tres escenarios usan el [reparto determinista del oráculo](oracle/README.md#partición-exacta-de-la-entrada),
+registrado en su manifiesto. En `tiny`, organizar los registros sintéticos para
+garantizar la cobertura requerida por cliente. Para cambiar un escenario,
+seguir las [reglas de actualización de referencias](oracle/README.md#actualizar-referencias).
 
 ## Orden de entrega y dependencias
 
@@ -206,25 +192,9 @@ Si sólo está implementado el middleware, puede ejecutarse una prueba de
 integración productor–RabbitMQ–consumidor para validar esa parte. Debe reportarse
 con ese alcance; el éxito de `tiny` exige el recorrido real completo y Q1–Q5.
 
-## Fuentes y reglas semánticas
+## Documentación relacionada
 
-La funcionalidad sigue los [requisitos del sistema](../docs/requisitos.md);
-el [mapa de documentación](../docs/README.md#precedencia-de-fuentes) establece
-la precedencia respecto del informe y las propuestas históricas. El diseño
-vigente está en [Informe.pdf](../Informe.pdf) y [docs/tex/](../docs/tex/).
-[Diagramas/](../Diagramas/README.md) contiene los editables, y el
-[README del dataset](../dataset/README.md#esquema-real) documenta el esquema
-verificado y la muestra local.
-
-Q2 devuelve nombre, URL del artículo y bytes; Q3 excluye stopwords; Q4 excluye
-stopwords y cuenta palabras distintas por abstract; Q5 excluye stopwords y cuenta
-ocurrencias. La deduplicación de Q5 que permanece en algunos textos del informe
-está pendiente de corrección. El desempate de Q4 usa cantidad descendente y palabra
-ascendente. `WordTokenizer` debe preservar la información necesaria para contar
-repeticiones en la rama de Q5; este plan no prescribe cómo cambiar sus mensajes.
-
-Los esquemas de inglés y francés difieren dentro de `version`. Conservar archivos
-por idioma/origen evita conversiones innecesarias. Q5 calcula su promedio dentro
-de la entrada de cada cliente, excluyendo abstracts históricos nulos conforme al
-contrato documentado. Q2 informa ausencia de imagen explícita y fallo cuando una
-descarga existente falla definitivamente, sin convertirlo en resultado vacío.
+- [Requisitos funcionales](../docs/requisitos.md#requerimientos-funcionales).
+- [Esquema e inventario de la muestra](../dataset/README.md#esquema-real).
+- [Contrato del oráculo serial](oracle/README.md#contrato-serial).
+- [Mapa de arquitectura y documentación](../docs/README.md).

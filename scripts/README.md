@@ -136,16 +136,9 @@ reconstruir con los mismos bytes usando este generador. Se rechazan paquetes de
 2 GiB o más por el límite de tamaño de assets; si se llega a ese volumen habrá que
 dividir la captura y extender el formato del manifiesto y el descargador.
 
-**Cambiar la entrada requiere generar nuevas expectativas**, manteniendo las
-anteriores. Para una nueva captura de los mismos idiomas y consultas:
-
-```sh
-uv run --project tests/oracle --locked python tests/oracle/run_notebook.py --output tests/expected/full-5clients-v2
-```
-
-Seguir la [guía del oráculo](../tests/oracle/README.md) para revisar las salidas,
-capturar las imágenes de Q2 y auditar el paquete de referencias. Esto se hace
-manualmente al preparar el escenario; los tests no regeneran sus expectativas.
+Para preparar las referencias (resultados esperados) de una nueva captura, seguir la
+[guía del oráculo](../tests/oracle/README.md#piloto-y-muestra-completa) y sus
+[reglas de actualización](../tests/oracle/README.md#actualizar-referencias).
 `dataset/manifest.json` describe la distribución de la entrada; los manifiestos
 en `tests/expected/` describen las referencias y su entrada específica. No son
 intercambiables.

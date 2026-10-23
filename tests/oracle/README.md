@@ -38,12 +38,35 @@ pero no se copia al código ni a los manifiestos de resultados. Sin contacto vá
 la captura falla antes de solicitar imágenes. Reutilizar bytes ya capturados no
 necesita contacto ni conexión de red.
 
-Los comandos siguientes se ejecutan desde la raíz del repositorio. Las stopwords
-inglesas y francesas de NLTK ya están guardadas en `resources/`: no se descarga
-ningún corpus al calcular las consultas. Su procedencia, fecha y hashes están en
-`stopwords-provenance.json`. `stopwords-union.txt` contiene las 346 palabras únicas
-ordenadas que debe adoptar el sistema para comparar contra estas referencias.
-Conservar también el aviso de procedencia original `stopwords-source.txt`.
+Los comandos siguientes se ejecutan desde la raíz del repositorio.
+
+## Contrato serial
+
+Las consultas responden a los [requisitos funcionales](../../docs/requisitos.md#requerimientos-funcionales).
+El contrato usado por estas referencias se llama **`wiki-serial-v1`**. Lo registra
+`contract()` en [reference.py](reference.py) y queda congelado en `semantics` del
+manifiesto de cada escenario, incluida la versión Unicode del generador.
+
+La tokenización usa `str.lower()` de Python y la expresión `\b\w+\b`, sin
+quitar acentos ni aplicar stemming. Excluye los tokens que coinciden por completo
+con `[+-]?((\d+\.?\d*)|(\.\d+))` y las stopwords. Para Q2, compara el nombre
+completo de la sección en minúsculas con `biography` o `biographie`, sin búsqueda
+de subcadenas.
+
+Las stopwords inglesas y francesas de NLTK están guardadas en [resources/](resources/):
+no se descarga ningún corpus al calcular las consultas. Su procedencia, fecha y
+hashes están en [stopwords-provenance.json](resources/stopwords-provenance.json).
+[stopwords-union.txt](resources/stopwords-union.txt) contiene las 346 palabras
+únicas ordenadas usadas por el oráculo. Conservar también el aviso original
+[stopwords-source.txt](resources/stopwords-source.txt).
+
+Q5 calcula por cliente la suma histórica `S` y la cantidad de abstracts históricos
+computables `N`. Excluye los nulos; uno vacío no nulo aporta cero y sí integra `N`.
+Emite un candidato sólo si `count * N > S`, sin redondear el promedio. Si `N == 0`,
+produce un resultado vacío con estado `no_historical_base`.
+
+La equivalencia con Go queda pendiente de adoptar y verificar el mismo contrato
+Unicode, stopwords y reglas. Ejecutar el notebook no valida el sistema distribuido.
 
 ## Piloto y muestra completa
 
@@ -59,22 +82,24 @@ Ese piloto comprueba la lectura y exportación; no garantiza resultados positivo
 en todas las consultas. Los casos pequeños de `test_reference.py` verifican las
 reglas de conteo con expectativas escritas a mano.
 
-Para los diez archivos completos, cinco clientes y **250.000 filas / 467.363.817
-bytes de Parquet**, ejecutar una vez:
+Para la [muestra completa](../../dataset/README.md#organización-y-volumen), con
+cinco clientes, ejecutar, por ejemplo:
 
 ```sh
-uv run --project tests/oracle --locked python tests/oracle/run_notebook.py --output tests/expected/full-5clients-v1
+uv run --project tests/oracle --locked python tests/oracle/run_notebook.py --output tests/expected/full-5clients-v2
 ```
 
+El notebook puede ejecutarse varias veces contra el mismo dataset. En cada
+ejecución, `--output` debe señalar un directorio que todavía no exista, para
+evitar sobrescribir resultados esperados anteriores. 
 El comando ejecuta el notebook real, guarda sus salidas y conserva una copia
 ejecutada en el destino. También puede abrirse el notebook en Jupyter y ejecutarse
 manualmente: revisar `CLIENTS`, `ROWS_PER_FILE`, `OUTPUT` y `DOWNLOAD_IMAGES` en
 la primera celda de código. `run_notebook.py` configura esos valores mediante
 variables de entorno para poder realizar un piloto sin editar el notebook.
 
-No se sobrescriben carpetas existentes. Para generar otra referencia, usar un
-nombre nuevo, por ejemplo `full-5clients-v2`. El cálculo es serial, un cliente a
-la vez; lee lotes de campos analíticos, no concatena todo el corpus en RAM. La
+El cálculo es serial, un cliente a la vez; lee lotes de campos analíticos,
+no concatena todo el corpus en RAM. La
 memoria utilizada por vocabularios y candidatos de un cliente sí crece con su
 entrada: esta herramienta de referencia no representa al sistema distribuido.
 
@@ -93,23 +118,21 @@ pertenece al cliente `(O + r) % clients`. Sólo se incluyen filas
 archivos anteriores. La selección no depende de los grupos de filas ni del lote
 de lectura. Las filas originales repetidas se conservan como ocurrencias distintas.
 
-En el escenario completo, cada cliente recibe 50.000 filas: 25.000 por idioma.
 No se crean copias de las entradas. Cuando exista el cliente Go, podrá consumir
-esa selección o materializarla automáticamente en archivos temporales, conservando
-sus 19 columnas y los esquemas por idioma. El oráculo puede proyectar columnas;
-el cliente del sistema debe transmitir registros íntegros.
+esa selección o materializarla automáticamente en archivos temporales, respetando
+el [esquema y las condiciones de ingesta](../../dataset/README.md#esquema-real).
 
 ## Completar Q2 con bytes de imágenes
 
-El cálculo local deja las referencias de imagen en estado `pending`. Las filas
-sin referencia tienen `image: null`, como ausencia explícita. Una referencia que
-no pudo descargarse nunca se convierte en ausencia ni en una salida exitosa.
+El cálculo local deja las referencias de imagen en estado `pending`. Los
+[formatos de salida](../expected/README.md#formatos-de-salida) distinguen ausencia,
+referencia pendiente, imagen disponible y HTTP 404.
 
 Ejecutar explícitamente la captura de red:
 
 ```sh
-uv run --project tests/oracle --locked python tests/oracle/reference.py capture-images tests/expected/full-5clients-v1
-uv run --project tests/oracle --locked python tests/oracle/reference.py verify tests/expected/full-5clients-v1 --dataset dataset
+uv run --project tests/oracle --locked python tests/oracle/reference.py capture-images tests/expected/full-5clients-v2
+uv run --project tests/oracle --locked python tests/oracle/reference.py verify tests/expected/full-5clients-v2 --dataset dataset
 ```
 
 La captura descarga el contenido original de cada URL `image.content_url` por
@@ -119,20 +142,10 @@ del Parquet directamente; el fetcher del sistema puede obtener sus metadatos por
 la API de Wikimedia. Para una regresión reproducible deberá entregar los mismos
 bytes congelados en este paquete.
 
-Cada imagen disponible registra ruta, SHA-256, longitud, URL de origen/resuelta,
-fecha y cabeceras HTTP. Se conserva en la carpeta común
-`tests/expected/images/<sha256>.bin`; cada escenario hermano la referencia con
-`../images/<sha256>.bin`. Para salidas fuera de `tests/expected/`, la carpeta común
-también se crea junto al escenario, en `<padre-del-escenario>/images/`.
-
-`images/index.json` asocia cada URL descargada con su descriptor. `capture-images`
-consulta ese índice para las referencias pendientes: verifica los bytes y los
-reutiliza antes de acceder a la red. Una descarga nueva agrega la URL al índice;
-URLs distintas con los mismos bytes comparten un archivo por SHA-256. El índice
-sólo contiene descargas exitosas; los 404 permanecen en cada escenario. No editar
-el índice para modificar expectativas: cada escenario fija su propio hash, y
-`verify` comprueba esa referencia sin depender del índice. Una imagen ausente o
-corrupta produce error; no se reemplaza automáticamente descargándola de nuevo.
+`capture-images` consulta el [índice común de imágenes](../expected/README.md#imágenes-compartidas)
+para las referencias pendientes: verifica los bytes y los reutiliza antes de
+acceder a la red. Una descarga exitosa agrega la URL al índice. Una imagen ausente
+o corrupta produce error; no se reemplaza automáticamente descargándola de nuevo.
 
 Ejecutar una sola captura a la vez, incluso entre escenarios, para mantener simple
 la escritura del índice común. El contador `reused_from_store` de cada sesión
@@ -163,55 +176,22 @@ y reutiliza los bytes ya capturados antes de solicitar los pendientes.
 Si esta máquina no tiene acceso a Wikimedia, copiar **el escenario, su carpeta
 hermana `images/` y `tests/oracle/` con sus recursos** a una máquina con acceso,
 conservando las rutas relativas, y sincronizar el mismo
-lockfile con uv y ejecutar `capture-images` allí. Si el servidor responde HTTP 429,
-respetar `Retry-After` si lo informa o esperar antes de una nueva invocación manual;
-no ejecutar reintentos continuos. La captura no necesita los Parquet; para verificar también la entrada,
+lockfile con uv y ejecutar `capture-images` allí. La captura no necesita los
+Parquet; para verificar también la entrada,
 añadir después `--dataset dataset` en una máquina que los conserve. Retornar el
 escenario con el manifiesto actualizado y la carpeta común de imágenes, incluido
-su índice. Las URLs con 404
-permanecen identificadas para revisión del equipo; no se sustituyen por otra imagen
-ni se borran sus filas. Haber agotado las URLs pendientes no completa Q2 si siguen
-faltando esos bytes.
+su índice. Para determinar si la captura está completa, aplicar los criterios
+de la sección siguiente.
 
-## Artefactos y estado de validez
+## Verificar referencias
 
-```text
-tests/expected/
-├── images/                 # Compartida por los escenarios hermanos
-│   ├── index.json          # URL → descriptor de una captura exitosa
-│   └── <sha256>.bin
-└── full-5clients-v1/
-    ├── manifest.json
-    ├── executed.ipynb
-    ├── image-404-errors.jsonl   # Se crea si se encuentran HTTP 404
-    ├── generator/reference.py  # Fuente original archivada, sin modificar
-    └── client-0/ ... client-4/
-        ├── q1.jsonl
-        ├── q2.jsonl
-        ├── q3.jsonl
-        ├── q4.jsonl
-        └── q5.jsonl
+La [guía de artefactos](../expected/README.md) describe los archivos generados y
+sus formatos. Para auditar los archivos de un escenario sin exigir que Q2 esté
+completa:
+
+```sh
+uv run --project tests/oracle --locked python tests/oracle/reference.py verify tests/expected/full-5clients-v1 --dataset dataset --allow-incomplete-q2
 ```
-
-Cada línea JSONL es un resultado, sin truncamiento de presentación:
-
-| Consulta | Campos y comparación futura                                                                                     |
-| -------- | --------------------------------------------------------------------------------------------------------------- |
-| Q1       | `url`, `date_modified` ISO 8601 con milisegundos; multiconjunto                                                 |
-| Q2       | `name`, `url`, `image` nula o descriptor de bytes; multiconjunto, comparando los bytes y no la fecha de captura |
-| Q3       | `word`; vocabulario único ordenado                                                                              |
-| Q4       | `word`, `count`; lista exacta ordenada por cantidad descendente y palabra ascendente                            |
-| Q5       | `url`, `count`; multiconjunto, con conteo de ocurrencias                                                        |
-
-El manifiesto contiene versión semántica, hashes de stopwords, fuentes del
-generador, versiones del entorno y estadísticas por cliente. Q5 guarda la suma
-histórica `S`, cantidad computable `N` y estado `no_historical_base` si `N == 0`.
-Se excluyen abstracts históricos nulos; uno vacío no nulo aporta cero y sí integra
-`N`. Un candidato se emite sólo si `count * N > S`, sin redondear el promedio.
-
-`executed.ipynb` conserva el estado observado durante la ejecución del notebook.
-Si las imágenes se capturan después mediante el comando separado, el estado
-vigente es el del manifiesto, que se actualiza junto a Q2.
 
 `verify` comprueba integridad y rechaza por defecto cualquier paquete con imágenes
 pendientes o con 404. La auditoría informa `q2_pending_records` y
@@ -224,22 +204,22 @@ si revisó todas las URLs y sólo quedaron 404; la verificación estricta sigue
 rechazando esa referencia. Los hashes no reemplazan una revisión semántica del oráculo.
 
 Las otras cuatro consultas pueden utilizarse mientras se completa Q2, siempre
-declarando ese alcance. Guardar el paquete y los recursos de stopwords juntos en
-el repositorio/proyecto, junto con la carpeta común `images/`; una Q2 capturada no
-es recuperable sólo a partir de su hash. La verificación también admite las rutas
-antiguas `images/...` internas de un escenario.
+declarando ese alcance. La verificación también admite las rutas antiguas
+`images/...` internas de un escenario.
+
+## Actualizar referencias
+
+Si cambia la entrada de un cliente, la lista de stopwords o alguna regla, preparar
+una referencia nueva manualmente, conservando las anteriores. Cambiar sólo
+concurrencia, réplicas o el orden de envío posterior a la asignación permite
+reutilizar las respuestas. Las pruebas del sistema consumen las referencias
+preparadas; nunca las regeneran durante su corrida.
 
 Para revisar el oráculo antes de generar referencias:
 
 ```sh
 uv run --project tests/oracle --locked python -m unittest discover -s tests/oracle -p 'test_*.py' -v
 ```
-
-Si cambia la entrada de un cliente, la lista de stopwords o alguna regla, preparar
-una referencia nueva manualmente. Cambiar sólo concurrencia, réplicas o el orden
-de envío permite reutilizar las respuestas. La equivalencia con Go queda pendiente
-de usar el mismo contrato Unicode, stopwords y reglas; no se asume validada por
-haber ejecutado este notebook.
 
 Fuentes de las dependencias y captura: [datos NLTK](https://www.nltk.org/data.html),
 [ejecución de notebooks con NBClient](https://nbclient.readthedocs.io/en/latest/),
