@@ -1,0 +1,3054 @@
+{
+  "https://upload.wikimedia.org/wikipedia/commons/0/00/Ahmad_Jassim_-_Feb_11%2C_2021.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ahmad_Jassim_-_Feb_11%2C_2021.jpg",
+    "status": "available",
+    "path": "../images/a710e05f70dd0a23b52afeba059cb5ccbb011d11585ad11041efe0e6d82b1bfc.bin",
+    "sha256": "a710e05f70dd0a23b52afeba059cb5ccbb011d11585ad11041efe0e6d82b1bfc",
+    "bytes": 51692,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ahmad_Jassim_-_Feb_11%2C_2021.jpg",
+    "captured_at": "2026-10-22T13:46:50.570645+00:00",
+    "http_headers": {
+      "ETag": "893d2cbb65f337ac0b439ea56dd5a175",
+      "Last-Modified": "Thu, 11 Feb 2021 23:09:27 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/00/Anton%C3%ADn_Hojer.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Anton%C3%ADn_Hojer.jpg",
+    "status": "available",
+    "path": "../images/4fed74524f8a822d2735653cd1a589b9f49e1736cd06f652f0a59d4998a25582.bin",
+    "sha256": "4fed74524f8a822d2735653cd1a589b9f49e1736cd06f652f0a59d4998a25582",
+    "bytes": 21534,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Anton%C3%ADn_Hojer.jpg",
+    "captured_at": "2026-10-22T14:08:38.477912+00:00",
+    "http_headers": {
+      "ETag": "a1da096bcfe698d08c55b2d49707aa17",
+      "Last-Modified": "Wed, 28 Feb 2018 17:05:20 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/00/Craig_Pickering_Osaka07.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Craig_Pickering_Osaka07.jpg",
+    "status": "available",
+    "path": "../images/f99f2217dcff630b1cd907d67164fa860257ed4c7219eb4d2718425690422f0f.bin",
+    "sha256": "f99f2217dcff630b1cd907d67164fa860257ed4c7219eb4d2718425690422f0f",
+    "bytes": 56344,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Craig_Pickering_Osaka07.jpg",
+    "captured_at": "2026-10-22T14:06:02.467768+00:00",
+    "http_headers": {
+      "ETag": "abc63ae2b70afa813e25b89e9d8f4043",
+      "Last-Modified": "Tue, 07 Oct 2014 15:46:55 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/02/PORTRAIT_BIRGIT_SCHWEIGER_2015_2.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/PORTRAIT_BIRGIT_SCHWEIGER_2015_2.jpg",
+    "status": "available",
+    "path": "../images/4f3af857877908e20a1e75fe3e15919ce44ab3988bdbe241ba8ebc8183cf7f00.bin",
+    "sha256": "4f3af857877908e20a1e75fe3e15919ce44ab3988bdbe241ba8ebc8183cf7f00",
+    "bytes": 188600,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/02/PORTRAIT_BIRGIT_SCHWEIGER_2015_2.jpg",
+    "captured_at": "2026-10-22T14:09:07.975335+00:00",
+    "http_headers": {
+      "ETag": "3d51eb121c937c2105aa005f79408dc5",
+      "Last-Modified": "Fri, 25 Mar 2016 12:04:47 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/06/Alysia_Jonhson_2010_USA_Outdoor.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Alysia_Jonhson_2010_USA_Outdoor.jpg",
+    "status": "available",
+    "path": "../images/9061555a7f807ae08334cf75700dc12517c9aebafec16ee64734fb165e08cd11.bin",
+    "sha256": "9061555a7f807ae08334cf75700dc12517c9aebafec16ee64734fb165e08cd11",
+    "bytes": 1471089,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Alysia_Jonhson_2010_USA_Outdoor.jpg",
+    "captured_at": "2026-10-22T14:07:52.498421+00:00",
+    "http_headers": {
+      "ETag": "4d220b2a606477b1766aabe011d97d05",
+      "Last-Modified": "Tue, 07 Oct 2014 12:07:01 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/08/AlanLeo.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/AlanLeo.jpg",
+    "status": "available",
+    "path": "../images/69b653c335b1d93062eb9414c09a3eafb65f23beae435180e61aa5b83607e244.bin",
+    "sha256": "69b653c335b1d93062eb9414c09a3eafb65f23beae435180e61aa5b83607e244",
+    "bytes": 16986,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/AlanLeo.jpg",
+    "captured_at": "2026-10-22T14:07:06.943312+00:00",
+    "http_headers": {
+      "ETag": "45b8086faf8c3cf74cfa50dc6d8842e8",
+      "Last-Modified": "Tue, 07 Oct 2014 11:58:07 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0a/Andy_the_Clown_circa_1983_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Andy_the_Clown_circa_1983_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/f53ef5ae73cb0253d2a7d688cec4d3482894835b2d4f4c5e4f9fa84ee8547f26.bin",
+    "sha256": "f53ef5ae73cb0253d2a7d688cec4d3482894835b2d4f4c5e4f9fa84ee8547f26",
+    "bytes": 342612,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Andy_the_Clown_circa_1983_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T14:04:45.594470+00:00",
+    "http_headers": {
+      "ETag": "11d890a8f4f833780c5527d2d8c81f64",
+      "Last-Modified": "Wed, 19 Jul 2023 07:51:01 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0d/Abiodun_Oyepitan_2012.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Abiodun_Oyepitan_2012.jpg",
+    "status": "available",
+    "path": "../images/e570e09f8719a1baaa38f4b0ac23643bdb093e6d1d1463c95fe16dd9a76a7951.bin",
+    "sha256": "e570e09f8719a1baaa38f4b0ac23643bdb093e6d1d1463c95fe16dd9a76a7951",
+    "bytes": 263663,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Abiodun_Oyepitan_2012.jpg",
+    "captured_at": "2026-10-22T12:46:17.259488+00:00",
+    "http_headers": {
+      "ETag": "6b05a3fb22443b48a29e56b936e811da",
+      "Last-Modified": "Wed, 20 Apr 2016 22:24:45 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0e/1912_Athletics_men%27s_marathon_-_Christian_Gitsham.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/1912_Athletics_men%27s_marathon_-_Christian_Gitsham.JPG",
+    "status": "available",
+    "path": "../images/2899cd37e6de615a480f42aa52a4dc1e57a946c5897918dd63150a3cdf250070.bin",
+    "sha256": "2899cd37e6de615a480f42aa52a4dc1e57a946c5897918dd63150a3cdf250070",
+    "bytes": 95496,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/1912_Athletics_men%27s_marathon_-_Christian_Gitsham.JPG",
+    "captured_at": "2026-10-22T14:09:33.082593+00:00",
+    "http_headers": {
+      "ETag": "5a9d62878f142669ffaac657cdb8511c",
+      "Last-Modified": "Sun, 12 Oct 2014 05:30:13 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0e/Blanche_Bates.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Blanche_Bates.jpg",
+    "status": "available",
+    "path": "../images/c3be802c75ccbc3f84590a474f8e190c52afdfe48b527530a0d3aedbe999f511.bin",
+    "sha256": "c3be802c75ccbc3f84590a474f8e190c52afdfe48b527530a0d3aedbe999f511",
+    "bytes": 6665698,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Blanche_Bates.jpg",
+    "captured_at": "2026-10-22T14:09:12.326017+00:00",
+    "http_headers": {
+      "ETag": "36f7f8522beb26f091560be53be4c7fc",
+      "Last-Modified": "Tue, 07 Oct 2014 13:42:32 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0f/Carmen_Mart%C3%ADnez_Castro.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Carmen_Mart%C3%ADnez_Castro.png",
+    "status": "available",
+    "path": "../images/9751649edf74cd804f6ff7af1a7b9032164e40f766dd6bd9f1237111b5224e6f.bin",
+    "sha256": "9751649edf74cd804f6ff7af1a7b9032164e40f766dd6bd9f1237111b5224e6f",
+    "bytes": 125008,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Carmen_Mart%C3%ADnez_Castro.png",
+    "captured_at": "2026-10-22T13:43:44.016744+00:00",
+    "http_headers": {
+      "ETag": "ab8fddf454674102846f5666bd5f5967",
+      "Last-Modified": "Fri, 19 May 2017 18:25:49 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/0/0f/Serie_A_1984-85_-_Napoli_vs_Inter_-_Giuseppe_Bruscolotti.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Serie_A_1984-85_-_Napoli_vs_Inter_-_Giuseppe_Bruscolotti.jpg",
+    "status": "available",
+    "path": "../images/d2d90f57f911fa41c44897c35d0cee0a3a8ae0def47f5220e65a341ce91b6d4e.bin",
+    "sha256": "d2d90f57f911fa41c44897c35d0cee0a3a8ae0def47f5220e65a341ce91b6d4e",
+    "bytes": 38196,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Serie_A_1984-85_-_Napoli_vs_Inter_-_Giuseppe_Bruscolotti.jpg",
+    "captured_at": "2026-10-22T13:46:12.369735+00:00",
+    "http_headers": {
+      "ETag": "33f69c4bc15f56df47923282e306cb9c",
+      "Last-Modified": "Sun, 26 Feb 2023 18:03:24 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/12/Amleto_Novelli_1920.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Amleto_Novelli_1920.jpg",
+    "status": "available",
+    "path": "../images/2dc318e7d7c56139656d7479acb1da7cf0cd2a3b626cf3814a0397de119c36ce.bin",
+    "sha256": "2dc318e7d7c56139656d7479acb1da7cf0cd2a3b626cf3814a0397de119c36ce",
+    "bytes": 12403,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Amleto_Novelli_1920.jpg",
+    "captured_at": "2026-10-22T14:10:20.101998+00:00",
+    "http_headers": {
+      "ETag": "56ac18c2ab121f08faef60592c048beb",
+      "Last-Modified": "Mon, 07 Sep 2015 14:30:44 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/12/Fernando_de_Menezes%2C_conde_da_Ericeira.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Fernando_de_Menezes%2C_conde_da_Ericeira.jpg",
+    "status": "available",
+    "path": "../images/0681ace4d669b870e37f9ac6fc40f58357459187f9db1042ba725bab60a956a5.bin",
+    "sha256": "0681ace4d669b870e37f9ac6fc40f58357459187f9db1042ba725bab60a956a5",
+    "bytes": 173459,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Fernando_de_Menezes%2C_conde_da_Ericeira.jpg",
+    "captured_at": "2026-10-22T14:06:14.078898+00:00",
+    "http_headers": {
+      "ETag": "f2d07f01f3d69b7404fb50c105b745f5",
+      "Last-Modified": "Thu, 09 Oct 2014 07:55:49 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/13/AppleBioShot.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/AppleBioShot.jpg",
+    "status": "available",
+    "path": "../images/ac128659ccd68debc4357d889ac7f84b3d9ddcea6e03a7a6dd45d96a9cd963d2.bin",
+    "sha256": "ac128659ccd68debc4357d889ac7f84b3d9ddcea6e03a7a6dd45d96a9cd963d2",
+    "bytes": 3992862,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/AppleBioShot.jpg",
+    "captured_at": "2026-10-22T14:05:43.342679+00:00",
+    "http_headers": {
+      "ETag": "055166345b8b060ae56ad934590bda40",
+      "Last-Modified": "Mon, 14 Sep 2015 08:08:19 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/13/Arno_van_Zwam_%282015%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Arno_van_Zwam_%282015%29.jpg",
+    "status": "available",
+    "path": "../images/5bc20c2fc5e5057f4f19ba2b9d462fd002c31172609612ebbefef5a3125b5a62.bin",
+    "sha256": "5bc20c2fc5e5057f4f19ba2b9d462fd002c31172609612ebbefef5a3125b5a62",
+    "bytes": 52745,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Arno_van_Zwam_%282015%29.jpg",
+    "captured_at": "2026-10-22T14:11:25.426868+00:00",
+    "http_headers": {
+      "ETag": "66316abbc49461dee3aa1f75ea52b702",
+      "Last-Modified": "Mon, 02 Nov 2015 10:21:26 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/14/Albrecht_Classen%2C_Juli_2019.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Albrecht_Classen%2C_Juli_2019.jpg",
+    "status": "available",
+    "path": "../images/51e41c4107384878458f00167089848fd5ab235b5c04ab2861b85f86e813b79e.bin",
+    "sha256": "51e41c4107384878458f00167089848fd5ab235b5c04ab2861b85f86e813b79e",
+    "bytes": 818815,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Albrecht_Classen%2C_Juli_2019.jpg",
+    "captured_at": "2026-10-22T14:07:18.928283+00:00",
+    "http_headers": {
+      "ETag": "5c56a86c4a5e58432e7baaa6a7c2719e",
+      "Last-Modified": "Mon, 05 Aug 2019 08:34:32 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/14/Carolina_Pascual_1992_Alicante.PNG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Carolina_Pascual_1992_Alicante.PNG",
+    "status": "available",
+    "path": "../images/474db2f97e96a085cf87b7a47d8b1ac694747c23aecca1c903976227334f6186.bin",
+    "sha256": "474db2f97e96a085cf87b7a47d8b1ac694747c23aecca1c903976227334f6186",
+    "bytes": 26685026,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Carolina_Pascual_1992_Alicante.PNG",
+    "captured_at": "2026-10-22T14:09:25.540684+00:00",
+    "http_headers": {
+      "ETag": "486f7e837430beb22899317690e41770",
+      "Last-Modified": "Thu, 25 Jun 2015 16:44:47 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/17/Angelo_Celsi.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Angelo_Celsi.jpg",
+    "status": "available",
+    "path": "../images/620e60edeaeda260527d81ad2964dbbb058a947587ad13d8ef27e24b917359f1.bin",
+    "sha256": "620e60edeaeda260527d81ad2964dbbb058a947587ad13d8ef27e24b917359f1",
+    "bytes": 420534,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Angelo_Celsi.jpg",
+    "captured_at": "2026-10-22T14:10:39.740039+00:00",
+    "http_headers": {
+      "ETag": "e3aa7c5e73601af7a774bc2aa32d643c",
+      "Last-Modified": "Tue, 19 May 2020 09:48:50 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/17/Brian_Sabean_2010_CROPPED.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Brian_Sabean_2010_CROPPED.jpg",
+    "status": "available",
+    "path": "../images/a921290ab66c5566ce49100c3253fae6bc7a3d9ef2aebb1475603ed45e7c795b.bin",
+    "sha256": "a921290ab66c5566ce49100c3253fae6bc7a3d9ef2aebb1475603ed45e7c795b",
+    "bytes": 2783601,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Brian_Sabean_2010_CROPPED.jpg",
+    "captured_at": "2026-10-22T13:45:57.847526+00:00",
+    "http_headers": {
+      "ETag": "fc29b649055935483f5434b530332fdd",
+      "Last-Modified": "Tue, 07 Oct 2014 13:40:01 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/17/Jerry_Meals_2011.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Jerry_Meals_2011.jpg",
+    "status": "available",
+    "path": "../images/889ded51f29c8db5d02ad4e85ffccee8d32b160386fd544f840546f5c4b1e97f.bin",
+    "sha256": "889ded51f29c8db5d02ad4e85ffccee8d32b160386fd544f840546f5c4b1e97f",
+    "bytes": 786437,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Jerry_Meals_2011.jpg",
+    "captured_at": "2026-10-22T14:06:29.079976+00:00",
+    "http_headers": {
+      "ETag": "49cc7ddd92261dbbf83211580ff09a30",
+      "Last-Modified": "Wed, 08 Oct 2014 23:23:39 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/18/Albert_Bouinais.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Albert_Bouinais.jpg",
+    "status": "available",
+    "path": "../images/abff36548d6303436ee7db32324e1407ca5e41bd8e3caef790eab3f380bdf722.bin",
+    "sha256": "abff36548d6303436ee7db32324e1407ca5e41bd8e3caef790eab3f380bdf722",
+    "bytes": 194946,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Albert_Bouinais.jpg",
+    "captured_at": "2026-10-22T13:41:34.290732+00:00",
+    "http_headers": {
+      "ETag": "79b7ca727339671c83dda14ea8c94c4b",
+      "Last-Modified": "Mon, 22 May 2023 14:05:10 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/18/D7_9_tienkamp_ver_%2837236388530%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/D7_9_tienkamp_ver_%2837236388530%29.jpg",
+    "status": "available",
+    "path": "../images/39e561ef0b73f77ed66f71ee574d891cbb5cac062437fb37529558e9eb119f14.bin",
+    "sha256": "39e561ef0b73f77ed66f71ee574d891cbb5cac062437fb37529558e9eb119f14",
+    "bytes": 237815,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/D7_9_tienkamp_ver_%2837236388530%29.jpg",
+    "captured_at": "2026-10-22T13:43:12.419624+00:00",
+    "http_headers": {
+      "ETag": "b4f4d8f252b38c9e3606ad92904ff295",
+      "Last-Modified": "Mon, 22 May 2023 23:20:01 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1a/Achilles_Bigot_-_Autoportrait.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Achilles_Bigot_-_Autoportrait.jpg",
+    "status": "available",
+    "path": "../images/88e39ebb73b28667f533049a8bb1056f39cbafb02e6f640f9ec00a19647d11bb.bin",
+    "sha256": "88e39ebb73b28667f533049a8bb1056f39cbafb02e6f640f9ec00a19647d11bb",
+    "bytes": 26004,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Achilles_Bigot_-_Autoportrait.jpg",
+    "captured_at": "2026-10-22T14:06:36.104324+00:00",
+    "http_headers": {
+      "ETag": "8a2307caedd520c279a67f6a23b521b4",
+      "Last-Modified": "Wed, 14 Oct 2015 13:19:03 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1a/Antoine_Rossfelder.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Antoine_Rossfelder.jpg",
+    "status": "available",
+    "path": "../images/4912b96895e321a9fb796bc9cf19b7e08ee8ab284fe6e88f4995cecc17b62a8d.bin",
+    "sha256": "4912b96895e321a9fb796bc9cf19b7e08ee8ab284fe6e88f4995cecc17b62a8d",
+    "bytes": 872596,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Antoine_Rossfelder.jpg",
+    "captured_at": "2026-10-22T13:42:48.594684+00:00",
+    "http_headers": {
+      "ETag": "5e6d759dd46494726dfc846af9324d2a",
+      "Last-Modified": "Tue, 07 Oct 2014 12:12:14 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/Andr%C3%A9_Neury_%281954%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Andr%C3%A9_Neury_%281954%29.jpg",
+    "status": "available",
+    "path": "../images/60e6e070168ecdbae710fbf6473c621fa87186ecbf27c44beb8ce3c3ffce8ffa.bin",
+    "sha256": "60e6e070168ecdbae710fbf6473c621fa87186ecbf27c44beb8ce3c3ffce8ffa",
+    "bytes": 462259,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Andr%C3%A9_Neury_%281954%29.jpg",
+    "captured_at": "2026-10-22T13:42:25.296949+00:00",
+    "http_headers": {
+      "ETag": "ab21ea159196e9ca88685ff7d7e76bf3",
+      "Last-Modified": "Wed, 11 Aug 2021 16:47:11 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/Beat_Presser.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Beat_Presser.jpg",
+    "status": "available",
+    "path": "../images/d67460d6273a678654acfc59d1bd1b000efe94ed4c28e5eb145a63e0639cd305.bin",
+    "sha256": "d67460d6273a678654acfc59d1bd1b000efe94ed4c28e5eb145a63e0639cd305",
+    "bytes": 124485,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Beat_Presser.jpg",
+    "captured_at": "2026-10-22T13:43:31.931632+00:00",
+    "http_headers": {
+      "ETag": "ad3fa244d385f8c839891762e8e74476",
+      "Last-Modified": "Fri, 24 Feb 2017 12:42:37 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nikfar_0065.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nikfar_0065.jpg",
+    "status": "available",
+    "path": "../images/2fb1ac8cbd8cf3c8c3679cfff3c77092e50502360e6fbbd8196cdb0381171917.bin",
+    "sha256": "2fb1ac8cbd8cf3c8c3679cfff3c77092e50502360e6fbbd8196cdb0381171917",
+    "bytes": 101403,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Nikfar_0065.jpg",
+    "captured_at": "2026-10-22T13:47:21.397935+00:00",
+    "http_headers": {
+      "ETag": "767cf4c6585cfe8d046cb938655f4c74",
+      "Last-Modified": "Thu, 09 Oct 2014 02:29:35 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1d/Edmondo_Passauro.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Edmondo_Passauro.jpg",
+    "status": "available",
+    "path": "../images/4140b87e00bbf7c0db13cec07839b932085a6f8d5dffe4b26637eca85ba3f386.bin",
+    "sha256": "4140b87e00bbf7c0db13cec07839b932085a6f8d5dffe4b26637eca85ba3f386",
+    "bytes": 472051,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Edmondo_Passauro.jpg",
+    "captured_at": "2026-10-22T14:06:06.183020+00:00",
+    "http_headers": {
+      "ETag": "a259d5694fa7fe413c1561fb5e81dbfa",
+      "Last-Modified": "Tue, 23 May 2023 02:14:56 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1d/Ujiyasu_Hojo.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Ujiyasu_Hojo.jpg",
+    "status": "available",
+    "path": "../images/6802497d0e39d55c48c9c5029de42148cdb8b424c22e4ea23a83bcdbc3b378d1.bin",
+    "sha256": "6802497d0e39d55c48c9c5029de42148cdb8b424c22e4ea23a83bcdbc3b378d1",
+    "bytes": 287297,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Ujiyasu_Hojo.jpg",
+    "captured_at": "2026-10-22T13:46:19.850763+00:00",
+    "http_headers": {
+      "ETag": "c64f602fa855507b378a71dd76c27e75",
+      "Last-Modified": "Fri, 10 Oct 2014 00:50:42 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1e/Michele_Schirru.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Michele_Schirru.jpg",
+    "status": "available",
+    "path": "../images/0f645469c68060a27429ee8b3ccf92e0ec21df8eb82152d95ecd1d7f8c983091.bin",
+    "sha256": "0f645469c68060a27429ee8b3ccf92e0ec21df8eb82152d95ecd1d7f8c983091",
+    "bytes": 46089,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Michele_Schirru.jpg",
+    "captured_at": "2026-10-22T14:06:32.638182+00:00",
+    "http_headers": {
+      "ETag": "7c454fe0711300d78760fa2bcc4e85bb",
+      "Last-Modified": "Thu, 09 Oct 2014 16:44:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1f/2013_World_Championships_in_Athletics_%28August%2C_10%29_by_Dmitry_Rozhkov_143.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/2013_World_Championships_in_Athletics_%28August%2C_10%29_by_Dmitry_Rozhkov_143.jpg",
+    "status": "available",
+    "path": "../images/04d463f0e35b7a915d285e6f0e266769490c0264cb3060b8dd7f0e9a6a516c50.bin",
+    "sha256": "04d463f0e35b7a915d285e6f0e266769490c0264cb3060b8dd7f0e9a6a516c50",
+    "bytes": 14143569,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/2013_World_Championships_in_Athletics_%28August%2C_10%29_by_Dmitry_Rozhkov_143.jpg",
+    "captured_at": "2026-10-22T13:44:00.041614+00:00",
+    "http_headers": {
+      "ETag": "02ebce87a095f7d6e8abe828231ff6a5",
+      "Last-Modified": "Mon, 22 May 2023 09:19:19 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/1/1f/Portret_van_kardinaal_Giori_Angelo_Effigies_Cardinalium_nunc_viventium_%28serietitel%29%2C_RP-P-1909-4377.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Portret_van_kardinaal_Giori_Angelo_Effigies_Cardinalium_nunc_viventium_%28serietitel%29%2C_RP-P-1909-4377.jpg",
+    "status": "available",
+    "path": "../images/5845aa71be39a47d828fb185f9d82f9f962219cb928fcd2158c2814f8e641481.bin",
+    "sha256": "5845aa71be39a47d828fb185f9d82f9f962219cb928fcd2158c2814f8e641481",
+    "bytes": 5379256,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Portret_van_kardinaal_Giori_Angelo_Effigies_Cardinalium_nunc_viventium_%28serietitel%29%2C_RP-P-1909-4377.jpg",
+    "captured_at": "2026-10-22T14:08:22.456419+00:00",
+    "http_headers": {
+      "ETag": "f7dd6d212b6dd094a17cfc604e726cb1",
+      "Last-Modified": "Sun, 29 Dec 2019 16:19:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/21/Andrew_Marshall_19941230.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Andrew_Marshall_19941230.jpg",
+    "status": "available",
+    "path": "../images/5235346a259ebba23fbb34ac784d4d9e9ae2cac68059a32de74d6c3ea72b9be9.bin",
+    "sha256": "5235346a259ebba23fbb34ac784d4d9e9ae2cac68059a32de74d6c3ea72b9be9",
+    "bytes": 4352944,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Andrew_Marshall_19941230.jpg",
+    "captured_at": "2026-10-22T14:04:38.281051+00:00",
+    "http_headers": {
+      "ETag": "b00dd38176c83859f4a4ceabd075d930",
+      "Last-Modified": "Mon, 08 Dec 2014 11:19:56 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B4%D0%BE%D1%81%D0%BA%D0%B0_%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%BE%D0%B2%D1%83_%D0%BD%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B5_%D0%BF%D0%BE_%D1%83%D0%BB._%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_%D0%B2_%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC_%D0%B6%D0%B8%D0%BB_%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C._%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80._2017.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B4%D0%BE%D1%81%D0%BA%D0%B0_%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%BE%D0%B2%D1%83_%D0%BD%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B5_%D0%BF%D0%BE_%D1%83%D0%BB._%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_%D0%B2_%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC_%D0%B6%D0%B8%D0%BB_%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C._%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80._2017.jpg",
+    "status": "available",
+    "path": "../images/574c1f93a503b5274f455045b8473904eb0191ca3eaf880ca265bd506193f201.bin",
+    "sha256": "574c1f93a503b5274f455045b8473904eb0191ca3eaf880ca265bd506193f201",
+    "bytes": 1415202,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/%D0%9C%D0%B5%D0%BC%D0%BE%D1%80%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%B4%D0%BE%D1%81%D0%BA%D0%B0_%D0%A1%D1%82%D0%B5%D0%BF%D0%B0%D0%BD%D0%BE%D0%B2%D1%83_%D0%BD%D0%B0_%D0%B4%D0%BE%D0%BC%D0%B5_%D0%BF%D0%BE_%D1%83%D0%BB._%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F_%D0%B2_%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%BC_%D0%B6%D0%B8%D0%BB_%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C._%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80._2017.jpg",
+    "captured_at": "2026-10-22T14:07:26.809334+00:00",
+    "http_headers": {
+      "ETag": "f793182acc63e00ece206c8037d88f1f",
+      "Last-Modified": "Tue, 31 Jan 2017 10:53:02 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/22/Alfonso_J._Cervantes%2C_mayor_of_St._Louis.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Alfonso_J._Cervantes%2C_mayor_of_St._Louis.jpg",
+    "status": "available",
+    "path": "../images/f430017f6a3f745254727f0e9690f4c2cd9ea358dce544898a18886fa02a70d3.bin",
+    "sha256": "f430017f6a3f745254727f0e9690f4c2cd9ea358dce544898a18886fa02a70d3",
+    "bytes": 10561,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Alfonso_J._Cervantes%2C_mayor_of_St._Louis.jpg",
+    "captured_at": "2026-10-22T14:07:33.941946+00:00",
+    "http_headers": {
+      "ETag": "e7dca402ee0b299d2adcd467bef18a8b",
+      "Last-Modified": "Fri, 15 Nov 2024 20:37:18 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/23/Andrzej_Kudelski_%2827030474444%29_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Andrzej_Kudelski_%2827030474444%29_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/2d442daf1f4613d51a632167d38b4d85adefa30ddd0963075dd9c842031e5fb1.bin",
+    "sha256": "2d442daf1f4613d51a632167d38b4d85adefa30ddd0963075dd9c842031e5fb1",
+    "bytes": 212983,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Andrzej_Kudelski_%2827030474444%29_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T13:45:11.854327+00:00",
+    "http_headers": {
+      "ETag": "6e0a9eb19c17d72073efde02acfb8d4e",
+      "Last-Modified": "Mon, 06 Nov 2023 08:02:31 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/25/Denain_-_Grand_Prix_de_Denain%2C_le_17_avril_2014_%28A070%29.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Denain_-_Grand_Prix_de_Denain%2C_le_17_avril_2014_%28A070%29.JPG",
+    "status": "available",
+    "path": "../images/1ab7d0eea2b064c2407c74d622db48f0fa5440e99e9d59388738f8bc0daa4241.bin",
+    "sha256": "1ab7d0eea2b064c2407c74d622db48f0fa5440e99e9d59388738f8bc0daa4241",
+    "bytes": 2636260,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Denain_-_Grand_Prix_de_Denain%2C_le_17_avril_2014_%28A070%29.JPG",
+    "captured_at": "2026-10-22T14:11:02.440210+00:00",
+    "http_headers": {
+      "ETag": "8f129dff6121e5fd5ce4f09f72d61915",
+      "Last-Modified": "Tue, 07 Oct 2014 16:16:41 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/27/FC_RB_Salzburg_gegen_FK_Austria_Wien_%2818._M%C3%A4rz_2018%29_42.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/FC_RB_Salzburg_gegen_FK_Austria_Wien_%2818._M%C3%A4rz_2018%29_42.jpg",
+    "status": "available",
+    "path": "../images/4ea8ff3b276d8fb41b079c5b8d2aefa3fbdb5f5ca8bcb725a4ed69ad2efac077.bin",
+    "sha256": "4ea8ff3b276d8fb41b079c5b8d2aefa3fbdb5f5ca8bcb725a4ed69ad2efac077",
+    "bytes": 2039294,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/27/FC_RB_Salzburg_gegen_FK_Austria_Wien_%2818._M%C3%A4rz_2018%29_42.jpg",
+    "captured_at": "2026-10-22T13:46:39.546949+00:00",
+    "http_headers": {
+      "ETag": "d1ec69bbad8db1bcc7a0670dd0d26ccc",
+      "Last-Modified": "Tue, 23 May 2023 03:22:43 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/29/AmosBinney_BSNH_1930.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/AmosBinney_BSNH_1930.png",
+    "status": "available",
+    "path": "../images/f0d8bdb505ade8b4608df295ec68e2246e9c8a15e89ddd04d58b4ca5f9ca2867.bin",
+    "sha256": "f0d8bdb505ade8b4608df295ec68e2246e9c8a15e89ddd04d58b4ca5f9ca2867",
+    "bytes": 118644,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/AmosBinney_BSNH_1930.png",
+    "captured_at": "2026-10-22T13:44:59.999067+00:00",
+    "http_headers": {
+      "ETag": "3e7b0e345ffb481ed6a1e0f1fc3b7271",
+      "Last-Modified": "Tue, 07 Oct 2014 12:06:26 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/29/Bernardo_Celentano_-_Il_Tasso_infermo_a_Bisaccia.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bernardo_Celentano_-_Il_Tasso_infermo_a_Bisaccia.jpg",
+    "status": "available",
+    "path": "../images/ddd499d3a39a44cb3039be9a1485babb6fae4386782338f3823ffb8beff3c6e4.bin",
+    "sha256": "ddd499d3a39a44cb3039be9a1485babb6fae4386782338f3823ffb8beff3c6e4",
+    "bytes": 43668,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Bernardo_Celentano_-_Il_Tasso_infermo_a_Bisaccia.jpg",
+    "captured_at": "2026-10-22T14:11:44.355797+00:00",
+    "http_headers": {
+      "ETag": "b3f6d46462d723fc723d4cf190f62237",
+      "Last-Modified": "Tue, 07 Oct 2014 13:15:20 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2a/Amy_Willerton_2013.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Amy_Willerton_2013.jpg",
+    "status": "available",
+    "path": "../images/23eae626e67fe2fb41d33158039328fb70148961ec5be9e57c4c6e32819232c8.bin",
+    "sha256": "23eae626e67fe2fb41d33158039328fb70148961ec5be9e57c4c6e32819232c8",
+    "bytes": 447625,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Amy_Willerton_2013.jpg",
+    "captured_at": "2026-10-22T13:45:03.761328+00:00",
+    "http_headers": {
+      "ETag": "4d937409da25d3b0a988c955ed5562cf",
+      "Last-Modified": "Thu, 10 Jun 2021 09:10:39 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2b/%CE%92%CE%AE%CE%BC%CE%B1_%CE%92%CE%BF%CF%85%CE%BB%CE%AE%CF%82.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%CE%92%CE%AE%CE%BC%CE%B1_%CE%92%CE%BF%CF%85%CE%BB%CE%AE%CF%82.jpg",
+    "status": "available",
+    "path": "../images/b8c388b6ae0012e62045dfc34acd1de14260f3a619611775a2ba8c84125daa16.bin",
+    "sha256": "b8c388b6ae0012e62045dfc34acd1de14260f3a619611775a2ba8c84125daa16",
+    "bytes": 1929335,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/%CE%92%CE%AE%CE%BC%CE%B1_%CE%92%CE%BF%CF%85%CE%BB%CE%AE%CF%82.jpg",
+    "captured_at": "2026-10-22T13:47:17.593261+00:00",
+    "http_headers": {
+      "ETag": "7b35826a989ba672299e8c59ee1cf515",
+      "Last-Modified": "Thu, 16 Dec 2021 11:50:03 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2c/Pleshcheev_v1_p44.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Pleshcheev_v1_p44.png",
+    "status": "available",
+    "path": "../images/a7a18600791c22152bbf152e27ff3de583cff79a214045dee8c0538cb9c59b65.bin",
+    "sha256": "a7a18600791c22152bbf152e27ff3de583cff79a214045dee8c0538cb9c59b65",
+    "bytes": 111044,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Pleshcheev_v1_p44.png",
+    "captured_at": "2026-10-22T14:07:22.707537+00:00",
+    "http_headers": {
+      "ETag": "c15339c2312efecc14a3e5438aa1d194",
+      "Last-Modified": "Thu, 09 Oct 2014 19:45:52 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2f/2016_WMxCC_final_-_Alexander_Krushelnitskiy.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/2016_WMxCC_final_-_Alexander_Krushelnitskiy.jpg",
+    "status": "available",
+    "path": "../images/7688b4a7173deb230a1e4122825163203c5a528edabf7fa124542b8af44c144d.bin",
+    "sha256": "7688b4a7173deb230a1e4122825163203c5a528edabf7fa124542b8af44c144d",
+    "bytes": 84869,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/2016_WMxCC_final_-_Alexander_Krushelnitskiy.jpg",
+    "captured_at": "2026-10-22T13:41:42.226525+00:00",
+    "http_headers": {
+      "ETag": "f27811e5612849bc337231287448de91",
+      "Last-Modified": "Thu, 24 Aug 2023 11:02:46 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/2/2f/Andrew_Innes_2011.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Andrew_Innes_2011.jpg",
+    "status": "available",
+    "path": "../images/d4127fb3fdb88dd34d024d0ade19351d95b45d3eccdb578aec5c8b37a4cb81c4.bin",
+    "sha256": "d4127fb3fdb88dd34d024d0ade19351d95b45d3eccdb578aec5c8b37a4cb81c4",
+    "bytes": 579383,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Andrew_Innes_2011.jpg",
+    "captured_at": "2026-10-22T14:10:32.051371+00:00",
+    "http_headers": {
+      "ETag": "d996fa450e6ade63cea4462d4b70e711",
+      "Last-Modified": "Tue, 07 Oct 2014 12:11:20 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/32/Arly_Velazquez_Mexico.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Arly_Velazquez_Mexico.jpg",
+    "status": "available",
+    "path": "../images/bdffde888c2e5fd9169664d953e28e71b0f17aecb7389c75595e0880949e78f7.bin",
+    "sha256": "bdffde888c2e5fd9169664d953e28e71b0f17aecb7389c75595e0880949e78f7",
+    "bytes": 4006828,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Arly_Velazquez_Mexico.jpg",
+    "captured_at": "2026-10-22T13:45:32.838264+00:00",
+    "http_headers": {
+      "ETag": "9915e39aac7354d91014304722cd4115",
+      "Last-Modified": "Tue, 07 Oct 2014 12:31:36 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/32/Caroline_Rotich.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Caroline_Rotich.jpg",
+    "status": "available",
+    "path": "../images/6af860cc871f3eb12e73cc78a2fca630a766eff0676ba48a2add26c01ef2a619.bin",
+    "sha256": "6af860cc871f3eb12e73cc78a2fca630a766eff0676ba48a2add26c01ef2a619",
+    "bytes": 264225,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Caroline_Rotich.jpg",
+    "captured_at": "2026-10-22T14:05:50.534598+00:00",
+    "http_headers": {
+      "ETag": "bd9bf1f6d9f1c5805b0ca133a0e65f5f",
+      "Last-Modified": "Mon, 27 Apr 2015 10:16:51 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/32/Common_Andrew_Ainslie.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Common_Andrew_Ainslie.jpg",
+    "status": "available",
+    "path": "../images/de0d5925ba82efbd2c51ff515c09ffb1649d95b0041760538067ec87d91abc3d.bin",
+    "sha256": "de0d5925ba82efbd2c51ff515c09ffb1649d95b0041760538067ec87d91abc3d",
+    "bytes": 81637,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Common_Andrew_Ainslie.jpg",
+    "captured_at": "2026-10-22T14:10:28.001572+00:00",
+    "http_headers": {
+      "ETag": "9b67844a0d7f2af3637b44238e0ba9d6",
+      "Last-Modified": "Mon, 14 Sep 2015 08:12:24 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/33/Alfred_John_Liversedge%2C_1900.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Alfred_John_Liversedge%2C_1900.jpg",
+    "status": "available",
+    "path": "../images/818f0be73f971f1b1c3d82ddffbab7d435e658bf094d91bc16b824e024037cba.bin",
+    "sha256": "818f0be73f971f1b1c3d82ddffbab7d435e658bf094d91bc16b824e024037cba",
+    "bytes": 101233,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Alfred_John_Liversedge%2C_1900.jpg",
+    "captured_at": "2026-10-22T13:41:53.605965+00:00",
+    "http_headers": {
+      "ETag": "7fef9e291aba8663674a381dc5babdef",
+      "Last-Modified": "Mon, 22 May 2023 14:12:04 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/38/Buddy_Clark_1948.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Buddy_Clark_1948.jpg",
+    "status": "available",
+    "path": "../images/c39bc8bd43237e1c4d30dad141fc325c2cc7d7927a20c99f0995c058fe24d81c.bin",
+    "sha256": "c39bc8bd43237e1c4d30dad141fc325c2cc7d7927a20c99f0995c058fe24d81c",
+    "bytes": 74445,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Buddy_Clark_1948.jpg",
+    "captured_at": "2026-10-22T14:09:19.447281+00:00",
+    "http_headers": {
+      "ETag": "14e267626f62e117a7de483a652a1c40",
+      "Last-Modified": "Mon, 22 May 2023 19:20:54 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/38/Opera_Nova_-_title_page.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Opera_Nova_-_title_page.png",
+    "status": "available",
+    "path": "../images/1fe5fed9e8f572b1f015fa07d9d6f258c6adbe4b0f12738979c04f78dbcb928a.bin",
+    "sha256": "1fe5fed9e8f572b1f015fa07d9d6f258c6adbe4b0f12738979c04f78dbcb928a",
+    "bytes": 57410,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Opera_Nova_-_title_page.png",
+    "captured_at": "2026-10-22T14:11:10.081371+00:00",
+    "http_headers": {
+      "ETag": "2e5ddbb759000fcf05a18fda787a5767",
+      "Last-Modified": "Thu, 09 Oct 2014 03:13:45 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/39/Bernard_LAMBLIN.1968.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bernard_LAMBLIN.1968.jpg",
+    "status": "available",
+    "path": "../images/ee2a1774d0e64ee151290bf38f505034f6949d18814c0b373cf2bb7f02bd63ed.bin",
+    "sha256": "ee2a1774d0e64ee151290bf38f505034f6949d18814c0b373cf2bb7f02bd63ed",
+    "bytes": 34059,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Bernard_LAMBLIN.1968.jpg",
+    "captured_at": "2026-10-22T13:45:48.861877+00:00",
+    "http_headers": {
+      "ETag": "2c4d9bb43593096864aba8723f7aea72",
+      "Last-Modified": "Wed, 14 Oct 2015 13:21:03 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3b/Alberto%C3%81lvarezTripleJumpFinalMenRio2016_edited.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Alberto%C3%81lvarezTripleJumpFinalMenRio2016_edited.jpg",
+    "status": "available",
+    "path": "../images/1fd7bb786e6c7c6e53cd726a9a4d3d2db493bf9147be5e4c2b0ef6e0a0ff57fe.bin",
+    "sha256": "1fd7bb786e6c7c6e53cd726a9a4d3d2db493bf9147be5e4c2b0ef6e0a0ff57fe",
+    "bytes": 335333,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Alberto%C3%81lvarezTripleJumpFinalMenRio2016_edited.jpg",
+    "captured_at": "2026-10-22T13:47:01.483065+00:00",
+    "http_headers": {
+      "ETag": "0b6c359ca9780f7581d7345f8c80a1fe",
+      "Last-Modified": "Thu, 01 Sep 2016 22:59:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3c/Antoni_%C5%81yko.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Antoni_%C5%81yko.jpg",
+    "status": "available",
+    "path": "../images/f7f575854f9f22bd1a79a401dbc1e54ba83cc73b57b009cb7c546defb514fdac.bin",
+    "sha256": "f7f575854f9f22bd1a79a401dbc1e54ba83cc73b57b009cb7c546defb514fdac",
+    "bytes": 112658,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Antoni_%C5%81yko.jpg",
+    "captured_at": "2026-10-22T14:10:58.044977+00:00",
+    "http_headers": {
+      "ETag": "10bc049206cb0dc812b64deb8c4cd732",
+      "Last-Modified": "Mon, 22 May 2023 15:08:24 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/3/3e/Alberto_Triulzi_-_El_Gr%C3%A1fico_1417.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Alberto_Triulzi_-_El_Gr%C3%A1fico_1417.jpg",
+    "status": "available",
+    "path": "../images/c6fba1611f9c9c02e907d1a6c7bdc1adf8ba59aaefe354cd008464f11f5f22a4.bin",
+    "sha256": "c6fba1611f9c9c02e907d1a6c7bdc1adf8ba59aaefe354cd008464f11f5f22a4",
+    "bytes": 2977547,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Alberto_Triulzi_-_El_Gr%C3%A1fico_1417.jpg",
+    "captured_at": "2026-10-22T13:41:38.716548+00:00",
+    "http_headers": {
+      "ETag": "33e5ddaa270db090f93d24365bfa7599",
+      "Last-Modified": "Thu, 08 Dec 2016 14:52:38 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/41/1963_Cortina_GT_Armstrong_500_winner_%289031573452%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/1963_Cortina_GT_Armstrong_500_winner_%289031573452%29.jpg",
+    "status": "available",
+    "path": "../images/9f83297230e8fc4ad2c2943b2614ab8e2f79b21cfd82af80e14700f2605c08ad.bin",
+    "sha256": "9f83297230e8fc4ad2c2943b2614ab8e2f79b21cfd82af80e14700f2605c08ad",
+    "bytes": 1838259,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/1963_Cortina_GT_Armstrong_500_winner_%289031573452%29.jpg",
+    "captured_at": "2026-10-22T14:11:48.705650+00:00",
+    "http_headers": {
+      "ETag": "39d40904ef3af0fe5b0d93ec36bd0978",
+      "Last-Modified": "Mon, 08 Dec 2014 11:34:39 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/42/Bartolomeo_di_S._Pudenziana.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bartolomeo_di_S._Pudenziana.jpg",
+    "status": "available",
+    "path": "../images/787b38067adfee27ab04b2cab8fc678d42774acb7fab9f9a27251a8a75489af0.bin",
+    "sha256": "787b38067adfee27ab04b2cab8fc678d42774acb7fab9f9a27251a8a75489af0",
+    "bytes": 13972,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Bartolomeo_di_S._Pudenziana.jpg",
+    "captured_at": "2026-10-22T13:43:28.415059+00:00",
+    "http_headers": {
+      "ETag": "1f8f6b91af34c8cd672aa492fc1cc333",
+      "Last-Modified": "Thu, 09 Oct 2014 13:20:40 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/43/Solvita_%C4%80bolti%C5%86a_tiekas_ar_Latvijas_olimpisko_komandu_XXII_Ziemas_olimpiskaj%C4%81s_sp%C4%93l%C4%93s_So%C4%8Dos_%2812812168073%29_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Solvita_%C4%80bolti%C5%86a_tiekas_ar_Latvijas_olimpisko_komandu_XXII_Ziemas_olimpiskaj%C4%81s_sp%C4%93l%C4%93s_So%C4%8Dos_%2812812168073%29_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/848454b272a82d3bb265cd92afe6b5a603366959d6df991b294191b449ef39ad.bin",
+    "sha256": "848454b272a82d3bb265cd92afe6b5a603366959d6df991b294191b449ef39ad",
+    "bytes": 382793,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Solvita_%C4%80bolti%C5%86a_tiekas_ar_Latvijas_olimpisko_komandu_XXII_Ziemas_olimpiskaj%C4%81s_sp%C4%93l%C4%93s_So%C4%8Dos_%2812812168073%29_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T13:46:35.170329+00:00",
+    "http_headers": {
+      "ETag": "f4e51eb76ab4187544700c78ee44fdb4",
+      "Last-Modified": "Mon, 29 Feb 2016 10:12:57 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/44/Abroo_old.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Abroo_old.jpg",
+    "status": "available",
+    "path": "../images/252a575f7918a602aada76cf713e242e5b056f88b3e7f4a269eba184c6a27e28.bin",
+    "sha256": "252a575f7918a602aada76cf713e242e5b056f88b3e7f4a269eba184c6a27e28",
+    "bytes": 27132,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Abroo_old.jpg",
+    "captured_at": "2026-10-22T13:46:43.121322+00:00",
+    "http_headers": {
+      "ETag": "47eef5453702bc07fdbe2b16691da09b",
+      "Last-Modified": "Sun, 06 Nov 2016 10:11:00 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/44/Leandro_Avalos_Blacha_au_Salon_du_Livre_de_Paris_en_2014.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Leandro_Avalos_Blacha_au_Salon_du_Livre_de_Paris_en_2014.jpg",
+    "status": "available",
+    "path": "../images/ac80960d98ea82ac9aab1066919c412dcfb3333b3da0ec0f3ca2d03a076bfc4f.bin",
+    "sha256": "ac80960d98ea82ac9aab1066919c412dcfb3333b3da0ec0f3ca2d03a076bfc4f",
+    "bytes": 608378,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Leandro_Avalos_Blacha_au_Salon_du_Livre_de_Paris_en_2014.jpg",
+    "captured_at": "2026-10-22T14:12:23.241574+00:00",
+    "http_headers": {
+      "ETag": "745e1fd0d586dd28283ff957eb88d1c9",
+      "Last-Modified": "Mon, 28 Nov 2016 17:15:14 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/45/2013_FITA_Archery_World_Cup_-_Women%27s_individual_compound_-_Final_-_03_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/2013_FITA_Archery_World_Cup_-_Women%27s_individual_compound_-_Final_-_03_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/dba381afdc1089ab8aa2637cc5b00573934ce7ec7006c257cec4b328ea6c0b20.bin",
+    "sha256": "dba381afdc1089ab8aa2637cc5b00573934ce7ec7006c257cec4b328ea6c0b20",
+    "bytes": 7527099,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/2013_FITA_Archery_World_Cup_-_Women%27s_individual_compound_-_Final_-_03_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T14:12:11.833991+00:00",
+    "http_headers": {
+      "ETag": "48d46e70453a07f1f85382c94328c4c9",
+      "Last-Modified": "Thu, 09 Oct 2014 12:26:26 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/45/Alina_Dumitru.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Alina_Dumitru.jpg",
+    "status": "available",
+    "path": "../images/e7d53283c911db0cc68da81715d1b9440c03d8a18dff0539445af4bbc35a094d.bin",
+    "sha256": "e7d53283c911db0cc68da81715d1b9440c03d8a18dff0539445af4bbc35a094d",
+    "bytes": 54915,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Alina_Dumitru.jpg",
+    "captured_at": "2026-10-22T14:07:44.437896+00:00",
+    "http_headers": {
+      "ETag": "f4bdc59dc67f2a1dde2d5a7fef053b7a",
+      "Last-Modified": "Thu, 14 Dec 2023 09:05:28 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/45/Benjamin_Dann_Walsh.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Benjamin_Dann_Walsh.JPG",
+    "status": "available",
+    "path": "../images/f03d8e425f7195add10397bbe408844bd5c55f9579f30942485a6da9c2acc394.bin",
+    "sha256": "f03d8e425f7195add10397bbe408844bd5c55f9579f30942485a6da9c2acc394",
+    "bytes": 19512,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Benjamin_Dann_Walsh.JPG",
+    "captured_at": "2026-10-22T14:11:40.623341+00:00",
+    "http_headers": {
+      "ETag": "8319c89d2fc9be777d3f213a4e16d4aa",
+      "Last-Modified": "Thu, 14 Apr 2016 23:38:23 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/46/20131005_-_Open_LFB_-_Toulouse-Mondeville_10.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/20131005_-_Open_LFB_-_Toulouse-Mondeville_10.jpg",
+    "status": "available",
+    "path": "../images/ade7607b2c96e90acd5eaed46e7bcb8d01cfdace3bf2961b7062b4b574afd65e.bin",
+    "sha256": "ade7607b2c96e90acd5eaed46e7bcb8d01cfdace3bf2961b7062b4b574afd65e",
+    "bytes": 1914645,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/20131005_-_Open_LFB_-_Toulouse-Mondeville_10.jpg",
+    "captured_at": "2026-10-22T13:46:46.931150+00:00",
+    "http_headers": {
+      "ETag": "77c8b417dba51755bc49a9c16453c7d5",
+      "Last-Modified": "Thu, 09 Oct 2014 12:20:53 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_IMG_1759.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_IMG_1759.JPG",
+    "status": "available",
+    "path": "../images/5474d8ad1aaafb778bbc1644654e015e7859d8aba588f8a7feea8d9c409e4641.bin",
+    "sha256": "5474d8ad1aaafb778bbc1644654e015e7859d8aba588f8a7feea8d9c409e4641",
+    "bytes": 3013251,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_IMG_1759.JPG",
+    "captured_at": "2026-10-22T13:44:56.382793+00:00",
+    "http_headers": {
+      "ETag": "e1f99ba56749df287f6491683763fa57",
+      "Last-Modified": "Fri, 10 Oct 2014 00:04:02 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/46/MK33481_Antje_M%C3%B6ldner-Schmidt.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MK33481_Antje_M%C3%B6ldner-Schmidt.jpg",
+    "status": "available",
+    "path": "../images/0a4aaf1882418f304ce573a1995b3ed50cffafc6af8ac29d2daac8a6461ed40b.bin",
+    "sha256": "0a4aaf1882418f304ce573a1995b3ed50cffafc6af8ac29d2daac8a6461ed40b",
+    "bytes": 2516728,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/MK33481_Antje_M%C3%B6ldner-Schmidt.jpg",
+    "captured_at": "2026-10-22T14:10:50.665231+00:00",
+    "http_headers": {
+      "ETag": "a3dafae14361d758f8c2e973005087f8",
+      "Last-Modified": "Mon, 12 Sep 2022 09:42:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4c/Aleksander_Cicho%C5%84.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Aleksander_Cicho%C5%84.jpg",
+    "status": "available",
+    "path": "../images/b385a10e6262e1d5f3dae9106b08700a37f4f35182e998ed136895899a36fc2c.bin",
+    "sha256": "b385a10e6262e1d5f3dae9106b08700a37f4f35182e998ed136895899a36fc2c",
+    "bytes": 144722,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Aleksander_Cicho%C5%84.jpg",
+    "captured_at": "2026-10-22T13:47:08.833749+00:00",
+    "http_headers": {
+      "ETag": "32e72ad89081f4cb8cc459b9dcdc27d9",
+      "Last-Modified": "Mon, 07 Sep 2015 15:00:40 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4c/Carricaberry.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Carricaberry.jpg",
+    "status": "available",
+    "path": "../images/02d74f3e623361d5fe068c1d8f135f5dfb68942005116b7b1240292191312411.bin",
+    "sha256": "02d74f3e623361d5fe068c1d8f135f5dfb68942005116b7b1240292191312411",
+    "bytes": 22092,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Carricaberry.jpg",
+    "captured_at": "2026-10-22T14:07:40.988638+00:00",
+    "http_headers": {
+      "ETag": "35b463fd1c2ca46ff373cdf6b942a418",
+      "Last-Modified": "Tue, 04 Aug 2015 09:06:03 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4d/Artemi_Gavezou_2013_Kiev.PNG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Artemi_Gavezou_2013_Kiev.PNG",
+    "status": "available",
+    "path": "../images/48290069c0b8e50e07a4fe689bdffad402d025332d0e142cf42f1e9cd65791a1.bin",
+    "sha256": "48290069c0b8e50e07a4fe689bdffad402d025332d0e142cf42f1e9cd65791a1",
+    "bytes": 3180451,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Artemi_Gavezou_2013_Kiev.PNG",
+    "captured_at": "2026-10-22T14:05:27.836968+00:00",
+    "http_headers": {
+      "ETag": "bdeb390fd26e5e41ec60dc93e7ccbb3b",
+      "Last-Modified": "Wed, 29 Oct 2014 15:25:42 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4e/Angus_MacIntyre.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Angus_MacIntyre.jpg",
+    "status": "available",
+    "path": "../images/14b2263624f478855567e8ab14610873075b68b1727684b6b1152a2923c8a26b.bin",
+    "sha256": "14b2263624f478855567e8ab14610873075b68b1727684b6b1152a2923c8a26b",
+    "bytes": 3997598,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Angus_MacIntyre.jpg",
+    "captured_at": "2026-10-22T14:04:57.955604+00:00",
+    "http_headers": {
+      "ETag": "0c2f320d1064f951ac0888570e2f1276",
+      "Last-Modified": "Mon, 10 Aug 2015 08:01:41 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/4/4e/Arturo_Viligiardi.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Arturo_Viligiardi.jpg",
+    "status": "available",
+    "path": "../images/bdd790239958a817022f86d8670339c9dddaf714bcc370d31b3d58097dd3424e.bin",
+    "sha256": "bdd790239958a817022f86d8670339c9dddaf714bcc370d31b3d58097dd3424e",
+    "bytes": 41466,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Arturo_Viligiardi.jpg",
+    "captured_at": "2026-10-22T14:11:29.099159+00:00",
+    "http_headers": {
+      "ETag": "931e59b47df8b8ece32bd3c18003dad9",
+      "Last-Modified": "Thu, 09 Oct 2014 14:01:54 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/50/Basinio_Basini.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Basinio_Basini.jpg",
+    "status": "available",
+    "path": "../images/5d45dc4b70e2ce2f4915784d15f6c5a9fbd9c6dc8c30a0f2e6d12a602286abbb.bin",
+    "sha256": "5d45dc4b70e2ce2f4915784d15f6c5a9fbd9c6dc8c30a0f2e6d12a602286abbb",
+    "bytes": 40539,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Basinio_Basini.jpg",
+    "captured_at": "2026-10-22T14:11:37.088285+00:00",
+    "http_headers": {
+      "ETag": "f2273aae0e290611bae29ae9745b9df6",
+      "Last-Modified": "Thu, 09 Oct 2014 14:53:55 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/54/Albert_Laniece_consultazioni_Quirinale_2018.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Albert_Laniece_consultazioni_Quirinale_2018.JPG",
+    "status": "available",
+    "path": "../images/63fd0d2a1d47c4e4691f81b743e339462ce265f4cc546f4373eae5e938b99a84.bin",
+    "sha256": "63fd0d2a1d47c4e4691f81b743e339462ce265f4cc546f4373eae5e938b99a84",
+    "bytes": 73527,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Albert_Laniece_consultazioni_Quirinale_2018.JPG",
+    "captured_at": "2026-10-22T13:46:54.024092+00:00",
+    "http_headers": {
+      "ETag": "4b48c2e24cc8ad7ebeca74fc683e539d",
+      "Last-Modified": "Thu, 22 Aug 2019 13:04:12 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/54/Charles_Luther%2C_Stockholm_1912.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Charles_Luther%2C_Stockholm_1912.jpg",
+    "status": "available",
+    "path": "../images/83025e6141319f3277f3e9a3f92c600acaef00b45226c69a54bcb38eeb401359.bin",
+    "sha256": "83025e6141319f3277f3e9a3f92c600acaef00b45226c69a54bcb38eeb401359",
+    "bytes": 188315,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Charles_Luther%2C_Stockholm_1912.jpg",
+    "captured_at": "2026-10-22T14:09:29.582725+00:00",
+    "http_headers": {
+      "ETag": "311a7b2659f11427713e3b2408a79e61",
+      "Last-Modified": "Mon, 15 Feb 2016 10:12:58 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5b/3_000_m_Valence_2008.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/3_000_m_Valence_2008.jpg",
+    "status": "available",
+    "path": "../images/bd732c227c38fce9fd071faed873058656478ad061e4f23275ee252445761ba7.bin",
+    "sha256": "bd732c227c38fce9fd071faed873058656478ad061e4f23275ee252445761ba7",
+    "bytes": 58142,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/3_000_m_Valence_2008.jpg",
+    "captured_at": "2026-10-22T13:45:37.548461+00:00",
+    "http_headers": {
+      "ETag": "1a07b62884902468f12a8693f5a60ddf",
+      "Last-Modified": "Thu, 09 Oct 2014 13:21:00 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5b/Alex_M%C3%BCller_%28racing_driver%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Alex_M%C3%BCller_%28racing_driver%29.jpg",
+    "status": "available",
+    "path": "../images/0ac8363faed1659e6d7608d0e6fa4a33ff97b653f5131525394d1c09da09ac53.bin",
+    "sha256": "0ac8363faed1659e6d7608d0e6fa4a33ff97b653f5131525394d1c09da09ac53",
+    "bytes": 973651,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Alex_M%C3%BCller_%28racing_driver%29.jpg",
+    "captured_at": "2026-10-22T13:44:49.076714+00:00",
+    "http_headers": {
+      "ETag": "20e6bde074cb55b432099aa9b3ac7cb7",
+      "Last-Modified": "Sat, 25 Feb 2023 23:22:07 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5c/Antoni_Noguera_i_Balaguer.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Antoni_Noguera_i_Balaguer.jpg",
+    "status": "available",
+    "path": "../images/ca54bf4c2ba4d5d4e1278026b83b36145260f0c5d7c8b3a454e687aa48cf09c0.bin",
+    "sha256": "ca54bf4c2ba4d5d4e1278026b83b36145260f0c5d7c8b3a454e687aa48cf09c0",
+    "bytes": 21806,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Antoni_Noguera_i_Balaguer.jpg",
+    "captured_at": "2026-10-22T14:10:54.359930+00:00",
+    "http_headers": {
+      "ETag": "defbd66a65aee66edb120903a5bcb39a",
+      "Last-Modified": "Tue, 22 Jun 2021 08:03:03 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5e/Alex_Hope.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Alex_Hope.jpg",
+    "status": "available",
+    "path": "../images/493e2c7a9253d2162575ff83fe2e340b0bac1075890e6bebce7229b3ef689065.bin",
+    "sha256": "493e2c7a9253d2162575ff83fe2e340b0bac1075890e6bebce7229b3ef689065",
+    "bytes": 5451238,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Alex_Hope.jpg",
+    "captured_at": "2026-10-22T13:41:50.009311+00:00",
+    "http_headers": {
+      "ETag": "7ba99165e30a7f898396c51b69ce5f20",
+      "Last-Modified": "Tue, 22 Mar 2016 18:08:22 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/5/5f/Holstein-Pinneberg.PNG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Holstein-Pinneberg.PNG",
+    "status": "available",
+    "path": "../images/7320b14339e603389d10d950e4c65bac784f66af2ed5b57dcbfb6855db224142.bin",
+    "sha256": "7320b14339e603389d10d950e4c65bac784f66af2ed5b57dcbfb6855db224142",
+    "bytes": 21755,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Holstein-Pinneberg.PNG",
+    "captured_at": "2026-10-22T14:05:12.587704+00:00",
+    "http_headers": {
+      "ETag": "67d496d5d172838399ef81a6816bcc80",
+      "Last-Modified": "Fri, 10 Oct 2014 10:50:18 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/61/Brian_Moehler.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Brian_Moehler.jpg",
+    "status": "available",
+    "path": "../images/ba42124323d80a6fce1df23c8a53e9ac95f61221af30635c0716b7a8f66e0a8c.bin",
+    "sha256": "ba42124323d80a6fce1df23c8a53e9ac95f61221af30635c0716b7a8f66e0a8c",
+    "bytes": 135204,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Brian_Moehler.jpg",
+    "captured_at": "2026-10-22T14:11:52.483201+00:00",
+    "http_headers": {
+      "ETag": "49f430f9c1a4bec68640ac1d4d0f5840",
+      "Last-Modified": "Fri, 10 Oct 2014 04:19:54 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/62/Kevin_Claeys_3DWV2011.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Kevin_Claeys_3DWV2011.JPG",
+    "status": "available",
+    "path": "../images/640414306b447315d3fdd63a1ee137755829313f5b04fadb9fad7c641a45e10b.bin",
+    "sha256": "640414306b447315d3fdd63a1ee137755829313f5b04fadb9fad7c641a45e10b",
+    "bytes": 1291307,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Kevin_Claeys_3DWV2011.JPG",
+    "captured_at": "2026-10-22T13:46:31.228147+00:00",
+    "http_headers": {
+      "ETag": "9a0332735aad9edfedabe2c0e186140f",
+      "Last-Modified": "Fri, 10 Oct 2014 21:47:31 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/63/Andrei_Glanzmann_1932.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Andrei_Glanzmann_1932.jpg",
+    "status": "available",
+    "path": "../images/01cd7a85252dc864341bb4c18a59b2a894bc364f71aa439b651c2ced7700b59e.bin",
+    "sha256": "01cd7a85252dc864341bb4c18a59b2a894bc364f71aa439b651c2ced7700b59e",
+    "bytes": 42582,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Andrei_Glanzmann_1932.jpg",
+    "captured_at": "2026-10-22T14:04:34.163014+00:00",
+    "http_headers": {
+      "ETag": "f0d18f87ae4701260f52de9c8650e580",
+      "Last-Modified": "Tue, 07 Jan 2025 17:37:12 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/66/Meeting_Areva_2011_3_000_m_steeple.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Meeting_Areva_2011_3_000_m_steeple.jpg",
+    "status": "available",
+    "path": "../images/5750f37eecb96ca1069945a675f8509947ae68d04c93ac1611f8ff725d44d208.bin",
+    "sha256": "5750f37eecb96ca1069945a675f8509947ae68d04c93ac1611f8ff725d44d208",
+    "bytes": 4242959,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Meeting_Areva_2011_3_000_m_steeple.jpg",
+    "captured_at": "2026-10-22T14:09:57.297326+00:00",
+    "http_headers": {
+      "ETag": "c438d6c764c10ac1f32f0e7c07315a0c",
+      "Last-Modified": "Fri, 10 Oct 2014 15:44:10 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/67/Alan_Gordon_playing_for_LA_Galaxy.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Alan_Gordon_playing_for_LA_Galaxy.JPG",
+    "status": "available",
+    "path": "../images/2caa579cb6461e2b439ef3411b76101cb1e80bf27cfec306b4f45367acc655ce.bin",
+    "sha256": "2caa579cb6461e2b439ef3411b76101cb1e80bf27cfec306b4f45367acc655ce",
+    "bytes": 606377,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Alan_Gordon_playing_for_LA_Galaxy.JPG",
+    "captured_at": "2026-10-22T13:41:30.234608+00:00",
+    "http_headers": {
+      "ETag": "2dec04db06f2cc95b3b4c80824979bb9",
+      "Last-Modified": "Mon, 27 Apr 2015 10:58:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/67/Gebauer-georg-christian-in-voit-max-hrsg-bildnisse-goettinger-professoren-goettingen-vandenhoeck-und-ruprecht-1937-nr003.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Gebauer-georg-christian-in-voit-max-hrsg-bildnisse-goettinger-professoren-goettingen-vandenhoeck-und-ruprecht-1937-nr003.jpg",
+    "status": "available",
+    "path": "../images/c7a7cb5748dd0fda56c8d9caa35edbce6bab31761e3b093caab98f3a4907a0eb.bin",
+    "sha256": "c7a7cb5748dd0fda56c8d9caa35edbce6bab31761e3b093caab98f3a4907a0eb",
+    "bytes": 372782,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Gebauer-georg-christian-in-voit-max-hrsg-bildnisse-goettinger-professoren-goettingen-vandenhoeck-und-ruprecht-1937-nr003.jpg",
+    "captured_at": "2026-10-22T13:46:09.138879+00:00",
+    "http_headers": {
+      "ETag": "93b7743b9518a14afb9d34307744c147",
+      "Last-Modified": "Sun, 08 May 2022 20:55:35 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/68/Esmee_visser-1514676292.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Esmee_visser-1514676292.jpg",
+    "status": "available",
+    "path": "../images/47799193573de0c1ab31f5a8b3011806a3d16a79ef28da9d90883d0e5387de18.bin",
+    "sha256": "47799193573de0c1ab31f5a8b3011806a3d16a79ef28da9d90883d0e5387de18",
+    "bytes": 207865,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Esmee_visser-1514676292.jpg",
+    "captured_at": "2026-10-22T14:12:15.823588+00:00",
+    "http_headers": {
+      "ETag": "e32abe23d4e957e6707652c357b1e200",
+      "Last-Modified": "Mon, 01 Jan 2018 22:39:52 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/69/Ahti_Toivanen_at_Biathlon_WC_2015_Nov%C3%A9_M%C4%9Bsto.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Ahti_Toivanen_at_Biathlon_WC_2015_Nov%C3%A9_M%C4%9Bsto.jpg",
+    "status": "available",
+    "path": "../images/7a20469aa27a556e7656159a71d5eea41f3193ba50fde119cd46baed1f665dfa.bin",
+    "sha256": "7a20469aa27a556e7656159a71d5eea41f3193ba50fde119cd46baed1f665dfa",
+    "bytes": 494114,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Ahti_Toivanen_at_Biathlon_WC_2015_Nov%C3%A9_M%C4%9Bsto.jpg",
+    "captured_at": "2026-10-22T14:07:03.331480+00:00",
+    "http_headers": {
+      "ETag": "61082ab9521788d622e6745680ad7d9f",
+      "Last-Modified": "Wed, 18 Feb 2015 10:44:15 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6b/An_Il-Bom.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/An_Il-Bom.JPG",
+    "status": "available",
+    "path": "../images/ad9e45a5f119926f8fd2b5a72f9a9d2750de071ac97f1d82f5636a9d8564679b.bin",
+    "sha256": "ad9e45a5f119926f8fd2b5a72f9a9d2750de071ac97f1d82f5636a9d8564679b",
+    "bytes": 3073706,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/An_Il-Bom.JPG",
+    "captured_at": "2026-10-22T14:10:24.465886+00:00",
+    "http_headers": {
+      "ETag": "bce298f4c7795e0268d7e9878d63487b",
+      "Last-Modified": "Fri, 10 Oct 2014 06:43:43 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6b/Aramis_Nagli%C4%87_Rijeka_0808.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Aramis_Nagli%C4%87_Rijeka_0808.jpg",
+    "status": "available",
+    "path": "../images/eeddd372bf6f055bf0b38e09ae7cd0be79833f1e69c95a98cb42ddd4cc75d73f.bin",
+    "sha256": "eeddd372bf6f055bf0b38e09ae7cd0be79833f1e69c95a98cb42ddd4cc75d73f",
+    "bytes": 532738,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Aramis_Nagli%C4%87_Rijeka_0808.jpg",
+    "captured_at": "2026-10-22T13:43:00.800791+00:00",
+    "http_headers": {
+      "ETag": "6f66f3d4be06b8dbfcfeda33054f5054",
+      "Last-Modified": "Mon, 31 Aug 2015 14:46:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6b/Grave_of_Boris_Lisunov_at_Donskoe_Cemetery.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Grave_of_Boris_Lisunov_at_Donskoe_Cemetery.jpg",
+    "status": "available",
+    "path": "../images/a7afbe3cd92031e5637245b83e769209649dbc276dc2fd8b02f7cb62bb2326f2.bin",
+    "sha256": "a7afbe3cd92031e5637245b83e769209649dbc276dc2fd8b02f7cb62bb2326f2",
+    "bytes": 5273358,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Grave_of_Boris_Lisunov_at_Donskoe_Cemetery.jpg",
+    "captured_at": "2026-10-22T13:45:53.460440+00:00",
+    "http_headers": {
+      "ETag": "90eda6bbd6d06c4c779597b683965b18",
+      "Last-Modified": "Sun, 06 Oct 2024 18:14:02 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6c/Ashikaga_Ujimitsu.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Ashikaga_Ujimitsu.jpg",
+    "status": "available",
+    "path": "../images/9c7e89d803403306af892c204b55bee4ab9c417b08d2ba61a95b28d3fdf7d73b.bin",
+    "sha256": "9c7e89d803403306af892c204b55bee4ab9c417b08d2ba61a95b28d3fdf7d73b",
+    "bytes": 789213,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Ashikaga_Ujimitsu.jpg",
+    "captured_at": "2026-10-22T13:43:08.532789+00:00",
+    "http_headers": {
+      "ETag": "05ee727ffa5737050b43efed6bee747b",
+      "Last-Modified": "Fri, 10 Oct 2014 07:12:12 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6c/Shuvalov-andrey-petrovich_01.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Shuvalov-andrey-petrovich_01.jpg",
+    "status": "available",
+    "path": "../images/d0b678464f03727bdab118a45e57f3e76f5ac7078db0390737e54b158beadb15.bin",
+    "sha256": "d0b678464f03727bdab118a45e57f3e76f5ac7078db0390737e54b158beadb15",
+    "bytes": 32253,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Shuvalov-andrey-petrovich_01.jpg",
+    "captured_at": "2026-10-22T14:10:35.706000+00:00",
+    "http_headers": {
+      "ETag": "e566222cbc87d9fb50685481ca8091a9",
+      "Last-Modified": "Fri, 10 Oct 2014 23:23:09 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6e/Athanase_de_Villermont.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Athanase_de_Villermont.jpg",
+    "status": "available",
+    "path": "../images/57e54da91fe3b9277050c08aa53bec3663c070858c409139ba6d84a9c2057723.bin",
+    "sha256": "57e54da91fe3b9277050c08aa53bec3663c070858c409139ba6d84a9c2057723",
+    "bytes": 93310,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Athanase_de_Villermont.jpg",
+    "captured_at": "2026-10-22T13:43:20.585075+00:00",
+    "http_headers": {
+      "ETag": "c4e96b845cc4b6bf393a4b66e69a3a7c",
+      "Last-Modified": "Sun, 15 Sep 2019 18:49:10 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6f/APHD.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/APHD.jpg",
+    "status": "available",
+    "path": "../images/ecd7fe10764951af03f155fe19485a5006c42e2202fd71f00d7428d471ffa287.bin",
+    "sha256": "ecd7fe10764951af03f155fe19485a5006c42e2202fd71f00d7428d471ffa287",
+    "bytes": 53598,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/APHD.jpg",
+    "captured_at": "2026-10-22T14:05:31.063933+00:00",
+    "http_headers": {
+      "ETag": "ec9a30afdc1f197504ffe3e639bd760e",
+      "Last-Modified": "Wed, 26 Aug 2015 13:56:44 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/6/6f/Andrei_Krauchanka_Barcelona_2010.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Andrei_Krauchanka_Barcelona_2010.jpg",
+    "status": "available",
+    "path": "../images/24812021656fcac41e7f0a545655e7860b702c68a7744ea62825fc06f011bd98.bin",
+    "sha256": "24812021656fcac41e7f0a545655e7860b702c68a7744ea62825fc06f011bd98",
+    "bytes": 78201,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Andrei_Krauchanka_Barcelona_2010.jpg",
+    "captured_at": "2026-10-22T14:08:17.590404+00:00",
+    "http_headers": {
+      "ETag": "3c2671d6423cdbcbfd2c4b30422012a8",
+      "Last-Modified": "Wed, 25 May 2016 03:06:55 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/70/Anastasia_Nazarenko.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Anastasia_Nazarenko.jpg",
+    "status": "available",
+    "path": "../images/5a617edecaa8308bbd19cec6d050c2d9c64ba50bf0ed7fe50ea5f61220921cc8.bin",
+    "sha256": "5a617edecaa8308bbd19cec6d050c2d9c64ba50bf0ed7fe50ea5f61220921cc8",
+    "bytes": 879437,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Anastasia_Nazarenko.jpg",
+    "captured_at": "2026-10-22T13:45:07.870291+00:00",
+    "http_headers": {
+      "ETag": "7949392842f16e44248ca9cbe42f9895",
+      "Last-Modified": "Thu, 26 Apr 2018 22:20:08 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/71/CarloCorazzin.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/CarloCorazzin.jpg",
+    "status": "available",
+    "path": "../images/a403d9dfd25cd399eb2c0d2a2f0b8e50d959db11e922f8b887b45d9a7a915ec0.bin",
+    "sha256": "a403d9dfd25cd399eb2c0d2a2f0b8e50d959db11e922f8b887b45d9a7a915ec0",
+    "bytes": 49041,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/CarloCorazzin.jpg",
+    "captured_at": "2026-10-22T14:11:55.823738+00:00",
+    "http_headers": {
+      "ETag": "a792804d588a0f855e4344feb810f5bb",
+      "Last-Modified": "Fri, 10 Oct 2014 09:00:18 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/72/Alize_Mounter_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Alize_Mounter_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/86728282f70c4f95e2155696c35acaba2f954b27e3bc46f19802cc2120857d1f.bin",
+    "sha256": "86728282f70c4f95e2155696c35acaba2f954b27e3bc46f19802cc2120857d1f",
+    "bytes": 28378,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Alize_Mounter_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T13:44:52.533429+00:00",
+    "http_headers": {
+      "ETag": "7f9be5e4dd0566894e700b2a38ade7e6",
+      "Last-Modified": "Mon, 22 May 2023 14:20:10 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/72/Eino_Sepp%C3%A4l%C3%A4_%281924%29_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Eino_Sepp%C3%A4l%C3%A4_%281924%29_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/edbfd39e38c48294dd58b1f81ccb196816232470fb771e98f003e4a47458e169.bin",
+    "sha256": "edbfd39e38c48294dd58b1f81ccb196816232470fb771e98f003e4a47458e169",
+    "bytes": 22055,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Eino_Sepp%C3%A4l%C3%A4_%281924%29_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T14:12:07.680965+00:00",
+    "http_headers": {
+      "ETag": "4b85ecabeccda55d00ce2a1c7b347ca3",
+      "Last-Modified": "Wed, 04 Dec 2024 20:23:18 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/73/Bryan_Clauson_-_500_Festival_Parade_-_2015_-_Sarah_Stierch.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bryan_Clauson_-_500_Festival_Parade_-_2015_-_Sarah_Stierch.jpg",
+    "status": "available",
+    "path": "../images/6af86541fd50b305966b77536c1ba575a4c9c62deb4e04b50101fcba5bb5d13d.bin",
+    "sha256": "6af86541fd50b305966b77536c1ba575a4c9c62deb4e04b50101fcba5bb5d13d",
+    "bytes": 2805935,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Bryan_Clauson_-_500_Festival_Parade_-_2015_-_Sarah_Stierch.jpg",
+    "captured_at": "2026-10-22T13:43:40.202644+00:00",
+    "http_headers": {
+      "ETag": "8d3b9d6af4fe599cbf0dc2b61e15d0c7",
+      "Last-Modified": "Mon, 22 May 2023 19:18:54 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/75/AdrivanMale1940.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/AdrivanMale1940.jpg",
+    "status": "available",
+    "path": "../images/8d64638acf3737af38011aac31cd1f9b3e8f8f1d1c6c16142cdfb9aade0e1b06.bin",
+    "sha256": "8d64638acf3737af38011aac31cd1f9b3e8f8f1d1c6c16142cdfb9aade0e1b06",
+    "bytes": 27728,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/AdrivanMale1940.jpg",
+    "captured_at": "2026-10-22T13:44:30.198927+00:00",
+    "http_headers": {
+      "ETag": "f1f22a38dead2d3fb895f51725dccd56",
+      "Last-Modified": "Thu, 18 Apr 2024 22:07:12 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/75/Christian_Schmidt_en_1993.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Christian_Schmidt_en_1993.jpg",
+    "status": "available",
+    "path": "../images/48e342c5b5bf508abf8dbf741dfb3e2062d7d43a1e0abb9e745df06b6a34235c.bin",
+    "sha256": "48e342c5b5bf508abf8dbf741dfb3e2062d7d43a1e0abb9e745df06b6a34235c",
+    "bytes": 168802,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Christian_Schmidt_en_1993.jpg",
+    "captured_at": "2026-10-22T14:09:40.573751+00:00",
+    "http_headers": {
+      "ETag": "4cf1d4312a7636cf1215f28748c5fb84",
+      "Last-Modified": "Wed, 12 Feb 2020 18:03:36 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/75/Courtney_Thompson_2012_01.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Courtney_Thompson_2012_01.jpg",
+    "status": "available",
+    "path": "../images/de1e3da7c11f75e2e1c8432a4b8dc587e11d50178cc0f9eaa0acb47cbe41c316.bin",
+    "sha256": "de1e3da7c11f75e2e1c8432a4b8dc587e11d50178cc0f9eaa0acb47cbe41c316",
+    "bytes": 1689838,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Courtney_Thompson_2012_01.jpg",
+    "captured_at": "2026-10-22T14:09:44.277313+00:00",
+    "http_headers": {
+      "ETag": "46ad2a738abb8f15c2ab753336c8f67e",
+      "Last-Modified": "Fri, 10 Oct 2014 10:02:57 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/76/Elena_L%C3%B3pez_2013_Kiev.PNG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Elena_L%C3%B3pez_2013_Kiev.PNG",
+    "status": "available",
+    "path": "../images/e432ee88619b19c3de0b779ff03cbca8218fe254deaa4ec786d6ce62d2a245ab.bin",
+    "sha256": "e432ee88619b19c3de0b779ff03cbca8218fe254deaa4ec786d6ce62d2a245ab",
+    "bytes": 2883246,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Elena_L%C3%B3pez_2013_Kiev.PNG",
+    "captured_at": "2026-10-22T13:44:04.384096+00:00",
+    "http_headers": {
+      "ETag": "f78c16e3ef4871c1f76ce0fcdba8e036",
+      "Last-Modified": "Wed, 29 Oct 2014 15:30:16 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/79/Aldo_Di_Biagio_datisenato_2013.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Aldo_Di_Biagio_datisenato_2013.jpg",
+    "status": "available",
+    "path": "../images/399679dadd29e2044bb2d7c89bc57d8318c575115fca853aeda4cd02b1a68d3c.bin",
+    "sha256": "399679dadd29e2044bb2d7c89bc57d8318c575115fca853aeda4cd02b1a68d3c",
+    "bytes": 24596,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Aldo_Di_Biagio_datisenato_2013.jpg",
+    "captured_at": "2026-10-22T14:10:13.197200+00:00",
+    "http_headers": {
+      "ETag": "4a99f3d1044bce9857de4416286a4cb0",
+      "Last-Modified": "Sun, 30 Sep 2018 16:10:39 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7a/Team_Belarus_-_Rhythmic_Gymnastics_Group_All-Around.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Team_Belarus_-_Rhythmic_Gymnastics_Group_All-Around.jpg",
+    "status": "available",
+    "path": "../images/3f2477077f0f9bede9269484e66c37fae8ba894b95bfaff064078bee05346841.bin",
+    "sha256": "3f2477077f0f9bede9269484e66c37fae8ba894b95bfaff064078bee05346841",
+    "bytes": 5797860,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Team_Belarus_-_Rhythmic_Gymnastics_Group_All-Around.jpg",
+    "captured_at": "2026-10-22T14:07:57.056782+00:00",
+    "http_headers": {
+      "ETag": "1c0471fb601fc1529947aa15c53af164",
+      "Last-Modified": "Sat, 11 Oct 2014 00:46:11 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7b/%D0%A0%D0%B0%D1%81%D0%BF%D1%83%D1%82%D0%B8%D0%BD%D0%B0_%D0%90%D0%BD%D0%BD%D0%B0_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%281874-1908%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%D0%A0%D0%B0%D1%81%D0%BF%D1%83%D1%82%D0%B8%D0%BD%D0%B0_%D0%90%D0%BD%D0%BD%D0%B0_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%281874-1908%29.jpg",
+    "status": "available",
+    "path": "../images/cf18224df3417e4615d209a72c4f80755b29e7233f2e4477d8138ba6a8b841bc.bin",
+    "sha256": "cf18224df3417e4615d209a72c4f80755b29e7233f2e4477d8138ba6a8b841bc",
+    "bytes": 25901,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/%D0%A0%D0%B0%D1%81%D0%BF%D1%83%D1%82%D0%B8%D0%BD%D0%B0_%D0%90%D0%BD%D0%BD%D0%B0_%D0%9C%D0%B8%D1%85%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%281874-1908%29.jpg",
+    "captured_at": "2026-10-22T14:10:43.202071+00:00",
+    "http_headers": {
+      "ETag": "70ffc3aad55985b2d49b587a992d9cb0",
+      "Last-Modified": "Tue, 18 Oct 2016 20:26:19 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7b/Albert_Sauveur.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Albert_Sauveur.jpg",
+    "status": "available",
+    "path": "../images/0bd7a2b371791795ada8976897908a2498fb61162ead848102fbe8140551fc03.bin",
+    "sha256": "0bd7a2b371791795ada8976897908a2498fb61162ead848102fbe8140551fc03",
+    "bytes": 69965,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Albert_Sauveur.jpg",
+    "captured_at": "2026-10-22T13:46:57.722765+00:00",
+    "http_headers": {
+      "ETag": "3e66bcf8fb9302d153e49052a23bb645",
+      "Last-Modified": "Tue, 25 Apr 2023 14:39:22 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7c/Lali5.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Lali5.jpg",
+    "status": "available",
+    "path": "../images/85c95a80ff2f3a7a552149ca353caa609a3b76b04f9907ac0b7ca48c470a24d1.bin",
+    "sha256": "85c95a80ff2f3a7a552149ca353caa609a3b76b04f9907ac0b7ca48c470a24d1",
+    "bytes": 77066,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Lali5.jpg",
+    "captured_at": "2026-10-22T13:47:05.191160+00:00",
+    "http_headers": {
+      "ETag": "1356d4f49f3b9bc3e605f377d4e91c95",
+      "Last-Modified": "Tue, 09 Jun 2015 17:03:58 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7e/Anne_Isabella_Thackeray_Ritchie.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Anne_Isabella_Thackeray_Ritchie.jpg",
+    "status": "available",
+    "path": "../images/81fc3023870246536e537814606ab81fc8709cd2208919522e78e942f245af97.bin",
+    "sha256": "81fc3023870246536e537814606ab81fc8709cd2208919522e78e942f245af97",
+    "bytes": 100452,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Anne_Isabella_Thackeray_Ritchie.jpg",
+    "captured_at": "2026-10-22T14:10:46.914419+00:00",
+    "http_headers": {
+      "ETag": "4ff59b5e54a016873a6524ecbfafc112",
+      "Last-Modified": "Fri, 10 Oct 2014 07:22:48 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7f/Adnan_Mravac_-_SV_Mattersburg.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Adnan_Mravac_-_SV_Mattersburg.jpg",
+    "status": "available",
+    "path": "../images/15eaef91078310768f194b014ccf5f676a709addb26b4228ce165cd32ace189c.bin",
+    "sha256": "15eaef91078310768f194b014ccf5f676a709addb26b4228ce165cd32ace189c",
+    "bytes": 3566638,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Adnan_Mravac_-_SV_Mattersburg.jpg",
+    "captured_at": "2026-10-22T14:06:48.821012+00:00",
+    "http_headers": {
+      "ETag": "c999b25e6857c5db6565c07a1a1374c9",
+      "Last-Modified": "Fri, 10 Oct 2014 07:18:44 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/7/7f/Anders_Golding_London2012.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Anders_Golding_London2012.jpg",
+    "status": "available",
+    "path": "../images/e49681c6fa2d7c9c046d1f003015cecf653875eb4fd580129d87463410820fc6.bin",
+    "sha256": "e49681c6fa2d7c9c046d1f003015cecf653875eb4fd580129d87463410820fc6",
+    "bytes": 51777,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Anders_Golding_London2012.jpg",
+    "captured_at": "2026-10-22T14:08:00.708318+00:00",
+    "http_headers": {
+      "ETag": "602cc61f0904f4e1a0ad2f11c883f401",
+      "Last-Modified": "Tue, 18 Apr 2017 06:28:37 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/80/Malavisi_Rieti_2013.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Malavisi_Rieti_2013.jpg",
+    "status": "available",
+    "path": "../images/604b29bca38f53a058c318b6a8e3522be0eca2130218fc5da9015f1e3b9f656e.bin",
+    "sha256": "604b29bca38f53a058c318b6a8e3522be0eca2130218fc5da9015f1e3b9f656e",
+    "bytes": 51635,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Malavisi_Rieti_2013.jpg",
+    "captured_at": "2026-10-22T13:44:41.395791+00:00",
+    "http_headers": {
+      "ETag": "341c0ab834a447b6dbfb0568c91b4083",
+      "Last-Modified": "Fri, 10 Oct 2014 18:20:30 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/81/2012_IAAF_World_Indoor_by_Mardetanha3283_%28cropped%29.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/2012_IAAF_World_Indoor_by_Mardetanha3283_%28cropped%29.JPG",
+    "status": "available",
+    "path": "../images/61c1c876b7403ca55e3680e39ef0497ea52863d21d15016b48e6bcd60109b8ca.bin",
+    "sha256": "61c1c876b7403ca55e3680e39ef0497ea52863d21d15016b48e6bcd60109b8ca",
+    "bytes": 255181,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/2012_IAAF_World_Indoor_by_Mardetanha3283_%28cropped%29.JPG",
+    "captured_at": "2026-10-22T14:09:48.247714+00:00",
+    "http_headers": {
+      "ETag": "75a9a885fa1af7392b0b958ed95b49f8",
+      "Last-Modified": "Thu, 09 Mar 2017 22:17:31 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/84/Cecil_Stanley_Harrison_gravestone%2C_Jersey.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Cecil_Stanley_Harrison_gravestone%2C_Jersey.JPG",
+    "status": "available",
+    "path": "../images/2ab34143538bbbf7a21b6a8f7e39770eb1d6323487806ec1aa1088e540461867.bin",
+    "sha256": "2ab34143538bbbf7a21b6a8f7e39770eb1d6323487806ec1aa1088e540461867",
+    "bytes": 613113,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Cecil_Stanley_Harrison_gravestone%2C_Jersey.JPG",
+    "captured_at": "2026-10-22T14:12:00.007653+00:00",
+    "http_headers": {
+      "ETag": "464a7084357daeacafb27ca0e7069f08",
+      "Last-Modified": "Tue, 07 Oct 2014 21:40:51 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/87/Alfred_A._H%C3%A4sler.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Alfred_A._H%C3%A4sler.jpg",
+    "status": "available",
+    "path": "../images/3ab77cd8c156ea2de3ddbed13b3730dc2b6539d5f3bf017ce98088841cc967b0.bin",
+    "sha256": "3ab77cd8c156ea2de3ddbed13b3730dc2b6539d5f3bf017ce98088841cc967b0",
+    "bytes": 202460,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Alfred_A._H%C3%A4sler.jpg",
+    "captured_at": "2026-10-22T14:07:37.567047+00:00",
+    "http_headers": {
+      "ETag": "70067307e89129fed8fadf86c7757afa",
+      "Last-Modified": "Mon, 13 Aug 2018 23:16:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/89/Alex_Genest_2013.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Alex_Genest_2013.jpg",
+    "status": "available",
+    "path": "../images/abf3454d41c1582df127a1f9e7f82db7d685b089d38e725799793ddd91d8ab91.bin",
+    "sha256": "abf3454d41c1582df127a1f9e7f82db7d685b089d38e725799793ddd91d8ab91",
+    "bytes": 241707,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Alex_Genest_2013.jpg",
+    "captured_at": "2026-10-22T13:41:46.221180+00:00",
+    "http_headers": {
+      "ETag": "4cf871a97aad429221b395170c124a25",
+      "Last-Modified": "Sun, 08 May 2016 10:19:53 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8a/%CE%91%CE%BD%CF%84%CF%8E%CE%BD%CE%B7%CF%82_%CE%A3%CE%B1%CE%BC%CE%B1%CF%81%CE%AC%CF%82_-_%CE%A3%CF%85%CE%BD%CE%B5%CE%B4%CF%81%CE%AF%CE%B1%CF%83%CE%B7_%CE%9A%CE%BF%CE%B9%CE%BD%CE%BF%CE%B2%CE%BF%CF%85%CE%BB%CE%B5%CF%85%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9F%CE%BC%CE%AC%CE%B4%CE%B1%CF%82_24-07-2012_7732412732.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%CE%91%CE%BD%CF%84%CF%8E%CE%BD%CE%B7%CF%82_%CE%A3%CE%B1%CE%BC%CE%B1%CF%81%CE%AC%CF%82_-_%CE%A3%CF%85%CE%BD%CE%B5%CE%B4%CF%81%CE%AF%CE%B1%CF%83%CE%B7_%CE%9A%CE%BF%CE%B9%CE%BD%CE%BF%CE%B2%CE%BF%CF%85%CE%BB%CE%B5%CF%85%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9F%CE%BC%CE%AC%CE%B4%CE%B1%CF%82_24-07-2012_7732412732.jpg",
+    "status": "available",
+    "path": "../images/3bdd83d34fc42d672f813921e52aa72c962c2f46f0b904a87c175778b580d394.bin",
+    "sha256": "3bdd83d34fc42d672f813921e52aa72c962c2f46f0b904a87c175778b580d394",
+    "bytes": 677639,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/%CE%91%CE%BD%CF%84%CF%8E%CE%BD%CE%B7%CF%82_%CE%A3%CE%B1%CE%BC%CE%B1%CF%81%CE%AC%CF%82_-_%CE%A3%CF%85%CE%BD%CE%B5%CE%B4%CF%81%CE%AF%CE%B1%CF%83%CE%B7_%CE%9A%CE%BF%CE%B9%CE%BD%CE%BF%CE%B2%CE%BF%CF%85%CE%BB%CE%B5%CF%85%CF%84%CE%B9%CE%BA%CE%AE%CF%82_%CE%9F%CE%BC%CE%AC%CE%B4%CE%B1%CF%82_24-07-2012_7732412732.jpg",
+    "captured_at": "2026-10-22T14:08:49.581765+00:00",
+    "http_headers": {
+      "ETag": "4eb70d605cecd0e4f8b977a09355bf96",
+      "Last-Modified": "Mon, 09 Nov 2015 10:56:45 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8a/Anja_Lechner_bei_ihrem_Konzert_mit_Fran%C3%A7ois_Couturier_in_der_Stadtkirche_Darmstadt_am_11._Oktober_2015.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Anja_Lechner_bei_ihrem_Konzert_mit_Fran%C3%A7ois_Couturier_in_der_Stadtkirche_Darmstadt_am_11._Oktober_2015.jpg",
+    "status": "available",
+    "path": "../images/b2ef01217a38ae854e88eac93c504698679bdf9d182d52cafc8c141f52e1381f.bin",
+    "sha256": "b2ef01217a38ae854e88eac93c504698679bdf9d182d52cafc8c141f52e1381f",
+    "bytes": 4558433,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Anja_Lechner_bei_ihrem_Konzert_mit_Fran%C3%A7ois_Couturier_in_der_Stadtkirche_Darmstadt_am_11._Oktober_2015.jpg",
+    "captured_at": "2026-10-22T13:42:36.784701+00:00",
+    "http_headers": {
+      "ETag": "b66f6e9dc8396fc1330afc91e76844fa",
+      "Last-Modified": "Sun, 08 Oct 2017 13:26:52 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8a/Ari_Rath-4224_%2810470447586%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Ari_Rath-4224_%2810470447586%29.jpg",
+    "status": "available",
+    "path": "../images/6f3da88917412772d9fd323960c32fe53808800d1ddf1b422d0be979bf1179e8.bin",
+    "sha256": "6f3da88917412772d9fd323960c32fe53808800d1ddf1b422d0be979bf1179e8",
+    "bytes": 150358,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Ari_Rath-4224_%2810470447586%29.jpg",
+    "captured_at": "2026-10-22T14:11:17.295188+00:00",
+    "http_headers": {
+      "ETag": "819bf8bac9f9efeb2fe5f300b019f8f2",
+      "Last-Modified": "Mon, 11 May 2015 07:24:43 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8b/Le_portrait_bernois%2C_Vol._2%2C_No._15.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Le_portrait_bernois%2C_Vol._2%2C_No._15.jpg",
+    "status": "available",
+    "path": "../images/236b73828a415918c187fb1e206a34c1186c80e971d0c7f946b44cca9a9e5622.bin",
+    "sha256": "236b73828a415918c187fb1e206a34c1186c80e971d0c7f946b44cca9a9e5622",
+    "bytes": 132621,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Le_portrait_bernois%2C_Vol._2%2C_No._15.jpg",
+    "captured_at": "2026-10-22T14:05:58.612920+00:00",
+    "http_headers": {
+      "ETag": "b3e02b70731e299ebcfccd9bda80fea4",
+      "Last-Modified": "Fri, 10 Oct 2014 16:40:33 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8c/Afonso_Gon%C3%A7alves_Baldaia_-_Padr%C3%A3o_dos_Descobrimentos.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Afonso_Gon%C3%A7alves_Baldaia_-_Padr%C3%A3o_dos_Descobrimentos.png",
+    "status": "available",
+    "path": "../images/4761fea500076fabb5102de5b6bf95de618f0007ca18bfd707675e74a9681e29.bin",
+    "sha256": "4761fea500076fabb5102de5b6bf95de618f0007ca18bfd707675e74a9681e29",
+    "bytes": 82941,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Afonso_Gon%C3%A7alves_Baldaia_-_Padr%C3%A3o_dos_Descobrimentos.png",
+    "captured_at": "2026-10-22T14:06:55.703750+00:00",
+    "http_headers": {
+      "ETag": "8a49a1a28a262e81df5b73cb288df76a",
+      "Last-Modified": "Wed, 20 Jul 2016 02:29:54 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8c/Frico_Kafenda.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Frico_Kafenda.jpg",
+    "status": "available",
+    "path": "../images/92051c2c7b2846c5ef5e14d62ef06f11adacc8a345d77c91c0ce13519860186a.bin",
+    "sha256": "92051c2c7b2846c5ef5e14d62ef06f11adacc8a345d77c91c0ce13519860186a",
+    "bytes": 180525,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Frico_Kafenda.jpg",
+    "captured_at": "2026-10-22T13:46:05.118937+00:00",
+    "http_headers": {
+      "ETag": "91c01510f088d5ed5a42fadea8cc7780",
+      "Last-Modified": "Wed, 08 Oct 2014 00:24:26 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Adriano_de_Paiva_Brand%C3%A3o_%28Conde_de_Campo_Belo%29_-_Jos%C3%A9_Alberto_Nunes.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Adriano_de_Paiva_Brand%C3%A3o_%28Conde_de_Campo_Belo%29_-_Jos%C3%A9_Alberto_Nunes.png",
+    "status": "available",
+    "path": "../images/342b5160721246d270827a8ec33230809bc839f889bda9940dbe86888b4b7457.bin",
+    "sha256": "342b5160721246d270827a8ec33230809bc839f889bda9940dbe86888b4b7457",
+    "bytes": 161806,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Adriano_de_Paiva_Brand%C3%A3o_%28Conde_de_Campo_Belo%29_-_Jos%C3%A9_Alberto_Nunes.png",
+    "captured_at": "2026-10-22T14:06:52.387553+00:00",
+    "http_headers": {
+      "ETag": "aa4d663f3293e61bf84a969d465cfb0a",
+      "Last-Modified": "Wed, 14 Sep 2016 00:12:00 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8e/Humberto_Elgueta%2C_Los_Sports%2C_1925-06-05_%28117%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Humberto_Elgueta%2C_Los_Sports%2C_1925-06-05_%28117%29.jpg",
+    "status": "available",
+    "path": "../images/26495d3df507cd6f8a6ca24c266e3dc155369fb6ae91c9aded5f415ae37f8a64.bin",
+    "sha256": "26495d3df507cd6f8a6ca24c266e3dc155369fb6ae91c9aded5f415ae37f8a64",
+    "bytes": 25242,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Humberto_Elgueta%2C_Los_Sports%2C_1925-06-05_%28117%29.jpg",
+    "captured_at": "2026-10-22T13:46:15.883912+00:00",
+    "http_headers": {
+      "ETag": "cacc855ac04ab37c2a791e3b08e529cd",
+      "Last-Modified": "Sat, 05 Aug 2023 16:36:34 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8f/Anika_2013_bei_oberhausenole_2013-12-22_19-05.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Anika_2013_bei_oberhausenole_2013-12-22_19-05.jpg",
+    "status": "available",
+    "path": "../images/e99b797680a55881d30738f789ad7b1e1173b072db06c8f8784919e8aa390381.bin",
+    "sha256": "e99b797680a55881d30738f789ad7b1e1173b072db06c8f8784919e8aa390381",
+    "bytes": 40060,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Anika_2013_bei_oberhausenole_2013-12-22_19-05.jpg",
+    "captured_at": "2026-10-22T13:42:32.684048+00:00",
+    "http_headers": {
+      "ETag": "96b23b7413901785c4a5b774a8e15cc0",
+      "Last-Modified": "Tue, 07 Oct 2014 19:36:52 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/91/Cover_of_Flying_Lesbian_by_Del_Britt_-_Illustration_by_Fred_Fixler_-_Brandon_House_1963.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Cover_of_Flying_Lesbian_by_Del_Britt_-_Illustration_by_Fred_Fixler_-_Brandon_House_1963.jpg",
+    "status": "available",
+    "path": "../images/f0b608aedd69864fa47085534e5d9bd299e10701e1e828699c46604c0f394528.bin",
+    "sha256": "f0b608aedd69864fa47085534e5d9bd299e10701e1e828699c46604c0f394528",
+    "bytes": 103394,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Cover_of_Flying_Lesbian_by_Del_Britt_-_Illustration_by_Fred_Fixler_-_Brandon_House_1963.jpg",
+    "captured_at": "2026-10-22T13:44:11.572858+00:00",
+    "http_headers": {
+      "ETag": "a04c9bff5c06a5b2810733bc1ee2418f",
+      "Last-Modified": "Wed, 16 Sep 2015 08:28:25 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/92/Schockenhoff%2C_Andreas-0311.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Schockenhoff%2C_Andreas-0311.jpg",
+    "status": "available",
+    "path": "../images/e25a7a3e0a994362b516996120c2abb76890b698e1d185b6bd2bab629df0064f.bin",
+    "sha256": "e25a7a3e0a994362b516996120c2abb76890b698e1d185b6bd2bab629df0064f",
+    "bytes": 4166562,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Schockenhoff%2C_Andreas-0311.jpg",
+    "captured_at": "2026-10-22T14:08:14.284081+00:00",
+    "http_headers": {
+      "ETag": "333930949e393de7f9bef408a500dae8",
+      "Last-Modified": "Wed, 08 Oct 2014 07:55:07 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/94/Mannio_2010-06-04_Bislett_Games.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Mannio_2010-06-04_Bislett_Games.jpg",
+    "status": "available",
+    "path": "../images/91d3a054dbee1b13191794ddc400c954729d2221eaec121cb72574c0f84d1e41.bin",
+    "sha256": "91d3a054dbee1b13191794ddc400c954729d2221eaec121cb72574c0f84d1e41",
+    "bytes": 1689594,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Mannio_2010-06-04_Bislett_Games.jpg",
+    "captured_at": "2026-10-22T13:45:28.347986+00:00",
+    "http_headers": {
+      "ETag": "59bffd2c77b5b0d7ca69690e95a55dc9",
+      "Last-Modified": "Thu, 25 Jun 2015 17:42:16 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/95/CARDINAL_ANGELUS.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/CARDINAL_ANGELUS.JPG",
+    "status": "available",
+    "path": "../images/348313de44b1d623b92a90a25f750d0002e9ee43de2f3d0c5bb96200b9b82fcb.bin",
+    "sha256": "348313de44b1d623b92a90a25f750d0002e9ee43de2f3d0c5bb96200b9b82fcb",
+    "bytes": 21560,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/CARDINAL_ANGELUS.JPG",
+    "captured_at": "2026-10-22T14:04:53.598428+00:00",
+    "http_headers": {
+      "ETag": "abdf9384224062fa13647861c8c4f811",
+      "Last-Modified": "Tue, 07 Oct 2014 21:24:03 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/95/Grabst%C3%A4tte_Andreas_Matthae.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Grabst%C3%A4tte_Andreas_Matthae.jpg",
+    "status": "available",
+    "path": "../images/91405e8ccd75a03d7614fd1df5b5b41e6d0eff3b4c5eab32250dd887b5c6ee12.bin",
+    "sha256": "91405e8ccd75a03d7614fd1df5b5b41e6d0eff3b4c5eab32250dd887b5c6ee12",
+    "bytes": 6927146,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Grabst%C3%A4tte_Andreas_Matthae.jpg",
+    "captured_at": "2026-10-22T14:08:09.585164+00:00",
+    "http_headers": {
+      "ETag": "f531ef04c01e81043dad4a853c52ab3c",
+      "Last-Modified": "Tue, 09 May 2023 16:10:24 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/95/Rhythmic_gymnastics_at_the_2012_Summer_Olympics_%287915015836%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rhythmic_gymnastics_at_the_2012_Summer_Olympics_%287915015836%29.jpg",
+    "status": "available",
+    "path": "../images/4027783f0c2a96a26360d1138a683a5861b3f3d29b54bbe70cb75dc73c044dee.bin",
+    "sha256": "4027783f0c2a96a26360d1138a683a5861b3f3d29b54bbe70cb75dc73c044dee",
+    "bytes": 4311421,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Rhythmic_gymnastics_at_the_2012_Summer_Olympics_%287915015836%29.jpg",
+    "captured_at": "2026-10-22T13:47:13.337926+00:00",
+    "http_headers": {
+      "ETag": "1ad70c863af894e214c2c882835f0503",
+      "Last-Modified": "Wed, 08 Oct 2014 07:20:46 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/96/Angels_general_manager_Billy_Eppler_%2823573425971%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Angels_general_manager_Billy_Eppler_%2823573425971%29.jpg",
+    "status": "available",
+    "path": "../images/4642fb16ffc95edf9ea523d10aeaed9ca65110bc7477cb18a4790a2c8ac9aaaa.bin",
+    "sha256": "4642fb16ffc95edf9ea523d10aeaed9ca65110bc7477cb18a4790a2c8ac9aaaa",
+    "bytes": 4849626,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Angels_general_manager_Billy_Eppler_%2823573425971%29.jpg",
+    "captured_at": "2026-10-22T14:09:04.197852+00:00",
+    "http_headers": {
+      "ETag": "2b3017549690baa59dbc63f4bdde9483",
+      "Last-Modified": "Mon, 21 Dec 2015 09:54:23 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/97/Askari_Mohammadian.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Askari_Mohammadian.jpg",
+    "status": "available",
+    "path": "../images/04847fe8611ecf0e8afaf0bb59a273285c496713f52a331e41a933540aa49d79.bin",
+    "sha256": "04847fe8611ecf0e8afaf0bb59a273285c496713f52a331e41a933540aa49d79",
+    "bytes": 418505,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Askari_Mohammadian.jpg",
+    "captured_at": "2026-10-22T13:43:16.376626+00:00",
+    "http_headers": {
+      "ETag": "5947a347e09d86f43d1b2d93781ac4cd",
+      "Last-Modified": "Fri, 07 Jul 2017 05:24:28 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/98/Charles_Caryl_Coleman_by_Oliver_Ingraham_Lay_%28ca._1876%29_bw.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Charles_Caryl_Coleman_by_Oliver_Ingraham_Lay_%28ca._1876%29_bw.jpg",
+    "status": "available",
+    "path": "../images/f4b87c9c7b2259e500b73cb186b7776482b7190c1321cce5a2d898b2782c0692.bin",
+    "sha256": "f4b87c9c7b2259e500b73cb186b7776482b7190c1321cce5a2d898b2782c0692",
+    "bytes": 698816,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Charles_Caryl_Coleman_by_Oliver_Ingraham_Lay_%28ca._1876%29_bw.jpg",
+    "captured_at": "2026-10-22T14:12:04.049750+00:00",
+    "http_headers": {
+      "ETag": "dcc42c4dae546632f5cd8950e4101048",
+      "Last-Modified": "Fri, 01 Jul 2016 21:41:46 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/99/ChrisMassogliaSep09.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/ChrisMassogliaSep09.jpg",
+    "status": "available",
+    "path": "../images/82d350551427aee97fafa23b4d04c0e9da403212c97d1b8b6147edfc4e10b925.bin",
+    "sha256": "82d350551427aee97fafa23b4d04c0e9da403212c97d1b8b6147edfc4e10b925",
+    "bytes": 231580,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/ChrisMassogliaSep09.jpg",
+    "captured_at": "2026-10-22T14:09:36.778665+00:00",
+    "http_headers": {
+      "ETag": "7a24935b6d69ad10280734044c8f389d",
+      "Last-Modified": "Tue, 07 Oct 2014 21:48:20 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9b/Osaka07_D6A_M200M_nearfinish.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Osaka07_D6A_M200M_nearfinish.jpg",
+    "status": "available",
+    "path": "../images/a15273fd2b2009c7f03ef11e0d98713b1e0242fd8f90818c33102023fb6552ef.bin",
+    "sha256": "a15273fd2b2009c7f03ef11e0d98713b1e0242fd8f90818c33102023fb6552ef",
+    "bytes": 620794,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Osaka07_D6A_M200M_nearfinish.jpg",
+    "captured_at": "2026-10-22T13:42:12.754273+00:00",
+    "http_headers": {
+      "ETag": "e2da77c4341892ac3e88c589ca684045",
+      "Last-Modified": "Wed, 08 Oct 2014 05:52:36 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ashley_Henderson_runner.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ashley_Henderson_runner.jpg",
+    "status": "available",
+    "path": "../images/dc2c92199a6cbb243fa7a3a6ed144846f0d901438ec96d14e070c0bfe618af44.bin",
+    "sha256": "dc2c92199a6cbb243fa7a3a6ed144846f0d901438ec96d14e070c0bfe618af44",
+    "bytes": 2925511,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ashley_Henderson_runner.jpg",
+    "captured_at": "2026-10-22T14:11:33.490822+00:00",
+    "http_headers": {
+      "ETag": "7ab6f2d57e616f6b87650c2283847fce",
+      "Last-Modified": "Wed, 30 May 2018 15:01:52 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9e/Matteo_Martino.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Matteo_Martino.jpg",
+    "status": "available",
+    "path": "../images/df61fc21073ba441fc45b5681c4ff5665bb528543017992aecb92db21f1d855d.bin",
+    "sha256": "df61fc21073ba441fc45b5681c4ff5665bb528543017992aecb92db21f1d855d",
+    "bytes": 2524397,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Matteo_Martino.jpg",
+    "captured_at": "2026-10-22T14:09:52.744479+00:00",
+    "http_headers": {
+      "ETag": "c5abd10fcdc9341f326c33c94ea63cc8",
+      "Last-Modified": "Sat, 11 Oct 2014 00:52:29 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giulio_Rinaldi_1961.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giulio_Rinaldi_1961.jpg",
+    "status": "available",
+    "path": "../images/6c0afe42b86eaf62d479c6a502151419859cb4e17436592941d513ba462d6e7c.bin",
+    "sha256": "6c0afe42b86eaf62d479c6a502151419859cb4e17436592941d513ba462d6e7c",
+    "bytes": 209820,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Giulio_Rinaldi_1961.jpg",
+    "captured_at": "2026-10-22T14:06:21.671497+00:00",
+    "http_headers": {
+      "ETag": "6e7c7aa4a61add8e23ea169ab812703b",
+      "Last-Modified": "Mon, 28 Aug 2017 03:25:36 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a0/Ashikaga_Mochijuji_color.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Ashikaga_Mochijuji_color.jpg",
+    "status": "available",
+    "path": "../images/a9c4479772a94e3bed22f425f51daf3a5794e94db93f50360cd7f9d7fd0dc973.bin",
+    "sha256": "a9c4479772a94e3bed22f425f51daf3a5794e94db93f50360cd7f9d7fd0dc973",
+    "bytes": 135040,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Ashikaga_Mochijuji_color.jpg",
+    "captured_at": "2026-10-22T13:45:45.374525+00:00",
+    "http_headers": {
+      "ETag": "cdd40d38e8aa3cd6549a62626b50f23a",
+      "Last-Modified": "Tue, 07 Oct 2014 19:42:44 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/2022-23_Ahed_vs_Shabab_Sahel_07_%28Ahmad_Zreik%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/2022-23_Ahed_vs_Shabab_Sahel_07_%28Ahmad_Zreik%29.jpg",
+    "status": "available",
+    "path": "../images/81444926f22a5df21344a223eb8841c44e0514cc4308d88035d687c9778bb02c.bin",
+    "sha256": "81444926f22a5df21344a223eb8841c44e0514cc4308d88035d687c9778bb02c",
+    "bytes": 219164,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/2022-23_Ahed_vs_Shabab_Sahel_07_%28Ahmad_Zreik%29.jpg",
+    "captured_at": "2026-10-22T14:06:59.250072+00:00",
+    "http_headers": {
+      "ETag": "bf2277c861f715b17d77c293351efaaf",
+      "Last-Modified": "Tue, 04 Oct 2022 09:33:39 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Carl_Robert_Mannerheim.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Carl_Robert_Mannerheim.jpg",
+    "status": "available",
+    "path": "../images/7462d9d2c5ca24992b05c5b3931dde85b151cd9e8c63a5ee1c25cb904bbd463c.bin",
+    "sha256": "7462d9d2c5ca24992b05c5b3931dde85b151cd9e8c63a5ee1c25cb904bbd463c",
+    "bytes": 204386,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Carl_Robert_Mannerheim.jpg",
+    "captured_at": "2026-10-22T14:05:46.969583+00:00",
+    "http_headers": {
+      "ETag": "4606e6f759c354518a67baf1de8a6640",
+      "Last-Modified": "Tue, 07 Oct 2014 21:26:08 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a3/Portret_van_kardinaal_Antonio_Bichi_Effigies_Cardinalium_nunc_viventium_%28serietitel%29%2C_RP-P-1909-4371.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Portret_van_kardinaal_Antonio_Bichi_Effigies_Cardinalium_nunc_viventium_%28serietitel%29%2C_RP-P-1909-4371.jpg",
+    "status": "available",
+    "path": "../images/523641971e39d516ce53aea5fbc58c2f9845be8df056eae3872d3f281fdc891d.bin",
+    "sha256": "523641971e39d516ce53aea5fbc58c2f9845be8df056eae3872d3f281fdc891d",
+    "bytes": 5788600,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Portret_van_kardinaal_Antonio_Bichi_Effigies_Cardinalium_nunc_viventium_%28serietitel%29%2C_RP-P-1909-4371.jpg",
+    "captured_at": "2026-10-22T14:11:06.435184+00:00",
+    "http_headers": {
+      "ETag": "4d8d449f0cf735b00f0dfadbdb08cbbc",
+      "Last-Modified": "Sun, 29 Dec 2019 16:27:26 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a4/Albert_Samuel_Gatschet_by_Benjamin_F._Reimer.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Albert_Samuel_Gatschet_by_Benjamin_F._Reimer.png",
+    "status": "available",
+    "path": "../images/cf5f486ee66e3b8c97c6de0b16f0dd789d84f919c56820debce8f7126fbc477b.bin",
+    "sha256": "cf5f486ee66e3b8c97c6de0b16f0dd789d84f919c56820debce8f7126fbc477b",
+    "bytes": 2844624,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Albert_Samuel_Gatschet_by_Benjamin_F._Reimer.png",
+    "captured_at": "2026-10-22T14:07:11.139503+00:00",
+    "http_headers": {
+      "ETag": "95e1d0644ef71594897a633adf2335f9",
+      "Last-Modified": "Wed, 27 Sep 2023 23:50:37 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/a4/Arthurkylander.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Arthurkylander.jpg",
+    "status": "available",
+    "path": "../images/064ae3dd75f903102a31f727136d447f410f5342788c58636ac6ebed7d8042f3.bin",
+    "sha256": "064ae3dd75f903102a31f727136d447f410f5342788c58636ac6ebed7d8042f3",
+    "bytes": 180926,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Arthurkylander.jpg",
+    "captured_at": "2026-10-22T14:08:42.066889+00:00",
+    "http_headers": {
+      "ETag": "73f2b7fb0a0d5b7d8b1d0e2e0ecfcd58",
+      "Last-Modified": "Tue, 07 Oct 2014 19:50:58 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/Aile_Asszonyi_2012_%C2%A9_Priit_Palomets.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Aile_Asszonyi_2012_%C2%A9_Priit_Palomets.jpg",
+    "status": "available",
+    "path": "../images/08a2db8b927ee11614696a673e0f21009775b4a7555c29fef08a2cf9c64c6180.bin",
+    "sha256": "08a2db8b927ee11614696a673e0f21009775b4a7555c29fef08a2cf9c64c6180",
+    "bytes": 3565168,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Aile_Asszonyi_2012_%C2%A9_Priit_Palomets.jpg",
+    "captured_at": "2026-10-22T13:41:25.944579+00:00",
+    "http_headers": {
+      "ETag": "d0e3b6a10f03ad67c0883fba981ad0dc",
+      "Last-Modified": "Tue, 07 Oct 2014 19:10:25 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ac/Cathy_Ubels_%28EVP%29%2C_Bestanddeelnr_932-3182.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Cathy_Ubels_%28EVP%29%2C_Bestanddeelnr_932-3182.jpg",
+    "status": "available",
+    "path": "../images/6d9a7849ad1f8dd170a66377c4981d9633448587bf3c6662475986a4e46b3a55.bin",
+    "sha256": "6d9a7849ad1f8dd170a66377c4981d9633448587bf3c6662475986a4e46b3a55",
+    "bytes": 1183114,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Cathy_Ubels_%28EVP%29%2C_Bestanddeelnr_932-3182.jpg",
+    "captured_at": "2026-10-22T14:05:54.885864+00:00",
+    "http_headers": {
+      "ETag": "52d19b57003fecddba2896d21e4e2fb6",
+      "Last-Modified": "Sun, 11 Feb 2018 08:33:27 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ad/2018-06-10_ZDF_Fernsehgarten_Anna_Maria_Zimmermann-9783.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/2018-06-10_ZDF_Fernsehgarten_Anna_Maria_Zimmermann-9783.jpg",
+    "status": "available",
+    "path": "../images/5353fddb885f05b291c029584f820f1015395e81eaa5c2bb61d3fb7aeba32a1d.bin",
+    "sha256": "5353fddb885f05b291c029584f820f1015395e81eaa5c2bb61d3fb7aeba32a1d",
+    "bytes": 2549929,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/2018-06-10_ZDF_Fernsehgarten_Anna_Maria_Zimmermann-9783.jpg",
+    "captured_at": "2026-10-22T13:42:41.126908+00:00",
+    "http_headers": {
+      "ETag": "ba33640b5afb60d9d8b05a84425acbdc",
+      "Last-Modified": "Fri, 29 Jun 2018 20:15:40 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ad/Anne_Ridler_%26_Vivian_Ridler_%2829119994464%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Anne_Ridler_%26_Vivian_Ridler_%2829119994464%29.jpg",
+    "status": "available",
+    "path": "../images/e2200c3cdff3e014b05941baee90d20a9a4c61af27604932517a5badeb8108d6.bin",
+    "sha256": "e2200c3cdff3e014b05941baee90d20a9a4c61af27604932517a5badeb8108d6",
+    "bytes": 61794,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Anne_Ridler_%26_Vivian_Ridler_%2829119994464%29.jpg",
+    "captured_at": "2026-10-22T13:42:44.565002+00:00",
+    "http_headers": {
+      "ETag": "4cd2b54c7dc91e3f41a314b1ba08750f",
+      "Last-Modified": "Wed, 07 Nov 2018 13:25:54 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bakhtiyar_Akhmedov%2C_December_2018.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bakhtiyar_Akhmedov%2C_December_2018.jpg",
+    "status": "available",
+    "path": "../images/c7feebbf6707d54942af502a4cfe61e41b3a6ab4646af9100f252e58f2aea12b.bin",
+    "sha256": "c7feebbf6707d54942af502a4cfe61e41b3a6ab4646af9100f252e58f2aea12b",
+    "bytes": 204636,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bakhtiyar_Akhmedov%2C_December_2018.jpg",
+    "captured_at": "2026-10-22T14:05:38.845785+00:00",
+    "http_headers": {
+      "ETag": "dd3a767305a539c4c6f17fa2683a1657",
+      "Last-Modified": "Sat, 14 Aug 2021 17:44:55 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/a/af/Fiona_May%2C_Olympic_Games_and_world_championship_athlete_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Fiona_May%2C_Olympic_Games_and_world_championship_athlete_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/24a607aa6cee3ebfd90e1ae351f40436da900e202af9b64b2e5cd2cee5952f21.bin",
+    "sha256": "24a607aa6cee3ebfd90e1ae351f40436da900e202af9b64b2e5cd2cee5952f21",
+    "bytes": 178641,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Fiona_May%2C_Olympic_Games_and_world_championship_athlete_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T14:12:19.382220+00:00",
+    "http_headers": {
+      "ETag": "97c2bd2fb06760fd3541e2b6da1411ab",
+      "Last-Modified": "Mon, 23 May 2016 03:38:42 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b1/800m_men_final_Helsinki_2012.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/800m_men_final_Helsinki_2012.jpg",
+    "status": "available",
+    "path": "../images/9ed7c608d4999f0bf3590195eb93896d1fc2dcadfe4e2a3c2b9078fb60bf122b.bin",
+    "sha256": "9ed7c608d4999f0bf3590195eb93896d1fc2dcadfe4e2a3c2b9078fb60bf122b",
+    "bytes": 53434,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/800m_men_final_Helsinki_2012.jpg",
+    "captured_at": "2026-10-22T13:45:24.057524+00:00",
+    "http_headers": {
+      "ETag": "cb1b7a77d953ceeb0c4e3f5679024bcf",
+      "Last-Modified": "Tue, 07 Oct 2014 20:29:26 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b2/Alexia_Klassika4.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Alexia_Klassika4.jpg",
+    "status": "available",
+    "path": "../images/2728abeac0e7e58143d9c55b4d4411ae2baaa1f6860bf7d081bd4258b3289a00.bin",
+    "sha256": "2728abeac0e7e58143d9c55b4d4411ae2baaa1f6860bf7d081bd4258b3289a00",
+    "bytes": 186928,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Alexia_Klassika4.jpg",
+    "captured_at": "2026-10-22T13:42:04.611321+00:00",
+    "http_headers": {
+      "ETag": "4553243f09bea89e39e7472554aa0d42",
+      "Last-Modified": "Sun, 23 Oct 2016 12:40:35 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b2/Angel_Chelala_Men_400_m_French_Athletics_Championships_2013_t180101_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Angel_Chelala_Men_400_m_French_Athletics_Championships_2013_t180101_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/6b16a5cc699ef014edec89c5217556eb349b2a8f4493a7697956697546bb272c.bin",
+    "sha256": "6b16a5cc699ef014edec89c5217556eb349b2a8f4493a7697956697546bb272c",
+    "bytes": 1322109,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Angel_Chelala_Men_400_m_French_Athletics_Championships_2013_t180101_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T13:45:20.332281+00:00",
+    "http_headers": {
+      "ETag": "0ff8ca106866dc305eb40bc428530d68",
+      "Last-Modified": "Sun, 01 Jul 2018 18:39:27 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b2/PLM12_67_IMSA_Performance_Porsche_Anthony_Pons.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/PLM12_67_IMSA_Performance_Porsche_Anthony_Pons.jpg",
+    "status": "available",
+    "path": "../images/41c048234bb42d32479726935e64ea8c02927c147d2b39f394c68d5115a11cd0.bin",
+    "sha256": "41c048234bb42d32479726935e64ea8c02927c147d2b39f394c68d5115a11cd0",
+    "bytes": 221349,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/PLM12_67_IMSA_Performance_Porsche_Anthony_Pons.jpg",
+    "captured_at": "2026-10-22T14:05:05.515718+00:00",
+    "http_headers": {
+      "ETag": "261147c902a5c91383c57e65b37648c1",
+      "Last-Modified": "Fri, 10 Oct 2014 22:30:00 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b4/La_Madonna_con_il_Bambino%2C_santi_e_angeli_by_Benedetto_Coda.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/La_Madonna_con_il_Bambino%2C_santi_e_angeli_by_Benedetto_Coda.jpg",
+    "status": "available",
+    "path": "../images/e53db3b9aaded30be8820b8ae6838ae6a3db6efbbd82117a1f35bb5717116444.bin",
+    "sha256": "e53db3b9aaded30be8820b8ae6838ae6a3db6efbbd82117a1f35bb5717116444",
+    "bytes": 346835,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/La_Madonna_con_il_Bambino%2C_santi_e_angeli_by_Benedetto_Coda.jpg",
+    "captured_at": "2026-10-22T13:43:35.863734+00:00",
+    "http_headers": {
+      "ETag": "f271f3b6249d1383a322b0ab2be31dce",
+      "Last-Modified": "Sat, 01 Oct 2016 11:08:07 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b6/Antoni_Brodowski.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Antoni_Brodowski.jpg",
+    "status": "available",
+    "path": "../images/3553497eec3ef638caf9c6031e931cf135654ea337a4d828aa1ef1c186d3a118.bin",
+    "sha256": "3553497eec3ef638caf9c6031e931cf135654ea337a4d828aa1ef1c186d3a118",
+    "bytes": 94782,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Antoni_Brodowski.jpg",
+    "captured_at": "2026-10-22T14:05:20.399683+00:00",
+    "http_headers": {
+      "ETag": "52f09b34c8a93bc29132ee406396a796",
+      "Last-Modified": "Mon, 31 Aug 2015 15:19:39 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b7/Inguna_Butane_in_Michael_Kors_FW_08_Collection.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Inguna_Butane_in_Michael_Kors_FW_08_Collection.jpg",
+    "status": "available",
+    "path": "../images/53e2346110b532bab8d2db5109a0ffad598b5779949cb74cdfe81884fbc56d1f.bin",
+    "sha256": "53e2346110b532bab8d2db5109a0ffad598b5779949cb74cdfe81884fbc56d1f",
+    "bytes": 171044,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Inguna_Butane_in_Michael_Kors_FW_08_Collection.jpg",
+    "captured_at": "2026-10-22T13:46:23.363549+00:00",
+    "http_headers": {
+      "ETag": "44cdfb26843f2371e06337b19eb94c39",
+      "Last-Modified": "Fri, 10 Oct 2014 17:06:41 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b7/P%C3%A1sztor_Bence.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/P%C3%A1sztor_Bence.jpg",
+    "status": "available",
+    "path": "../images/8c4a0b95cb37530570104a86cd0fdc7c458ae372ee8df02ad20dc281067f35d5.bin",
+    "sha256": "8c4a0b95cb37530570104a86cd0fdc7c458ae372ee8df02ad20dc281067f35d5",
+    "bytes": 2122125,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/P%C3%A1sztor_Bence.jpg",
+    "captured_at": "2026-10-22T14:08:59.614581+00:00",
+    "http_headers": {
+      "ETag": "d2d1d3a2066cc408ffaadb2c3af7f90d",
+      "Last-Modified": "Mon, 07 Mar 2016 14:20:58 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bb/AbeTadaaki.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/AbeTadaaki.jpg",
+    "status": "available",
+    "path": "../images/97dd56629585e2f9c99980602432f6479aed2403340e51eb0ff07d2bfb687ee7.bin",
+    "sha256": "97dd56629585e2f9c99980602432f6479aed2403340e51eb0ff07d2bfb687ee7",
+    "bytes": 131432,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/AbeTadaaki.jpg",
+    "captured_at": "2026-10-22T13:44:19.244212+00:00",
+    "http_headers": {
+      "ETag": "8a0b1a7127a3266d1a1c1e2828fdf99b",
+      "Last-Modified": "Tue, 07 Oct 2014 20:32:28 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/bc/Blason_famille_fr_de_Salignac_de_F%C3%A9nelon.svg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Blason_famille_fr_de_Salignac_de_F%C3%A9nelon.svg",
+    "status": "available",
+    "path": "../images/37dd4c3841652e53705d1846ab1a2685ed5ea930ba14f8eda69a8ce531840382.bin",
+    "sha256": "37dd4c3841652e53705d1846ab1a2685ed5ea930ba14f8eda69a8ce531840382",
+    "bytes": 941,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Blason_famille_fr_de_Salignac_de_F%C3%A9nelon.svg",
+    "captured_at": "2026-10-22T14:10:16.634510+00:00",
+    "http_headers": {
+      "ETag": "W/d66e3f925e652acf8af3670e14c76e1c",
+      "Last-Modified": "Thu, 28 Dec 2023 11:07:36 GMT",
+      "Content-Type": "image/svg+xml"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/b/be/Stamps_of_Uzbekistan%2C_2006-009.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Stamps_of_Uzbekistan%2C_2006-009.jpg",
+    "status": "available",
+    "path": "../images/e0736a0f91d36ed1eff55cb4a46d506f3c78cab1bcac595db8f66611a99e8a0b.bin",
+    "sha256": "e0736a0f91d36ed1eff55cb4a46d506f3c78cab1bcac595db8f66611a99e8a0b",
+    "bytes": 66182,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Stamps_of_Uzbekistan%2C_2006-009.jpg",
+    "captured_at": "2026-10-22T13:44:37.618752+00:00",
+    "http_headers": {
+      "ETag": "90a42e9f9cc4ffce8cc886c3c29d8563",
+      "Last-Modified": "Wed, 08 Oct 2014 10:06:08 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c0/Perugino%2C_Tondo_della_Vergine_col_Bambino_tra_due_sante_e_due_angeli.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Perugino%2C_Tondo_della_Vergine_col_Bambino_tra_due_sante_e_due_angeli.jpg",
+    "status": "available",
+    "path": "../images/1fb56007f39601774dce19b818af90734d3e818373bb0fda5fb9cd8c764e1d28.bin",
+    "sha256": "1fb56007f39601774dce19b818af90734d3e818373bb0fda5fb9cd8c764e1d28",
+    "bytes": 78732,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Perugino%2C_Tondo_della_Vergine_col_Bambino_tra_due_sante_e_due_angeli.jpg",
+    "captured_at": "2026-10-22T13:42:16.409512+00:00",
+    "http_headers": {
+      "ETag": "9c87f95a00e29ce5201ca7eaf2a3bb75",
+      "Last-Modified": "Fri, 10 Oct 2014 23:14:46 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mobley_Power.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mobley_Power.jpg",
+    "status": "available",
+    "path": "../images/cb4fb9ce19c83d1732d77e562094530dea8f3b4ff4b4e5bda000b25b282542af.bin",
+    "sha256": "cb4fb9ce19c83d1732d77e562094530dea8f3b4ff4b4e5bda000b25b282542af",
+    "bytes": 60868,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Mobley_Power.jpg",
+    "captured_at": "2026-10-22T13:46:01.279243+00:00",
+    "http_headers": {
+      "ETag": "4a76add1d1ffca85643499bf166a4111",
+      "Last-Modified": "Tue, 27 Jun 2017 08:53:41 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c6/Berlin-Sch%C3%B6neberg_bayrischer_platz_loewe_03.10.2011_15-04-22.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Berlin-Sch%C3%B6neberg_bayrischer_platz_loewe_03.10.2011_15-04-22.jpg",
+    "status": "available",
+    "path": "../images/d1f21d53e3d776ea21441aef04f681db204415f4d07854a9df04d70a9fe57754.bin",
+    "sha256": "d1f21d53e3d776ea21441aef04f681db204415f4d07854a9df04d70a9fe57754",
+    "bytes": 5588190,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Berlin-Sch%C3%B6neberg_bayrischer_platz_loewe_03.10.2011_15-04-22.jpg",
+    "captured_at": "2026-10-22T14:08:30.098095+00:00",
+    "http_headers": {
+      "ETag": "8a2e4387b703880835a95855949d9447",
+      "Last-Modified": "Mon, 02 Jan 2023 10:40:24 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c7/Portrait_of_Andress_Small_Floyd.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Portrait_of_Andress_Small_Floyd.jpg",
+    "status": "available",
+    "path": "../images/029ffc033ed83f86a931240d638cf4249e326f1a66ab632a0285007e11f0c5e4.bin",
+    "sha256": "029ffc033ed83f86a931240d638cf4249e326f1a66ab632a0285007e11f0c5e4",
+    "bytes": 458779,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Portrait_of_Andress_Small_Floyd.jpg",
+    "captured_at": "2026-10-22T13:42:20.033278+00:00",
+    "http_headers": {
+      "ETag": "a90b7f727a1f58ff12b88ce5fe3fa2a8",
+      "Last-Modified": "Thu, 09 Oct 2014 04:42:22 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c8/Andreas_Johansson.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Andreas_Johansson.jpg",
+    "status": "available",
+    "path": "../images/796a026c2f3d833ab6e47d28093a6eb8ff2a4e7989724d647ebbf017e61d1bc6.bin",
+    "sha256": "796a026c2f3d833ab6e47d28093a6eb8ff2a4e7989724d647ebbf017e61d1bc6",
+    "bytes": 71308,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Andreas_Johansson.jpg",
+    "captured_at": "2026-10-22T14:08:04.426929+00:00",
+    "http_headers": {
+      "ETag": "b83eab74d4927d179797f34adcb28f80",
+      "Last-Modified": "Wed, 08 Oct 2014 16:39:00 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/c9/Anthonie_Mirou_-_Extensive_Landscape_with_the_Rest_on_the_Flight_into_Egypt_-_WGA16046.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Anthonie_Mirou_-_Extensive_Landscape_with_the_Rest_on_the_Flight_into_Egypt_-_WGA16046.jpg",
+    "status": "available",
+    "path": "../images/b6e09fadd558f7e70895936b7b0d29f44cf1a8ae6c0494a67b93968c6d3510eb.bin",
+    "sha256": "b6e09fadd558f7e70895936b7b0d29f44cf1a8ae6c0494a67b93968c6d3510eb",
+    "bytes": 875778,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Anthonie_Mirou_-_Extensive_Landscape_with_the_Rest_on_the_Flight_into_Egypt_-_WGA16046.jpg",
+    "captured_at": "2026-10-22T14:05:16.663250+00:00",
+    "http_headers": {
+      "ETag": "0367b98269fd7a42095a5747baeaffc7",
+      "Last-Modified": "Tue, 16 Oct 2018 14:31:01 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ca/Alex_Gurney_cropped.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Alex_Gurney_cropped.jpg",
+    "status": "available",
+    "path": "../images/5faba7aa1f4dd95c2cee9529001d8767b9dcc0b98ba9feb21f29c71f52d65b1d.bin",
+    "sha256": "5faba7aa1f4dd95c2cee9529001d8767b9dcc0b98ba9feb21f29c71f52d65b1d",
+    "bytes": 34664,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Alex_Gurney_cropped.jpg",
+    "captured_at": "2026-10-22T13:44:44.858410+00:00",
+    "http_headers": {
+      "ETag": "85ee1532006e760150204bf57587ca44",
+      "Last-Modified": "Wed, 08 Oct 2014 03:15:15 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ca/Alireza_Rezaei.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Alireza_Rezaei.jpg",
+    "status": "available",
+    "path": "../images/d5d2e5a31eaf1e932cb90231104a082937471584e8938805c41a2e3b72a547a1.bin",
+    "sha256": "d5d2e5a31eaf1e932cb90231104a082937471584e8938805c41a2e3b72a547a1",
+    "bytes": 1306834,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Alireza_Rezaei.jpg",
+    "captured_at": "2026-10-22T14:07:48.089014+00:00",
+    "http_headers": {
+      "ETag": "cbc3bfe635c809697e5243c604904f3a",
+      "Last-Modified": "Wed, 08 Oct 2014 03:16:43 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ca/First_Reading_of_%27Tigers_Are_Coming%27%2C_by_Alan_Plater.tif": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/First_Reading_of_%27Tigers_Are_Coming%27%2C_by_Alan_Plater.tif",
+    "status": "available",
+    "path": "../images/1ec264b8bf3f187d47e57d30c174e1176bdda3ac0036987e172f9ddfa6e5aebf.bin",
+    "sha256": "1ec264b8bf3f187d47e57d30c174e1176bdda3ac0036987e172f9ddfa6e5aebf",
+    "bytes": 12622214,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/First_Reading_of_%27Tigers_Are_Coming%27%2C_by_Alan_Plater.tif",
+    "captured_at": "2026-10-22T14:10:05.843229+00:00",
+    "http_headers": {
+      "ETag": "85bf4caa152a445ef142fe5b12d8d005",
+      "Last-Modified": "Fri, 03 Jan 2020 21:59:50 GMT",
+      "Content-Type": "image/tiff"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ca/No-nb_bldsa_1c127.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/No-nb_bldsa_1c127.jpg",
+    "status": "available",
+    "path": "../images/cac9f1196dc23de637d800e9afbc107e7537427241ff9591d0ffab1e8774b6e1.bin",
+    "sha256": "cac9f1196dc23de637d800e9afbc107e7537427241ff9591d0ffab1e8774b6e1",
+    "bytes": 3180586,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/No-nb_bldsa_1c127.jpg",
+    "captured_at": "2026-10-22T14:08:34.189106+00:00",
+    "http_headers": {
+      "ETag": "af3c637e1c592aab5f95504719f0420a",
+      "Last-Modified": "Wed, 08 Oct 2014 12:15:46 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cris_Klebl.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cris_Klebl.JPG",
+    "status": "available",
+    "path": "../images/1cf50e7b6c0fa33ff24312108416be447848ccf0bfbd0c78d9c6d30417a198ea.bin",
+    "sha256": "1cf50e7b6c0fa33ff24312108416be447848ccf0bfbd0c78d9c6d30417a198ea",
+    "bytes": 6286586,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cris_Klebl.JPG",
+    "captured_at": "2026-10-22T13:43:48.610567+00:00",
+    "http_headers": {
+      "ETag": "ecece81b207313e0c448b14622ef800c",
+      "Last-Modified": "Wed, 08 Oct 2014 19:33:50 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/ce/AlbertoG%C3%B3mez1970.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/AlbertoG%C3%B3mez1970.jpg",
+    "status": "available",
+    "path": "../images/022c76d71fa126c835055f029401843467d6cbdb7eb13f69e5bab9a76ee469d6.bin",
+    "sha256": "022c76d71fa126c835055f029401843467d6cbdb7eb13f69e5bab9a76ee469d6",
+    "bytes": 45567,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/AlbertoG%C3%B3mez1970.jpg",
+    "captured_at": "2026-10-22T14:07:14.834701+00:00",
+    "http_headers": {
+      "ETag": "5aec19e7bcd1a60473c831ea19139fc4",
+      "Last-Modified": "Tue, 23 May 2023 03:47:45 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/Blason_munnich.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Blason_munnich.jpg",
+    "status": "available",
+    "path": "../images/b85a10e28c70bf5f1093ca7a54894034f51d5df81007cde906be8f165d8809ed.bin",
+    "sha256": "b85a10e28c70bf5f1093ca7a54894034f51d5df81007cde906be8f165d8809ed",
+    "bytes": 43888,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Blason_munnich.jpg",
+    "captured_at": "2026-10-22T13:42:52.080407+00:00",
+    "http_headers": {
+      "ETag": "6a6e31d39a8b246786830ad5b4eabd20",
+      "Last-Modified": "Tue, 07 Mar 2023 20:30:37 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/D%C3%A1niel_Kiss_2010_European_Team_Championships.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/D%C3%A1niel_Kiss_2010_European_Team_Championships.jpg",
+    "status": "available",
+    "path": "../images/1da4e9fafd506056a0e84d0a720d5a092a8200cbcc96972b3675b64b79da33a9.bin",
+    "sha256": "1da4e9fafd506056a0e84d0a720d5a092a8200cbcc96972b3675b64b79da33a9",
+    "bytes": 50462,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/D%C3%A1niel_Kiss_2010_European_Team_Championships.jpg",
+    "captured_at": "2026-10-22T13:43:55.942394+00:00",
+    "http_headers": {
+      "ETag": "7130b2c3e048f618682539d91a805f31",
+      "Last-Modified": "Wed, 08 Oct 2014 06:41:09 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/John_Salmons.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/John_Salmons.jpg",
+    "status": "available",
+    "path": "../images/b5fc8a63a60aca2b2335d73a631999491147231edf42c4ce7e6af73d98842888.bin",
+    "sha256": "b5fc8a63a60aca2b2335d73a631999491147231edf42c4ce7e6af73d98842888",
+    "bytes": 692551,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/John_Salmons.jpg",
+    "captured_at": "2026-10-22T13:46:27.459777+00:00",
+    "http_headers": {
+      "ETag": "b5f4bf63b421fc7a967ab93bc190fd2a",
+      "Last-Modified": "Wed, 08 Oct 2014 09:35:25 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/c/cf/TMB-TGB_119_cropped.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/TMB-TGB_119_cropped.JPG",
+    "status": "available",
+    "path": "../images/3260ee4b15708b03735083730dc77717987a1febc41a37c3cfc255ad9734490a.bin",
+    "sha256": "3260ee4b15708b03735083730dc77717987a1febc41a37c3cfc255ad9734490a",
+    "bytes": 1599980,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/TMB-TGB_119_cropped.JPG",
+    "captured_at": "2026-10-22T14:06:17.832235+00:00",
+    "http_headers": {
+      "ETag": "093e39f91567f5a1034a197639a48f73",
+      "Last-Modified": "Wed, 08 Oct 2014 16:33:17 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d0/Abgar_Barsom_%28cropped%29.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Abgar_Barsom_%28cropped%29.JPG",
+    "status": "available",
+    "path": "../images/ece26b9a2f758b0f735ebe238801892179f5805ec67be4148b5578531824cca0.bin",
+    "sha256": "ece26b9a2f758b0f735ebe238801892179f5805ec67be4148b5578531824cca0",
+    "bytes": 1109386,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Abgar_Barsom_%28cropped%29.JPG",
+    "captured_at": "2026-10-22T12:46:16.016543+00:00",
+    "http_headers": {
+      "ETag": "259c528383889317d2f0e0d126e551a4",
+      "Last-Modified": "Wed, 11 Oct 2017 20:32:47 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ali_Al-Amri_2007.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ali_Al-Amri_2007.jpg",
+    "status": "available",
+    "path": "../images/a727fd8ae8dcb37e068d10a883f6656cec1f0abd01510716415408b4027af1f9.bin",
+    "sha256": "a727fd8ae8dcb37e068d10a883f6656cec1f0abd01510716415408b4027af1f9",
+    "bytes": 12670,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ali_Al-Amri_2007.jpg",
+    "captured_at": "2026-10-22T13:42:00.968576+00:00",
+    "http_headers": {
+      "ETag": "98468a4176abe439a38a1d657bcdce53",
+      "Last-Modified": "Mon, 13 Jun 2016 22:59:13 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d5/By_Love_Depraved_by_Darcy_Ernest_Chiriaka_1961.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/By_Love_Depraved_by_Darcy_Ernest_Chiriaka_1961.jpg",
+    "status": "available",
+    "path": "../images/04c20ef1bb6a2c4b27620afb8907daea8902a053816a463d523bb0aed1c8dd25.bin",
+    "sha256": "04c20ef1bb6a2c4b27620afb8907daea8902a053816a463d523bb0aed1c8dd25",
+    "bytes": 1811739,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/By_Love_Depraved_by_Darcy_Ernest_Chiriaka_1961.jpg",
+    "captured_at": "2026-10-22T13:44:08.087858+00:00",
+    "http_headers": {
+      "ETag": "2d609c924d65a0e1e90b6cdb649cf27d",
+      "Last-Modified": "Tue, 10 Feb 2015 11:00:09 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d7/Adolf_von_Sonnenthal.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Adolf_von_Sonnenthal.jpg",
+    "status": "available",
+    "path": "../images/62c4273b1e98e4ead06cab53aaa7810ccadd4718b41c2ad7a3e0a8d86898829a.bin",
+    "sha256": "62c4273b1e98e4ead06cab53aaa7810ccadd4718b41c2ad7a3e0a8d86898829a",
+    "bytes": 151016,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Adolf_von_Sonnenthal.jpg",
+    "captured_at": "2026-10-22T13:44:26.625483+00:00",
+    "http_headers": {
+      "ETag": "1cdf66e39a18cfe3fbd6d2916d054a67",
+      "Last-Modified": "Wed, 08 Oct 2014 03:05:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d7/El_hechizado_por_fuerza%2C_por_Goya.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/El_hechizado_por_fuerza%2C_por_Goya.jpg",
+    "status": "available",
+    "path": "../images/0c62e02446965f7a4ced047bbde91c50f4a5d655906bd00ab915ddafc0a33b42.bin",
+    "sha256": "0c62e02446965f7a4ced047bbde91c50f4a5d655906bd00ab915ddafc0a33b42",
+    "bytes": 260813,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/El_hechizado_por_fuerza%2C_por_Goya.jpg",
+    "captured_at": "2026-10-22T14:11:13.751932+00:00",
+    "http_headers": {
+      "ETag": "0c9a30237d89fd8299db16f673f17d06",
+      "Last-Modified": "Thu, 06 Apr 2017 17:01:09 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d8/Battle-weary_GIs_And_French_Woman_by_Clark_Hulings_-_1956.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Battle-weary_GIs_And_French_Woman_by_Clark_Hulings_-_1956.jpg",
+    "status": "available",
+    "path": "../images/966a66355388672a1975f9edfdb878d6ea3beb639c47ab8e2421bb01ab3961ed.bin",
+    "sha256": "966a66355388672a1975f9edfdb878d6ea3beb639c47ab8e2421bb01ab3961ed",
+    "bytes": 84238,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Battle-weary_GIs_And_French_Woman_by_Clark_Hulings_-_1956.jpg",
+    "captured_at": "2026-10-22T13:43:52.254093+00:00",
+    "http_headers": {
+      "ETag": "66f217d2db306144d6a6640315e49f8f",
+      "Last-Modified": "Tue, 03 Feb 2015 12:50:30 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/d9/PozaAdaMilea.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/PozaAdaMilea.jpg",
+    "status": "available",
+    "path": "../images/309cc8ba66cba62390c0848c5268995bced3600b54f38180ee9eac126156f56b.bin",
+    "sha256": "309cc8ba66cba62390c0848c5268995bced3600b54f38180ee9eac126156f56b",
+    "bytes": 51726,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/PozaAdaMilea.jpg",
+    "captured_at": "2026-10-22T13:41:13.627747+00:00",
+    "http_headers": {
+      "ETag": "d45073db769c108fcabc81c63c11b48c",
+      "Last-Modified": "Wed, 08 Oct 2014 13:40:10 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/da/Ahmed_Abu_Risha_cropped.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Ahmed_Abu_Risha_cropped.jpg",
+    "status": "available",
+    "path": "../images/f1a099719e02ec82ad12d763e0c602f6d45b3c494b8361145c2b6cf38f4ac94f.bin",
+    "sha256": "f1a099719e02ec82ad12d763e0c602f6d45b3c494b8361145c2b6cf38f4ac94f",
+    "bytes": 741490,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Ahmed_Abu_Risha_cropped.jpg",
+    "captured_at": "2026-10-22T13:41:21.652644+00:00",
+    "http_headers": {
+      "ETag": "b54bf768aef5712e8936b95ed8c0677c",
+      "Last-Modified": "Wed, 08 Oct 2014 03:12:49 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/db/Adam_Simon_%2817056232071%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Adam_Simon_%2817056232071%29.jpg",
+    "status": "available",
+    "path": "../images/4c7e9eccfa83df5dd44d1f497102a0a66c8b2889c7d5644703b924c1016da2f7.bin",
+    "sha256": "4c7e9eccfa83df5dd44d1f497102a0a66c8b2889c7d5644703b924c1016da2f7",
+    "bytes": 8514050,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Adam_Simon_%2817056232071%29.jpg",
+    "captured_at": "2026-10-22T14:06:44.973310+00:00",
+    "http_headers": {
+      "ETag": "5e3127e8b762db06ebf80cecab7a3b92",
+      "Last-Modified": "Mon, 27 Apr 2015 12:34:49 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/de/Arnold_Drakenborch%2C_by_Jacob_Houbraken.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Arnold_Drakenborch%2C_by_Jacob_Houbraken.jpg",
+    "status": "available",
+    "path": "../images/da5b8e0b3f65f66429a73ef3a86eebe00ef389bf30a8f1b32cc60398b7eb76f1.bin",
+    "sha256": "da5b8e0b3f65f66429a73ef3a86eebe00ef389bf30a8f1b32cc60398b7eb76f1",
+    "bytes": 3862702,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Arnold_Drakenborch%2C_by_Jacob_Houbraken.jpg",
+    "captured_at": "2026-10-22T13:45:42.000841+00:00",
+    "http_headers": {
+      "ETag": "1d560f4b01836c34cbfea06b30d74525",
+      "Last-Modified": "Wed, 26 Aug 2015 15:02:51 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/de/N.Z.A.A.A._Championships._Q.E.2_Park._Women%27s_800_metres._Anne_Audain_%28Auckland%29_%2827978367554%29_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/N.Z.A.A.A._Championships._Q.E.2_Park._Women%27s_800_metres._Anne_Audain_%28Auckland%29_%2827978367554%29_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/4be0a1829d1332bd841627d54fef74b20ee411f4f326b9f585cec1c7261a866f.bin",
+    "sha256": "4be0a1829d1332bd841627d54fef74b20ee411f4f326b9f585cec1c7261a866f",
+    "bytes": 191780,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/N.Z.A.A.A._Championships._Q.E.2_Park._Women%27s_800_metres._Anne_Audain_%28Auckland%29_%2827978367554%29_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T14:05:01.696402+00:00",
+    "http_headers": {
+      "ETag": "ee76e2cb61558d7d3c153d0680d82949",
+      "Last-Modified": "Sat, 03 Nov 2018 07:18:04 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/d/de/Silhouette-personne.svg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Silhouette-personne.svg",
+    "status": "available",
+    "path": "../images/c066460ad051c5442b2ed9bf77f549a89f4a791aa3fe4cd128e75baaa0e64b66.bin",
+    "sha256": "c066460ad051c5442b2ed9bf77f549a89f4a791aa3fe4cd128e75baaa0e64b66",
+    "bytes": 26600,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Silhouette-personne.svg",
+    "captured_at": "2026-10-22T14:04:41.826791+00:00",
+    "http_headers": {
+      "ETag": "W/88e2c6cab83236e63655f1f77a0b3e26",
+      "Last-Modified": "Thu, 09 Oct 2014 05:51:17 GMT",
+      "Content-Type": "image/svg+xml"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e2/Afonso_Cruz.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Afonso_Cruz.jpg",
+    "status": "available",
+    "path": "../images/cc158c75d52e74b74849f3f4b5eaa35cc5c3db15525a188842c19867f4cc0eb0.bin",
+    "sha256": "cc158c75d52e74b74849f3f4b5eaa35cc5c3db15525a188842c19867f4cc0eb0",
+    "bytes": 133317,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Afonso_Cruz.jpg",
+    "captured_at": "2026-10-22T13:44:34.022896+00:00",
+    "http_headers": {
+      "ETag": "c5357a1472ca6c28e1a57da8e1908ab8",
+      "Last-Modified": "Wed, 20 Dec 2017 10:17:12 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e4/Angelina-Gruen.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Angelina-Gruen.jpg",
+    "status": "available",
+    "path": "../images/b56f5ae7b8f5ac997cf78061583256fe190048eaf89aea5fbd0194812af0b46c.bin",
+    "sha256": "b56f5ae7b8f5ac997cf78061583256fe190048eaf89aea5fbd0194812af0b46c",
+    "bytes": 1929982,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Angelina-Gruen.jpg",
+    "captured_at": "2026-10-22T14:04:49.937744+00:00",
+    "http_headers": {
+      "ETag": "787d9e651140f99dd2c58f0960f62878",
+      "Last-Modified": "Wed, 08 Oct 2014 16:04:18 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e8/Antonio-Serrano-Festival-San-Javier-2016_03.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Antonio-Serrano-Festival-San-Javier-2016_03.jpg",
+    "status": "available",
+    "path": "../images/683c0e8a2f3d90aa95d07ba60d513a6655460d47b9bccf42404649e6f1bdadcb.bin",
+    "sha256": "683c0e8a2f3d90aa95d07ba60d513a6655460d47b9bccf42404649e6f1bdadcb",
+    "bytes": 5225472,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Antonio-Serrano-Festival-San-Javier-2016_03.jpg",
+    "captured_at": "2026-10-22T13:42:56.733249+00:00",
+    "http_headers": {
+      "ETag": "e9e4b2281234cf9d18d78a3095eb3c85",
+      "Last-Modified": "Sun, 03 Jul 2016 21:21:22 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e9/2019-05-18_Fu%C3%9Fball%2C_Frauen%2C_UEFA_Women%27s_Champions_League%2C_Olympique_Lyonnais_-_FC_Barcelona_StP_0967_LR10_by_Stepro-2.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/2019-05-18_Fu%C3%9Fball%2C_Frauen%2C_UEFA_Women%27s_Champions_League%2C_Olympique_Lyonnais_-_FC_Barcelona_StP_0967_LR10_by_Stepro-2.jpg",
+    "status": "available",
+    "path": "../images/3bc56690e524ed7b37996d89c9279c739708ec81782cb36b033fc60b1ad32b51.bin",
+    "sha256": "3bc56690e524ed7b37996d89c9279c739708ec81782cb36b033fc60b1ad32b51",
+    "bytes": 2010880,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/2019-05-18_Fu%C3%9Fball%2C_Frauen%2C_UEFA_Women%27s_Champions_League%2C_Olympique_Lyonnais_-_FC_Barcelona_StP_0967_LR10_by_Stepro-2.jpg",
+    "captured_at": "2026-10-22T13:42:08.663173+00:00",
+    "http_headers": {
+      "ETag": "c8f241233abfb3cf315713eb1e1af26e",
+      "Last-Modified": "Tue, 21 May 2019 21:19:25 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e9/Andr%C3%A9-Michel_Besse.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Andr%C3%A9-Michel_Besse.jpg",
+    "status": "available",
+    "path": "../images/d64c23e79c25553fecbbaf36503c1e034e219675b6809d59674a448fb51e5ce2.bin",
+    "sha256": "d64c23e79c25553fecbbaf36503c1e034e219675b6809d59674a448fb51e5ce2",
+    "bytes": 63864,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Andr%C3%A9-Michel_Besse.jpg",
+    "captured_at": "2026-10-22T13:42:28.944444+00:00",
+    "http_headers": {
+      "ETag": "fa721fae96545ee1703013ed4b99292a",
+      "Last-Modified": "Sun, 08 May 2016 03:48:37 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/e9/Suusasprint_Tallinnas_12.05.07_%2806%29_Anti_Saarepuu_EST.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Suusasprint_Tallinnas_12.05.07_%2806%29_Anti_Saarepuu_EST.jpg",
+    "status": "available",
+    "path": "../images/d09cf7fad208bb05bc771510ca85e858fdd16c9d4e887a00316b228314500818.bin",
+    "sha256": "d09cf7fad208bb05bc771510ca85e858fdd16c9d4e887a00316b228314500818",
+    "bytes": 697743,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Suusasprint_Tallinnas_12.05.07_%2806%29_Anti_Saarepuu_EST.jpg",
+    "captured_at": "2026-10-22T14:08:26.084569+00:00",
+    "http_headers": {
+      "ETag": "54dadb133ef6884965bbb587601d2cae",
+      "Last-Modified": "Thu, 03 Nov 2022 16:59:59 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ea/Edward_Joseph_McCarthy.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Edward_Joseph_McCarthy.jpg",
+    "status": "available",
+    "path": "../images/ba66605a168a4dbf77827ef3b7defec95a366ac229cfd9fd53730758b265cef3.bin",
+    "sha256": "ba66605a168a4dbf77827ef3b7defec95a366ac229cfd9fd53730758b265cef3",
+    "bytes": 32233,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Edward_Joseph_McCarthy.jpg",
+    "captured_at": "2026-10-22T14:06:09.693199+00:00",
+    "http_headers": {
+      "ETag": "298d6776da49f3af8eb8f0238c654bd0",
+      "Last-Modified": "Wed, 08 Oct 2014 20:15:15 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ec/Abbas_Ahmed_Khamis.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Abbas_Ahmed_Khamis.jpg",
+    "status": "available",
+    "path": "../images/a3b9877cf7d77e8ff4a32e24006b46af690f36bbd39b481c1672f789da02c6a2.bin",
+    "sha256": "a3b9877cf7d77e8ff4a32e24006b46af690f36bbd39b481c1672f789da02c6a2",
+    "bytes": 123964,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Abbas_Ahmed_Khamis.jpg",
+    "captured_at": "2026-10-22T13:44:15.396046+00:00",
+    "http_headers": {
+      "ETag": "0719e4ac19bedf7002f81ae3da738871",
+      "Last-Modified": "Wed, 08 Oct 2014 15:46:40 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ec/Firma_Attilio_Perez.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Firma_Attilio_Perez.jpg",
+    "status": "available",
+    "path": "../images/bca046ac0589fbb9d238d0c1a38391678f055cae5bd41b6f7f43ac55fea62654.bin",
+    "sha256": "bca046ac0589fbb9d238d0c1a38391678f055cae5bd41b6f7f43ac55fea62654",
+    "bytes": 17323,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Firma_Attilio_Perez.jpg",
+    "captured_at": "2026-10-22T14:08:53.177459+00:00",
+    "http_headers": {
+      "ETag": "582511857ddd745b93179d45b6d5fddf",
+      "Last-Modified": "Sun, 28 Jan 2024 16:16:59 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ed/Barry_Opdam.JPG": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Barry_Opdam.JPG",
+    "status": "available",
+    "path": "../images/0a0774b3886a71f7a8f161addb7d017d1b3ead54a9f1426acadc5537ebfe8d5a.bin",
+    "sha256": "0a0774b3886a71f7a8f161addb7d017d1b3ead54a9f1426acadc5537ebfe8d5a",
+    "bytes": 2967136,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Barry_Opdam.JPG",
+    "captured_at": "2026-10-22T13:43:24.365518+00:00",
+    "http_headers": {
+      "ETag": "b8c075800460c7852d040d1f92b70089",
+      "Last-Modified": "Wed, 08 Oct 2014 16:58:36 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/e/ee/Anton%C3%ADn_Janda_footballer.png": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Anton%C3%ADn_Janda_footballer.png",
+    "status": "available",
+    "path": "../images/84ba523e88587a38b0a67bcc1ed55f5c96a0d8c2e67678c201fcd01cd2dfd815.bin",
+    "sha256": "84ba523e88587a38b0a67bcc1ed55f5c96a0d8c2e67678c201fcd01cd2dfd815",
+    "bytes": 460942,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Anton%C3%ADn_Janda_footballer.png",
+    "captured_at": "2026-10-22T14:05:24.009831+00:00",
+    "http_headers": {
+      "ETag": "eabd77a63c379916c4083ea67812acf8",
+      "Last-Modified": "Thu, 18 Aug 2022 16:19:53 GMT",
+      "Content-Type": "image/png"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f0/Adam_Barton_-_Curzon_Ashton_vs._Hereford_%28Away%29_21_-10-23-38_%2853275181084%29_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Adam_Barton_-_Curzon_Ashton_vs._Hereford_%28Away%29_21_-10-23-38_%2853275181084%29_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/6b998b9791343164e2247299e55b935841a65b3144388c03b192a3bc7e232258.bin",
+    "sha256": "6b998b9791343164e2247299e55b935841a65b3144388c03b192a3bc7e232258",
+    "bytes": 1242959,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Adam_Barton_-_Curzon_Ashton_vs._Hereford_%28Away%29_21_-10-23-38_%2853275181084%29_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T14:06:40.317253+00:00",
+    "http_headers": {
+      "ETag": "3264fda309b4eb0fb1f6f213a98bd7f9",
+      "Last-Modified": "Sun, 22 Oct 2023 11:50:44 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f0/Alberto_Vianelli_%28page_498_crop%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Alberto_Vianelli_%28page_498_crop%29.jpg",
+    "status": "available",
+    "path": "../images/9863b09a5f26dc4dcb610a97f164c780bc1ce5c9d0d8192e0bf347e7f79b9048.bin",
+    "sha256": "9863b09a5f26dc4dcb610a97f164c780bc1ce5c9d0d8192e0bf347e7f79b9048",
+    "bytes": 70377,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Alberto_Vianelli_%28page_498_crop%29.jpg",
+    "captured_at": "2026-10-22T14:10:09.350663+00:00",
+    "http_headers": {
+      "ETag": "ed6557d38149f21c7d5c60d812ac99aa",
+      "Last-Modified": "Thu, 21 Sep 2023 18:02:38 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lebanon_bench_Ahmad_Taktouk.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lebanon_bench_Ahmad_Taktouk.jpg",
+    "status": "available",
+    "path": "../images/2eed21c029d3ea184c57d8bd7ad0ab94e8a6efdebc5a5182cd4de65251973881.bin",
+    "sha256": "2eed21c029d3ea184c57d8bd7ad0ab94e8a6efdebc5a5182cd4de65251973881",
+    "bytes": 55607,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Lebanon_bench_Ahmad_Taktouk.jpg",
+    "captured_at": "2026-10-22T14:10:01.041948+00:00",
+    "http_headers": {
+      "ETag": "d856a64dab529ff70637b8263cb8668f",
+      "Last-Modified": "Tue, 07 Jul 2026 00:05:57 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f1/Artgate_Fondazione_Cariplo_-_Tommasi_Adolfo%2C_Visita_all%27acquedotto_o_Turisti_nella_campagna_romana.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Artgate_Fondazione_Cariplo_-_Tommasi_Adolfo%2C_Visita_all%27acquedotto_o_Turisti_nella_campagna_romana.jpg",
+    "status": "available",
+    "path": "../images/8cd6640016cb901ee27848f75c6f3be725c36c31f4465dc298ba6918eeeba5b0.bin",
+    "sha256": "8cd6640016cb901ee27848f75c6f3be725c36c31f4465dc298ba6918eeeba5b0",
+    "bytes": 73781,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Artgate_Fondazione_Cariplo_-_Tommasi_Adolfo%2C_Visita_all%27acquedotto_o_Turisti_nella_campagna_romana.jpg",
+    "captured_at": "2026-10-22T13:41:17.547363+00:00",
+    "http_headers": {
+      "ETag": "6d8d019e4cbd37de4ad870870121894d",
+      "Last-Modified": "Wed, 08 Oct 2014 16:26:42 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f1/Men_triple_jump_French_Athletics_Championships_2013_t155012b.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Men_triple_jump_French_Athletics_Championships_2013_t155012b.jpg",
+    "status": "available",
+    "path": "../images/50031d7c5d4b58acb529d8a27e3d7cbbb206115ee9de85cfe14a5f3c8444e045.bin",
+    "sha256": "50031d7c5d4b58acb529d8a27e3d7cbbb206115ee9de85cfe14a5f3c8444e045",
+    "bytes": 8711596,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Men_triple_jump_French_Athletics_Championships_2013_t155012b.jpg",
+    "captured_at": "2026-10-22T14:11:22.186875+00:00",
+    "http_headers": {
+      "ETag": "499ae026038875ea269077715790a3ed",
+      "Last-Modified": "Thu, 09 Oct 2014 01:32:07 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f2/Alfred_K%C3%B6rner_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Alfred_K%C3%B6rner_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/f6ddbd338b6cc3f7c541c6cdf1024d5832b1fc382df4bc94ca49075777851223.bin",
+    "sha256": "f6ddbd338b6cc3f7c541c6cdf1024d5832b1fc382df4bc94ca49075777851223",
+    "bytes": 177155,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Alfred_K%C3%B6rner_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T13:41:57.385880+00:00",
+    "http_headers": {
+      "ETag": "0ab511fc22fc8fc655dbe2d111ddf923",
+      "Last-Modified": "Sun, 20 Dec 2020 18:02:13 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ascension_Carre%C3%B1o_%28cropped%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ascension_Carre%C3%B1o_%28cropped%29.jpg",
+    "status": "available",
+    "path": "../images/9a3f4c118da8916c664b47aa7096ec75da85a9d298361edd24b41179a07b60e3.bin",
+    "sha256": "9a3f4c118da8916c664b47aa7096ec75da85a9d298361edd24b41179a07b60e3",
+    "bytes": 36386,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Ascension_Carre%C3%B1o_%28cropped%29.jpg",
+    "captured_at": "2026-10-22T13:43:04.365615+00:00",
+    "http_headers": {
+      "ETag": "5c495354b8d539ed2441922748c9e522",
+      "Last-Modified": "Sat, 06 Jan 2018 17:28:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f3/Axel_B%C3%A4ck.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Axel_B%C3%A4ck.jpg",
+    "status": "available",
+    "path": "../images/db03338c7ffde773c15186a490c45839560c99c7ac5f48f97792159620d92501.bin",
+    "sha256": "db03338c7ffde773c15186a490c45839560c99c7ac5f48f97792159620d92501",
+    "bytes": 6884845,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Axel_B%C3%A4ck.jpg",
+    "captured_at": "2026-10-22T14:05:35.028733+00:00",
+    "http_headers": {
+      "ETag": "8a1663e093155feaa55888ff14680d7d",
+      "Last-Modified": "Wed, 16 Sep 2015 09:00:50 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/f6/Isaac.Gulliver.Earlyoilpainting.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Isaac.Gulliver.Earlyoilpainting.jpg",
+    "status": "available",
+    "path": "../images/d1e7c292f01432740fc7a5c249b9cc9a11f7740a0303e2d6fbac0d8b8dae095a.bin",
+    "sha256": "d1e7c292f01432740fc7a5c249b9cc9a11f7740a0303e2d6fbac0d8b8dae095a",
+    "bytes": 12278,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Isaac.Gulliver.Earlyoilpainting.jpg",
+    "captured_at": "2026-10-22T14:06:25.046266+00:00",
+    "http_headers": {
+      "ETag": "80b56202f4e48cbd911fea2fb1a473c7",
+      "Last-Modified": "Wed, 08 Oct 2014 23:24:16 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fb/Abraham_Chepkirwok.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Abraham_Chepkirwok.jpg",
+    "status": "available",
+    "path": "../images/85176b6ab1e65582135a3949b348dac03c84cb59260405514927662607923fa2.bin",
+    "sha256": "85176b6ab1e65582135a3949b348dac03c84cb59260405514927662607923fa2",
+    "bytes": 88957,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Abraham_Chepkirwok.jpg",
+    "captured_at": "2026-10-22T13:44:23.004500+00:00",
+    "http_headers": {
+      "ETag": "8566018f6c009bab0d29308c65a3a417",
+      "Last-Modified": "Wed, 08 Oct 2014 15:49:21 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fc/Alexandre-Louis_de_Culant_%281733-1799%29.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Alexandre-Louis_de_Culant_%281733-1799%29.jpg",
+    "status": "available",
+    "path": "../images/535e5d1e4231a5332f64013b2fca788990a1c466a3b73eb5e442cf8ac04ff91a.bin",
+    "sha256": "535e5d1e4231a5332f64013b2fca788990a1c466a3b73eb5e442cf8ac04ff91a",
+    "bytes": 73774,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Alexandre-Louis_de_Culant_%281733-1799%29.jpg",
+    "captured_at": "2026-10-22T14:07:30.352078+00:00",
+    "http_headers": {
+      "ETag": "32fb1d80efeb97a4db8bbe778fb418c0",
+      "Last-Modified": "Sat, 07 Sep 2019 18:29:57 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fc/Antoine_Mulet.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Antoine_Mulet.jpg",
+    "status": "available",
+    "path": "../images/60bafdd0e413dcfcd420c6b1eeed910b1105df0e5e24cc91b09e3f3c7bba0a3d.bin",
+    "sha256": "60bafdd0e413dcfcd420c6b1eeed910b1105df0e5e24cc91b09e3f3c7bba0a3d",
+    "bytes": 126158,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Antoine_Mulet.jpg",
+    "captured_at": "2026-10-22T14:05:09.050263+00:00",
+    "http_headers": {
+      "ETag": "4d7fca163e1dc91bc2b813148564813c",
+      "Last-Modified": "Wed, 08 Oct 2014 16:16:22 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fd/Arvid_Holmberg.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Arvid_Holmberg.jpg",
+    "status": "available",
+    "path": "../images/0bf37875784b841bdd23f89cb0426d261d96a802371eaa97bc1b9f691b5f855c.bin",
+    "sha256": "0bf37875784b841bdd23f89cb0426d261d96a802371eaa97bc1b9f691b5f855c",
+    "bytes": 124185,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Arvid_Holmberg.jpg",
+    "captured_at": "2026-10-22T14:08:45.370790+00:00",
+    "http_headers": {
+      "ETag": "30818f43bf9472d2cc1bd3655ee9448d",
+      "Last-Modified": "Mon, 15 Feb 2016 11:13:30 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fe/Andre_Galtie_medal_design_%281929%29_in_pencil.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Andre_Galtie_medal_design_%281929%29_in_pencil.jpg",
+    "status": "available",
+    "path": "../images/5449e6e937c599b7a15e5845f1a12053a4fee0f05590120e25ac00a34c187f6c.bin",
+    "sha256": "5449e6e937c599b7a15e5845f1a12053a4fee0f05590120e25ac00a34c187f6c",
+    "bytes": 822213,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Andre_Galtie_medal_design_%281929%29_in_pencil.jpg",
+    "captured_at": "2026-10-22T13:45:16.081705+00:00",
+    "http_headers": {
+      "ETag": "58dafef610a5ec2892cd533b1c6422a6",
+      "Last-Modified": "Sun, 16 Dec 2018 10:59:28 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/f/fe/Brea_Bennett_5.jpg": {
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Brea_Bennett_5.jpg",
+    "status": "available",
+    "path": "../images/6cf1e0bf9cb2e8912075cc99e638f4a388110996331db8f158872eea8c4690a9.bin",
+    "sha256": "6cf1e0bf9cb2e8912075cc99e638f4a388110996331db8f158872eea8c4690a9",
+    "bytes": 26241,
+    "resolved_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Brea_Bennett_5.jpg",
+    "captured_at": "2026-10-22T14:09:15.850214+00:00",
+    "http_headers": {
+      "ETag": "ff37749f3f0368ace8f6e9df537d68c2",
+      "Last-Modified": "Wed, 08 Oct 2014 18:00:24 GMT",
+      "Content-Type": "image/jpeg"
+    }
+  }
+}
