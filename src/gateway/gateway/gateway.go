@@ -8,10 +8,11 @@ import (
 	"sync/atomic"
 	"syscall"
 
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/clientregistry"
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/common/messageprotocol/external"
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/common/middleware"
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/messagehandler"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/clientregistry"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/middleware"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/messagehandler"
 )
 
 type GatewayConfig struct {
@@ -183,7 +184,7 @@ func (gateway *Gateway) handleFruitRecordMessage(client clientregistry.ClientSta
 		slog.Debug("While reading FRUIT_RECORD", "err", err)
 		return err
 	}
-	message, err := client.Handler.SerializeDataMessage(*fruitRecord)
+	message, err := client.Handler.SerializeDataMessage([]fruititem.FruitItem{*fruitRecord})
 	if err != nil {
 		slog.Debug("While serializing data message", "err", err)
 		return err

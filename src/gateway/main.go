@@ -5,6 +5,8 @@ import (
 	"log/slog"
 	"os"
 	"strconv"
+
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/gateway/gateway"
 )
 
 func loadConfig() (gateway.GatewayConfig, error) {

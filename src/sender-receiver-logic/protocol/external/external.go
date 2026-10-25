@@ -3,9 +3,9 @@ package external
 import (
 	"io"
 
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/common/fruititem"
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/common/messageprotocol/external/safeio"
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/common/messageprotocol/external/serializer"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external/safeio"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external/serializer"
 )
 
 type MsgType uint32

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/common/fruititem"
-	"github.com/7574-sistemas-distribuidos/tp-coordinacion/common/middleware"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/middleware"
 )
 
 func serializeJson(message []interface{}) ([]byte, error) {
