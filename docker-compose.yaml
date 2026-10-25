@@ -1,0 +1,180 @@
+# Despliegue local de todos los nodos del TP:
+# RabbitMQ, un gateway, un cliente y una instancia de cada worker.
+#
+# Ejecutar desde este directorio:
+#   docker compose config
+#   docker compose build
+#   docker compose up
+services:
+  rabbitmq:
+    build:
+      context: ./src/rabbitmq
+      dockerfile: Dockerfile
+    container_name: tp-grupal-rabbitmq
+    environment:
+      RABBITMQ_LOG_LEVELS: error
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 30s
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  gateway:
+    build:
+      context: ./src
+      dockerfile: gateway/Dockerfile
+    container_name: tp-grupal-gateway
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    environment:
+      INPUT_QUEUE: results
+      OUTPUT_QUEUE: input
+      MOM_HOST: rabbitmq
+      MOM_PORT: "5672"
+      SERVER_HOST: 0.0.0.0
+      SERVER_PORT: "5678"
+    ports:
+      - "5678:5678"
+
+  client:
+    build:
+      context: ./src
+      dockerfile: client/Dockerfile
+    container_name: tp-grupal-client
+    depends_on:
+      gateway:
+        condition: service_started
+    environment:
+      SERVER_HOST: gateway
+      SERVER_PORT: "5678"
+
+  project:
+    build:
+      context: ./src
+      dockerfile: workers/project/Dockerfile
+    container_name: tp-grupal-project
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  shared-router:
+    build:
+      context: ./src
+      dockerfile: workers/sharedRouter/Dockerfile
+    container_name: tp-grupal-shared-router
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  english-filter:
+    build:
+      context: ./src
+      dockerfile: workers/englishFilter/Dockerfile
+    container_name: tp-grupal-english-filter
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  bio-filter:
+    build:
+      context: ./src
+      dockerfile: workers/bioFilter/Dockerfile
+    container_name: tp-grupal-bio-filter
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  date-filter:
+    build:
+      context: ./src
+      dockerfile: workers/dateFilter/Dockerfile
+    container_name: tp-grupal-date-filter
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  date-router:
+    build:
+      context: ./src
+      dockerfile: workers/dateRouter/Dockerfile
+    container_name: tp-grupal-date-router
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  image-fetcher:
+    build:
+      context: ./src
+      dockerfile: workers/imageFetcher/Dockerfile
+    container_name: tp-grupal-image-fetcher
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  word-tokenizer:
+    build:
+      context: ./src
+      dockerfile: workers/wordTokenizer/Dockerfile
+    container_name: tp-grupal-word-tokenizer
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  word-appearence-detector:
+    build:
+      context: ./src
+      dockerfile: workers/wordAppearenceDetector/Dockerfile
+    container_name: tp-grupal-word-appearence-detector
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  avarage-filter:
+    build:
+      context: ./src
+      dockerfile: workers/avarageFilter/Dockerfile
+    container_name: tp-grupal-avarage-filter
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  average-calculator:
+    build:
+      context: ./src
+      dockerfile: workers/averageCalculator/Dockerfile
+    container_name: tp-grupal-average-calculator
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  top-k-reducer:
+    build:
+      context: ./src
+      dockerfile: workers/topKReducer/Dockerfile
+    container_name: tp-grupal-top-k-reducer
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  wordcounter-reducer:
+    build:
+      context: ./src
+      dockerfile: workers/wordcounterReducer/Dockerfile
+    container_name: tp-grupal-wordcounter-reducer
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+
+  result-collector:
+    build:
+      context: ./src
+      dockerfile: workers/resultCollector/Dockerfile
+    container_name: tp-grupal-result-collector
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
