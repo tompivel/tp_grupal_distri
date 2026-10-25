@@ -6,10 +6,13 @@ WORKDIR /build/
 COPY go.mod .
 COPY go.sum .
 COPY common ./common
+COPY sender-receiver-logic ./sender-receiver-logic
+COPY clientregistry ./clientregistry
+COPY messagehandler ./messagehandler
 RUN go mod download
-COPY gateway .
+COPY gateway ./gateway
 # CGO_ENABLED must be disabled to run Go binary in Alpine
-RUN CGO_ENABLED=0 GOOS=linux go build -o bin/gateway
+RUN CGO_ENABLED=0 GOOS=linux go build -o bin/gateway ./gateway
 
 FROM busybox:latest
 COPY --from=builder /build/bin/gateway /gateway
