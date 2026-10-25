@@ -53,7 +53,7 @@ terraform.tfstate.*
 !INFORME.md
 !README.md
 !/docs/requisitos.md
-
+!build.md
 # Entorno y archivos temporales del notebook serial.
 .venv-oracle/
 .venv/

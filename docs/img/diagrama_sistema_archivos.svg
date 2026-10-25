@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#355c7d"/>
+    </marker>
+    <style>
+      .title { font: 700 28px sans-serif; fill: #17324d; }
+      .subtitle { font: 16px sans-serif; fill: #355c7d; }
+      .node-title { font: 700 19px sans-serif; fill: #17324d; }
+      .text { font: 15px monospace; fill: #243746; }
+      .note { font: 14px sans-serif; fill: #355c7d; }
+      .host { fill: #eef5fb; stroke: #4d7193; stroke-width: 2; }
+      .container { fill: #fff; stroke: #4d7193; stroke-width: 2; }
+      .discarded { fill: #f5f5f5; stroke: #8d99a6; stroke-width: 2; stroke-dasharray: 7 5; }
+      .broker { fill: #fff5e3; stroke: #bf8120; stroke-width: 2; }
+      .arrow { stroke: #355c7d; stroke-width: 2; fill: none; marker-end: url(#arrow); }
+      .dashed { stroke-dasharray: 7 5; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <text x="600" y="42" text-anchor="middle" class="title">Distribución del sistema de archivos por nodo</text>
+  <text x="600" y="69" text-anchor="middle" class="subtitle">Docker Compose · sin volúmenes compartidos</text>
+
+  <rect x="30" y="95" width="1140" height="130" rx="12" class="host"/>
+  <text x="600" y="124" text-anchor="middle" class="node-title">Host del proyecto (fuente y configuración)</text>
+  <text x="55" y="157" class="text">/docker-compose.yaml</text>
+  <text x="55" y="181" class="text">/src/{go.mod, go.sum, common/, gateway/, client/, workers/}</text>
+  <text x="55" y="205" class="text">/dataset/ · /docs/ · /scripts/ · /tests/</text>
+  <text x="825" y="171" text-anchor="middle" class="note">No se montan estas rutas dentro de los contenedores</text>
+  <text x="825" y="194" text-anchor="middle" class="note">El código se copia sólo durante la construcción de cada imagen</text>
+
+  <path d="M600 226 L600 258" class="arrow"/>
+  <text x="615" y="248" class="note">docker build</text>
+
+  <rect x="30" y="270" width="745" height="195" rx="12" class="discarded"/>
+  <text x="402" y="300" text-anchor="middle" class="node-title">Stage builder (temporal; no queda en la imagen final)</text>
+  <text x="55" y="333" class="text">/build/go.mod</text>
+  <text x="55" y="357" class="text">/build/go.sum</text>
+  <text x="55" y="381" class="text">/build/common/</text>
+  <text x="55" y="405" class="text">/build/{client,gateway,workers}/&lt;servicio&gt;/</text>
+  <text x="55" y="439" class="text">/build/bin/&lt;servicio&gt;</text>
+  <text x="435" y="382" class="note">golang:1.24-alpine3.23</text>
+  <text x="435" y="406" class="note">compilación CGO_ENABLED=0</text>
+  <text x="435" y="430" class="note">COPY --from=builder</text>
+
+  <path d="M775 367 L835 367" class="arrow"/>
+
+  <rect x="835" y="270" width="335" height="195" rx="12" class="container"/>
+  <text x="1002" y="300" text-anchor="middle" class="node-title">Nodos de aplicación</text>
+  <text x="860" y="334" class="text">busybox:latest</text>
+  <text x="860" y="360" class="text">/client</text>
+  <text x="860" y="384" class="text">/gateway</text>
+  <text x="860" y="408" class="text">/&lt;worker&gt;</text>
+  <text x="860" y="444" class="note">Un contenedor por servicio</text>
+
+  <rect x="30" y="510" width="520" height="170" rx="12" class="host"/>
+  <text x="290" y="540" text-anchor="middle" class="node-title">Nodos worker (filesystem efímero)</text>
+  <text x="55" y="574" class="text">/&lt;worker&gt;       ejecutable</text>
+  <text x="55" y="598" class="text">/tmp/             sólo si el proceso lo usa</text>
+  <text x="55" y="622" class="text">/etc/ /bin/ /usr/  provistos por busybox</text>
+  <text x="55" y="658" class="note">Estado y archivos generados no se comparten</text>
+
+  <rect x="580" y="510" width="590" height="170" rx="12" class="broker"/>
+  <text x="875" y="540" text-anchor="middle" class="node-title">Nodo RabbitMQ</text>
+  <text x="605" y="574" class="text">/etc/rabbitmq/       configuración</text>
+  <text x="605" y="598" class="text">/var/lib/rabbitmq/   datos del broker</text>
+  <text x="605" y="622" class="text">exchanges y colas     dentro del servicio</text>
+  <text x="605" y="658" class="note">Sin volumen declarado: datos efímeros al recrear el contenedor</text>
+
+  <path d="M1002 466 L1002 500" class="arrow"/>
+  <path d="M600 700 L600 720 L1140 720 L1140 700" class="arrow dashed"/>
+  <text x="600" y="745" text-anchor="middle" class="note">No hay bind mounts ni named volumes en docker-compose.yaml</text>
+</svg>
