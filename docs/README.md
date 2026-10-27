@@ -6,7 +6,8 @@
 | Propuesta de arquitectura vigente | [Informe](../Informe.pdf); fuentes en [tex/](tex/), entrada [main.tex](main.tex) y plantilla [estilo.cls](estilo.cls) |
 | Particionado, aislamiento y estado | [Vista de procesos](tex/vista_procesos.tex) |
 | Distribución física y despliegue | [Vista física](tex/vista_fisica.tex) |
-| Sistema de archivos por nodo | [Explicación](./docs/build.md) |
+| Sistema de archivos por nodo | [Explicación](./build.md) |
+| Definición y explicación de protocolo| [Protocolo](./protocolo_propuesta.md) |
 | Muestra local, esquema verificado y cobertura | [Dataset](../dataset/README.md) |
 | Descarga, verificación y publicación del dataset | [Guía de distribución](../scripts/README.md) |
 | Estrategia de pruebas y trabajo pendiente | [Infraestructura de pruebas](../tests/README.md) |
