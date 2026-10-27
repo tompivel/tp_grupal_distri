@@ -1,0 +1,120 @@
+syntax = "proto3";
+
+package internal;
+
+option go_package = "github.com/7574-sistemas-distribuidos/tp-grupal-distri/proto/internal";
+
+message InternalMessage {
+  string client_id = 1;
+
+  oneof payload {
+    Article article = 1;
+    ProjectedArticle projected_article = 2;
+    DateFiltered date_filtered = 3;
+    TokenizedAbstract tokenized_abstract = 4;
+  }
+}
+
+message Article {
+  string name = 1; 
+  int64 identifier = 2; 
+  string url = 3; 
+  string date_created = 4; 
+  string date_modified = 5;
+  ArticleProject is_part_of = 6;
+  ArticleLanguage in_language = 7;
+  ArticleEntity main_entity = 8;
+  repeated ArticleEntity additional_entities = 9;
+  ArticleVersion version = 10;
+  string description = 11;
+  string abstract = 12;
+  ArticleImage image = 13;
+  repeated ArticleLicense license = 14;
+  repeated ArticleItem infoboxes = 15;
+  repeated ArticleItem sections = 16;
+  repeated ArticleTable tables = 17; 
+  repeated ArticleReference references = 18;
+}
+
+message ArticleProject {
+  string identifier = 1;
+  string name = 2;
+}
+
+message ArticleLanguage {
+  string identifier = 1;
+  string name = 2;
+}
+
+message ArticleEntity {
+  string identifier = 1;
+  string url = 2;
+}
+
+message ArticleVersion {
+  string identifier = 1;
+  VersionEditor editor = 2;
+  // TODO: Implement 'scores'
+}
+
+message VersionEditor {
+  string identifier = 1;
+  string name = 2;
+}
+
+message ArticleImage {
+  string content_url = 1;
+  int64 height = 2;
+  int64 width = 3;
+}
+
+message ArticleLicense {
+  string identifier = 1;
+  string name = 2;
+  string url = 3;
+}
+
+message ArticleReference {
+  string identifier = 1;
+  string metadata = 2;
+}
+
+message ArticleTable {
+  string identifier = 1;
+  repeated string headers = 2;
+  repeated string rows = 3;
+  float confidence_score = 4;
+}
+
+message ArticleItem {
+  string type = 1;
+  string name = 2;
+  // TODO: Implement 'has_parts'
+}
+
+
+message ProjectedArticle {
+  string name = 1; 
+  string url = 2; 
+  string date_modified = 3;
+  ArticleLanguage in_language = 4;
+  string abstract = 5;
+  ArticleImage image = 6;
+  repeated ArticleItem sections = 7;
+}
+
+message DateFiltered {
+  string name = 1; 
+  string url = 2; 
+  string date_modified = 3;
+  ArticleLanguage in_language = 4;
+  ArticleImage image = 5;
+  repeated ArticleItem sections = 6;
+}
+
+message TokenizedAbstract {
+  repeated string abstract_words = 1; 
+  string url = 2; 
+  string date_modified = 3;
+  ArticleLanguage in_language = 4;
+}

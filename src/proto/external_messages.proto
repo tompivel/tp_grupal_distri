@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package external;
 
-option go_package = "github.com/7574-sistemas-distribuidos/tp-grupal-distri/proto";
+option go_package = "github.com/7574-sistemas-distribuidos/tp-grupal-distri/proto/external";
 
 message ExternalMessage {
   oneof payload {
