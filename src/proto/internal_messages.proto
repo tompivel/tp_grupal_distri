@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package internal;
 
-option go_package = "github.com/7574-sistemas-distribuidos/tp-grupal-distri/proto/internal";
+option go_package = "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto";
 
 message InternalMessage {
   string client_id = 1;
@@ -12,8 +12,11 @@ message InternalMessage {
     ProjectedArticle projected_article = 3;
     DateFiltered date_filtered = 4;
     TokenizedAbstract tokenized_abstract = 5;
+    EndOfFile end_of_file = 6;
   }
 }
+
+message EndOfFile {}
 
 message Article {
   string name = 1; 
