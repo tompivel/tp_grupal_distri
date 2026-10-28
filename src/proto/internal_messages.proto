@@ -8,10 +8,10 @@ message InternalMessage {
   string client_id = 1;
 
   oneof payload {
-    Article article = 1;
-    ProjectedArticle projected_article = 2;
-    DateFiltered date_filtered = 3;
-    TokenizedAbstract tokenized_abstract = 4;
+    Article article = 2;
+    ProjectedArticle projected_article = 3;
+    DateFiltered date_filtered = 4;
+    TokenizedAbstract tokenized_abstract = 5;
   }
 }
 
