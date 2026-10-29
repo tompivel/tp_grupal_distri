@@ -1,0 +1,18 @@
+{
+  "query": {
+    "pages": [
+      {
+        "pageid": 1,
+        "title": "File:Tiny.png",
+        "imageinfo": [
+          {
+            "url": "https://images.tiny.invalid/pixel.png",
+            "mime": "image/png",
+            "width": 1,
+            "height": 1
+          }
+        ]
+      }
+    ]
+  }
+}

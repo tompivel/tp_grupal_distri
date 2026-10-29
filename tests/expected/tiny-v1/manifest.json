@@ -1,0 +1,180 @@
+{
+  "format_version": 1,
+  "status": "complete",
+  "input": {
+    "assignment": "global_ordinal_modulo_clients_v1",
+    "clients": 2,
+    "rows_per_file": null,
+    "selected_rows": 32,
+    "source_parquet_bytes": 35937,
+    "files": [
+      {
+        "path": "enwiki/data/enwiki_namespace_0_00000.parquet",
+        "sha256": "fccc8f7ec36bf357cd05e9631c70bfde3cacfd22b019965a305812757149a547",
+        "bytes": 18334,
+        "rows": 16,
+        "selected_rows": 16,
+        "global_offset": 0,
+        "schema_sha256": "bf6a1aaea3e947b3b07057592d834376ba2be5c28eed4b3cd11a18a0dd24678f"
+      },
+      {
+        "path": "frwiki/data/frwiki_namespace_0_00000.parquet",
+        "sha256": "b0ac9a84a7826a4efe9e32325abf72e98480c03166bbd530da912c62bec85d8c",
+        "bytes": 17603,
+        "rows": 16,
+        "selected_rows": 16,
+        "global_offset": 16,
+        "schema_sha256": "a9b21192f8482e945fc22566a0552f6db6638f46ecde0945536e8144772dec95"
+      }
+    ]
+  },
+  "semantics": {
+    "version": "wiki-serial-v1",
+    "lowercase": "Python str.lower; sin quitar acentos ni aplicar stemming",
+    "word_regex": "\\b\\w+\\b",
+    "number_regex": "[+-]?((\\d+\\.?\\d*)|(\\.\\d+))",
+    "unicode_version": "16.0.0",
+    "stopwords_sha256": "6b0dfa01e971692e31e8b3d50ddffee255db8ba6ac0a06bc87a796322aa5f818",
+    "stopwords_count": 346,
+    "q2": "name, article url, original image bytes; explicit null if absent",
+    "q3": "unique intersection en/fr, excluding stopwords and numeric tokens",
+    "q4": "distinct tokens per abstract; sort by (-count, word); limit 20",
+    "q5": "occurrences; historical null abstracts excluded; count*N>S",
+    "no_history": "empty result with no_historical_base state",
+    "timestamps": "ISO 8601 milliseconds; preserve input timezone (none in sample)"
+  },
+  "created_at": "2026-10-29T17:24:12.295334+00:00",
+  "generator": {
+    "notebook_source_sha256": "ff9f06ed4c2be37e1327974b0356f8a03def7d0bd0e693804e9432a844959ce6",
+    "reference_sha256": "2b31a6f786badec0ef7b8c12863fede42c294181367b90de43630362e6d60f4d",
+    "reference_snapshot_path": "generator/reference.py",
+    "python": "3.14.8",
+    "packages": {
+      "pyarrow": "26.0.0",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0",
+      "ipykernel": "7.4.0",
+      "python-dotenv": "1.2.4"
+    },
+    "preparation_snapshot_path": "generator/prepare_tiny.py",
+    "preparation_sha256": "255ce8e12d8a648732898b73320edc8778313356a244fae30ffb5c7382dbf917"
+  },
+  "clients": [
+    {
+      "id": "client-0",
+      "input_rows": 16,
+      "languages": {
+        "en": 8,
+        "fr": 8
+      },
+      "input_occurrences_sha256": "0d6557e7933fee9779f4a96a97f764d57fd762c314e00255fb8aec111f81c04b",
+      "historical_sum": 32,
+      "historical_count": 8,
+      "q5_state": "complete",
+      "queries": {
+        "q1": {
+          "path": "client-0/q1.jsonl",
+          "sha256": "9f95980bc208fc650d7ad977bb6867cecfbb463b507fc3d007c206aebd5e2ad8",
+          "rows": 4,
+          "status": "complete"
+        },
+        "q2": {
+          "path": "client-0/q2.jsonl",
+          "sha256": "bc4f3d94a04c0da61d210fc85480146d70b7e01cf5e997b7edf0abd63268ad0d",
+          "rows": 5,
+          "status": "complete"
+        },
+        "q3": {
+          "path": "client-0/q3.jsonl",
+          "sha256": "22b47fc0fd63169b991997a25dac6f15e3f1fb81da64fd945658401173d63159",
+          "rows": 2,
+          "status": "complete"
+        },
+        "q4": {
+          "path": "client-0/q4.jsonl",
+          "sha256": "2693746c3551afffa97a1d5726f7bccd76006665e44ccac0b80f0e1ddfb53353",
+          "rows": 20,
+          "status": "complete"
+        },
+        "q5": {
+          "path": "client-0/q5.jsonl",
+          "sha256": "a50c2fe394c47f8e2c643db2dffd2aa612c729bd141d9c0a4052147e0fb90ecf",
+          "rows": 3,
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "id": "client-1",
+      "input_rows": 16,
+      "languages": {
+        "en": 8,
+        "fr": 8
+      },
+      "input_occurrences_sha256": "506d309f53b65a6e914238cd37af5e35d2756372536eccf6031f0229a8b05475",
+      "historical_sum": 48,
+      "historical_count": 8,
+      "q5_state": "complete",
+      "queries": {
+        "q1": {
+          "path": "client-1/q1.jsonl",
+          "sha256": "7c0a8537bdd9579db6bf310d01685e06b25a8ee0dc61185413d2f2b66a6f6269",
+          "rows": 4,
+          "status": "complete"
+        },
+        "q2": {
+          "path": "client-1/q2.jsonl",
+          "sha256": "760469da190a51e361563c53238da2efa16ac56faad2dec710ebe64f163cb720",
+          "rows": 5,
+          "status": "complete"
+        },
+        "q3": {
+          "path": "client-1/q3.jsonl",
+          "sha256": "3a2b46e8d63901e62016f78a97ae886086cdab0283ff91e120183ed782d07845",
+          "rows": 3,
+          "status": "complete"
+        },
+        "q4": {
+          "path": "client-1/q4.jsonl",
+          "sha256": "fd554181fa2bfbfa85b15ff4bad0eb10a225f3de615984eb7028ad77dd09a9ea",
+          "rows": 20,
+          "status": "complete"
+        },
+        "q5": {
+          "path": "client-1/q5.jsonl",
+          "sha256": "dd6cb00383cc9563f8a78e9aaec1b687af24bd88a9179919a62d4048b1f78650",
+          "rows": 3,
+          "status": "complete"
+        }
+      }
+    }
+  ],
+  "scenario": "tiny-v1",
+  "synthetic": true,
+  "fixture_files": {
+    "enwiki/data/enwiki_namespace_0_00000.parquet": "fccc8f7ec36bf357cd05e9631c70bfde3cacfd22b019965a305812757149a547",
+    "enwiki/schema.json": "b48fbd777b10e2f34a9638426db3061a9afc58ba5246eac4ea1d808c360d559a",
+    "frwiki/data/frwiki_namespace_0_00000.parquet": "b0ac9a84a7826a4efe9e32325abf72e98480c03166bbd530da912c62bec85d8c",
+    "frwiki/schema.json": "75c5587fa686add179e3713237e5866d8cfc4eeff37760c4c68d5bfa5fb2466c",
+    "oracle.ipynb": "4925b22d4fa3e9869a8ab15d97b5929415de9d138ce8601c6fb7f7c82e3ac4bd",
+    "services/metadata.json": "a0c42e5dcd40e9fe23143a45097fd41cc3c51a580a5505f42cd21ea94efb5fae",
+    "services/pixel.png": "4ff6ab670a58c14270e034e2090d9a432caa263a14e0a25785386b0c12f880b5"
+  },
+  "integration": {
+    "status": "pending",
+    "required_queries": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "blockers": [
+      "Ingesta completa y captura Q1–Q5 del cliente oficial",
+      "Disponibilidad y cierres de todas las etapas Q1–Q5",
+      "Agregación de los cinco cierres en ResultCollector",
+      "Endpoint local de metadatos/contenido compatible con ImageFetcher",
+      "Evidencia de solapamiento y formato de captura de cierres"
+    ]
+  }
+}
