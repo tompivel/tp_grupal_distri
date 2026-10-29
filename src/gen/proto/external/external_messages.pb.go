@@ -152,25 +152,25 @@ func (*ExternalMessage_ResultBatch) isExternalMessage_Payload() {}
 func (*ExternalMessage_AllFinished) isExternalMessage_Payload() {}
 
 type Article struct {
-	state              protoimpl.MessageState `protogen:"open.v1"`
-	Name               string                 `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
-	Identifier         int64                  `protobuf:"varint,2,opt,name=identifier,proto3" json:"identifier,omitempty"`
-	Url                string                 `protobuf:"bytes,3,opt,name=url,proto3" json:"url,omitempty"`
-	DateCreated        string                 `protobuf:"bytes,4,opt,name=date_created,json=dateCreated,proto3" json:"date_created,omitempty"`
-	DateModified       string                 `protobuf:"bytes,5,opt,name=date_modified,json=dateModified,proto3" json:"date_modified,omitempty"`
-	IsPartOf           *ArticleProject        `protobuf:"bytes,6,opt,name=is_part_of,json=isPartOf,proto3" json:"is_part_of,omitempty"`
-	InLanguage         *ArticleLanguage       `protobuf:"bytes,7,opt,name=in_language,json=inLanguage,proto3" json:"in_language,omitempty"`
-	MainEntity         *ArticleEntity         `protobuf:"bytes,8,opt,name=main_entity,json=mainEntity,proto3" json:"main_entity,omitempty"`
-	AdditionalEntities []*ArticleEntity       `protobuf:"bytes,9,rep,name=additional_entities,json=additionalEntities,proto3" json:"additional_entities,omitempty"`
-	Version            *ArticleVersion        `protobuf:"bytes,10,opt,name=version,proto3" json:"version,omitempty"`
-	Description        string                 `protobuf:"bytes,11,opt,name=description,proto3" json:"description,omitempty"`
-	Abstract           string                 `protobuf:"bytes,12,opt,name=abstract,proto3" json:"abstract,omitempty"`
-	Image              *ArticleImage          `protobuf:"bytes,13,opt,name=image,proto3" json:"image,omitempty"`
-	License            []*ArticleLicense      `protobuf:"bytes,14,rep,name=license,proto3" json:"license,omitempty"`
-	Infoboxes          []*ArticleItem         `protobuf:"bytes,15,rep,name=infoboxes,proto3" json:"infoboxes,omitempty"`
-	Sections           []*ArticleItem         `protobuf:"bytes,16,rep,name=sections,proto3" json:"sections,omitempty"`
-	Tables             []*ArticleTable        `protobuf:"bytes,17,rep,name=tables,proto3" json:"tables,omitempty"`
-	References         []*ArticleReference    `protobuf:"bytes,18,rep,name=references,proto3" json:"references,omitempty"`
+	state              protoimpl.MessageState     `protogen:"open.v1"`
+	Name               string                     `protobuf:"bytes,1,opt,name=name,proto3" json:"name,omitempty"`
+	Identifier         int64                      `protobuf:"varint,2,opt,name=identifier,proto3" json:"identifier,omitempty"`
+	Url                string                     `protobuf:"bytes,3,opt,name=url,proto3" json:"url,omitempty"`
+	DateCreated        string                     `protobuf:"bytes,4,opt,name=date_created,json=dateCreated,proto3" json:"date_created,omitempty"`
+	DateModified       string                     `protobuf:"bytes,5,opt,name=date_modified,json=dateModified,proto3" json:"date_modified,omitempty"`
+	IsPartOf           *ArticleProject            `protobuf:"bytes,6,opt,name=is_part_of,json=isPartOf,proto3" json:"is_part_of,omitempty"`
+	InLanguage         *ArticleLanguage           `protobuf:"bytes,7,opt,name=in_language,json=inLanguage,proto3" json:"in_language,omitempty"`
+	MainEntity         *ArticleMainEntity         `protobuf:"bytes,8,opt,name=main_entity,json=mainEntity,proto3" json:"main_entity,omitempty"`
+	AdditionalEntities []*ArticleAdditionalEntity `protobuf:"bytes,9,rep,name=additional_entities,json=additionalEntities,proto3" json:"additional_entities,omitempty"`
+	Version            *ArticleVersion            `protobuf:"bytes,10,opt,name=version,proto3" json:"version,omitempty"`
+	Description        string                     `protobuf:"bytes,11,opt,name=description,proto3" json:"description,omitempty"`
+	Abstract           string                     `protobuf:"bytes,12,opt,name=abstract,proto3" json:"abstract,omitempty"`
+	Image              *ArticleImage              `protobuf:"bytes,13,opt,name=image,proto3" json:"image,omitempty"`
+	License            []*ArticleLicense          `protobuf:"bytes,14,rep,name=license,proto3" json:"license,omitempty"`
+	Infoboxes          []*ArticleItem             `protobuf:"bytes,15,rep,name=infoboxes,proto3" json:"infoboxes,omitempty"`
+	Sections           []*ArticleItem             `protobuf:"bytes,16,rep,name=sections,proto3" json:"sections,omitempty"`
+	Tables             []*ArticleTable            `protobuf:"bytes,17,rep,name=tables,proto3" json:"tables,omitempty"`
+	References         []*ArticleReference        `protobuf:"bytes,18,rep,name=references,proto3" json:"references,omitempty"`
 	unknownFields      protoimpl.UnknownFields
 	sizeCache          protoimpl.SizeCache
 }
@@ -254,14 +254,14 @@ func (x *Article) GetInLanguage() *ArticleLanguage {
 	return nil
 }
 
-func (x *Article) GetMainEntity() *ArticleEntity {
+func (x *Article) GetMainEntity() *ArticleMainEntity {
 	if x != nil {
 		return x.MainEntity
 	}
 	return nil
 }
 
-func (x *Article) GetAdditionalEntities() []*ArticleEntity {
+func (x *Article) GetAdditionalEntities() []*ArticleAdditionalEntity {
 	if x != nil {
 		return x.AdditionalEntities
 	}
@@ -386,7 +386,6 @@ func (x *ArticleProject) GetName() string {
 type ArticleLanguage struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Identifier    string                 `protobuf:"bytes,1,opt,name=identifier,proto3" json:"identifier,omitempty"`
-	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -428,14 +427,7 @@ func (x *ArticleLanguage) GetIdentifier() string {
 	return ""
 }
 
-func (x *ArticleLanguage) GetName() string {
-	if x != nil {
-		return x.Name
-	}
-	return ""
-}
-
-type ArticleEntity struct {
+type ArticleMainEntity struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Identifier    string                 `protobuf:"bytes,1,opt,name=identifier,proto3" json:"identifier,omitempty"`
 	Url           string                 `protobuf:"bytes,2,opt,name=url,proto3" json:"url,omitempty"`
@@ -443,20 +435,20 @@ type ArticleEntity struct {
 	sizeCache     protoimpl.SizeCache
 }
 
-func (x *ArticleEntity) Reset() {
-	*x = ArticleEntity{}
+func (x *ArticleMainEntity) Reset() {
+	*x = ArticleMainEntity{}
 	mi := &file_external_messages_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
 
-func (x *ArticleEntity) String() string {
+func (x *ArticleMainEntity) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
 
-func (*ArticleEntity) ProtoMessage() {}
+func (*ArticleMainEntity) ProtoMessage() {}
 
-func (x *ArticleEntity) ProtoReflect() protoreflect.Message {
+func (x *ArticleMainEntity) ProtoReflect() protoreflect.Message {
 	mi := &file_external_messages_proto_msgTypes[4]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
@@ -468,36 +460,106 @@ func (x *ArticleEntity) ProtoReflect() protoreflect.Message {
 	return mi.MessageOf(x)
 }
 
-// Deprecated: Use ArticleEntity.ProtoReflect.Descriptor instead.
-func (*ArticleEntity) Descriptor() ([]byte, []int) {
+// Deprecated: Use ArticleMainEntity.ProtoReflect.Descriptor instead.
+func (*ArticleMainEntity) Descriptor() ([]byte, []int) {
 	return file_external_messages_proto_rawDescGZIP(), []int{4}
 }
 
-func (x *ArticleEntity) GetIdentifier() string {
+func (x *ArticleMainEntity) GetIdentifier() string {
 	if x != nil {
 		return x.Identifier
 	}
 	return ""
 }
 
-func (x *ArticleEntity) GetUrl() string {
+func (x *ArticleMainEntity) GetUrl() string {
 	if x != nil {
 		return x.Url
 	}
 	return ""
 }
 
-type ArticleVersion struct {
+type ArticleAdditionalEntity struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Identifier    string                 `protobuf:"bytes,1,opt,name=identifier,proto3" json:"identifier,omitempty"`
-	Editor        *VersionEditor         `protobuf:"bytes,2,opt,name=editor,proto3" json:"editor,omitempty"` // TODO: Implement 'scores'
+	Url           string                 `protobuf:"bytes,2,opt,name=url,proto3" json:"url,omitempty"`
+	Aspects       []string               `protobuf:"bytes,3,rep,name=aspects,proto3" json:"aspects,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
 
+func (x *ArticleAdditionalEntity) Reset() {
+	*x = ArticleAdditionalEntity{}
+	mi := &file_external_messages_proto_msgTypes[5]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *ArticleAdditionalEntity) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ArticleAdditionalEntity) ProtoMessage() {}
+
+func (x *ArticleAdditionalEntity) ProtoReflect() protoreflect.Message {
+	mi := &file_external_messages_proto_msgTypes[5]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use ArticleAdditionalEntity.ProtoReflect.Descriptor instead.
+func (*ArticleAdditionalEntity) Descriptor() ([]byte, []int) {
+	return file_external_messages_proto_rawDescGZIP(), []int{5}
+}
+
+func (x *ArticleAdditionalEntity) GetIdentifier() string {
+	if x != nil {
+		return x.Identifier
+	}
+	return ""
+}
+
+func (x *ArticleAdditionalEntity) GetUrl() string {
+	if x != nil {
+		return x.Url
+	}
+	return ""
+}
+
+func (x *ArticleAdditionalEntity) GetAspects() []string {
+	if x != nil {
+		return x.Aspects
+	}
+	return nil
+}
+
+type ArticleVersion struct {
+	state              protoimpl.MessageState `protogen:"open.v1"`
+	Comment            string                 `protobuf:"bytes,1,opt,name=comment,proto3" json:"comment,omitempty"`
+	Editor             string                 `protobuf:"bytes,2,opt,name=editor,proto3" json:"editor,omitempty"`
+	Identifier         int64                  `protobuf:"varint,3,opt,name=identifier,proto3" json:"identifier,omitempty"`
+	IsBreakingNews     *bool                  `protobuf:"varint,4,opt,name=is_breaking_news,json=isBreakingNews,proto3,oneof" json:"is_breaking_news,omitempty"`
+	IsFlaggedStabble   *bool                  `protobuf:"varint,5,opt,name=is_flagged_stabble,json=isFlaggedStabble,proto3,oneof" json:"is_flagged_stabble,omitempty"`
+	IsMinorEdit        *bool                  `protobuf:"varint,6,opt,name=is_minor_edit,json=isMinorEdit,proto3,oneof" json:"is_minor_edit,omitempty"`
+	MaintenanceTags    string                 `protobuf:"bytes,7,opt,name=maintenance_tags,json=maintenanceTags,proto3" json:"maintenance_tags,omitempty"`
+	Noindex            bool                   `protobuf:"varint,8,opt,name=noindex,proto3" json:"noindex,omitempty"`
+	NumberOfCharacters int64                  `protobuf:"varint,9,opt,name=number_of_characters,json=numberOfCharacters,proto3" json:"number_of_characters,omitempty"`
+	Scores             string                 `protobuf:"bytes,10,opt,name=scores,proto3" json:"scores,omitempty"`
+	Size               string                 `protobuf:"bytes,11,opt,name=size,proto3" json:"size,omitempty"`
+	Tags               []string               `protobuf:"bytes,12,rep,name=tags,proto3" json:"tags,omitempty"`
+	unknownFields      protoimpl.UnknownFields
+	sizeCache          protoimpl.SizeCache
+}
+
 func (x *ArticleVersion) Reset() {
 	*x = ArticleVersion{}
-	mi := &file_external_messages_proto_msgTypes[5]
+	mi := &file_external_messages_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -509,7 +571,7 @@ func (x *ArticleVersion) String() string {
 func (*ArticleVersion) ProtoMessage() {}
 
 func (x *ArticleVersion) ProtoReflect() protoreflect.Message {
-	mi := &file_external_messages_proto_msgTypes[5]
+	mi := &file_external_messages_proto_msgTypes[6]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -522,73 +584,91 @@ func (x *ArticleVersion) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use ArticleVersion.ProtoReflect.Descriptor instead.
 func (*ArticleVersion) Descriptor() ([]byte, []int) {
-	return file_external_messages_proto_rawDescGZIP(), []int{5}
-}
-
-func (x *ArticleVersion) GetIdentifier() string {
-	if x != nil {
-		return x.Identifier
-	}
-	return ""
-}
-
-func (x *ArticleVersion) GetEditor() *VersionEditor {
-	if x != nil {
-		return x.Editor
-	}
-	return nil
-}
-
-type VersionEditor struct {
-	state         protoimpl.MessageState `protogen:"open.v1"`
-	Identifier    string                 `protobuf:"bytes,1,opt,name=identifier,proto3" json:"identifier,omitempty"`
-	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
-	unknownFields protoimpl.UnknownFields
-	sizeCache     protoimpl.SizeCache
-}
-
-func (x *VersionEditor) Reset() {
-	*x = VersionEditor{}
-	mi := &file_external_messages_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
-}
-
-func (x *VersionEditor) String() string {
-	return protoimpl.X.MessageStringOf(x)
-}
-
-func (*VersionEditor) ProtoMessage() {}
-
-func (x *VersionEditor) ProtoReflect() protoreflect.Message {
-	mi := &file_external_messages_proto_msgTypes[6]
-	if x != nil {
-		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-		if ms.LoadMessageInfo() == nil {
-			ms.StoreMessageInfo(mi)
-		}
-		return ms
-	}
-	return mi.MessageOf(x)
-}
-
-// Deprecated: Use VersionEditor.ProtoReflect.Descriptor instead.
-func (*VersionEditor) Descriptor() ([]byte, []int) {
 	return file_external_messages_proto_rawDescGZIP(), []int{6}
 }
 
-func (x *VersionEditor) GetIdentifier() string {
+func (x *ArticleVersion) GetComment() string {
 	if x != nil {
-		return x.Identifier
+		return x.Comment
 	}
 	return ""
 }
 
-func (x *VersionEditor) GetName() string {
+func (x *ArticleVersion) GetEditor() string {
 	if x != nil {
-		return x.Name
+		return x.Editor
 	}
 	return ""
+}
+
+func (x *ArticleVersion) GetIdentifier() int64 {
+	if x != nil {
+		return x.Identifier
+	}
+	return 0
+}
+
+func (x *ArticleVersion) GetIsBreakingNews() bool {
+	if x != nil && x.IsBreakingNews != nil {
+		return *x.IsBreakingNews
+	}
+	return false
+}
+
+func (x *ArticleVersion) GetIsFlaggedStabble() bool {
+	if x != nil && x.IsFlaggedStabble != nil {
+		return *x.IsFlaggedStabble
+	}
+	return false
+}
+
+func (x *ArticleVersion) GetIsMinorEdit() bool {
+	if x != nil && x.IsMinorEdit != nil {
+		return *x.IsMinorEdit
+	}
+	return false
+}
+
+func (x *ArticleVersion) GetMaintenanceTags() string {
+	if x != nil {
+		return x.MaintenanceTags
+	}
+	return ""
+}
+
+func (x *ArticleVersion) GetNoindex() bool {
+	if x != nil {
+		return x.Noindex
+	}
+	return false
+}
+
+func (x *ArticleVersion) GetNumberOfCharacters() int64 {
+	if x != nil {
+		return x.NumberOfCharacters
+	}
+	return 0
+}
+
+func (x *ArticleVersion) GetScores() string {
+	if x != nil {
+		return x.Scores
+	}
+	return ""
+}
+
+func (x *ArticleVersion) GetSize() string {
+	if x != nil {
+		return x.Size
+	}
+	return ""
+}
+
+func (x *ArticleVersion) GetTags() []string {
+	if x != nil {
+		return x.Tags
+	}
+	return nil
 }
 
 type ArticleImage struct {
@@ -715,6 +795,9 @@ type ArticleReference struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Identifier    string                 `protobuf:"bytes,1,opt,name=identifier,proto3" json:"identifier,omitempty"`
 	Metadata      string                 `protobuf:"bytes,2,opt,name=metadata,proto3" json:"metadata,omitempty"`
+	Soruce        string                 `protobuf:"bytes,3,opt,name=soruce,proto3" json:"soruce,omitempty"`
+	Text          string                 `protobuf:"bytes,4,opt,name=text,proto3" json:"text,omitempty"`
+	Type          string                 `protobuf:"bytes,5,opt,name=type,proto3" json:"type,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -759,6 +842,27 @@ func (x *ArticleReference) GetIdentifier() string {
 func (x *ArticleReference) GetMetadata() string {
 	if x != nil {
 		return x.Metadata
+	}
+	return ""
+}
+
+func (x *ArticleReference) GetSoruce() string {
+	if x != nil {
+		return x.Soruce
+	}
+	return ""
+}
+
+func (x *ArticleReference) GetText() string {
+	if x != nil {
+		return x.Text
+	}
+	return ""
+}
+
+func (x *ArticleReference) GetType() string {
+	if x != nil {
+		return x.Type
 	}
 	return ""
 }
@@ -834,7 +938,8 @@ func (x *ArticleTable) GetConfidenceScore() float32 {
 type ArticleItem struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Type          string                 `protobuf:"bytes,1,opt,name=type,proto3" json:"type,omitempty"`
-	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"` // TODO: Implement 'has_parts'
+	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
+	HasParts      string                 `protobuf:"bytes,3,opt,name=has_parts,json=hasParts,proto3" json:"has_parts,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -879,6 +984,13 @@ func (x *ArticleItem) GetType() string {
 func (x *ArticleItem) GetName() string {
 	if x != nil {
 		return x.Name
+	}
+	return ""
+}
+
+func (x *ArticleItem) GetHasParts() string {
+	if x != nil {
+		return x.HasParts
 	}
 	return ""
 }
@@ -1496,7 +1608,7 @@ const file_external_messages_proto_rawDesc = "" +
 	"\x03ack\x18\x03 \x01(\v2\r.external.ACKH\x00R\x03ack\x12:\n" +
 	"\fresult_batch\x18\x04 \x01(\v2\x15.external.ResultBatchH\x00R\vresultBatch\x12:\n" +
 	"\fall_finished\x18\x05 \x01(\v2\x15.external.AllFinishedH\x00R\vallFinishedB\t\n" +
-	"\apayload\"\xb7\x06\n" +
+	"\apayload\"\xc5\x06\n" +
 	"\aArticle\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x1e\n" +
 	"\n" +
@@ -1508,10 +1620,10 @@ const file_external_messages_proto_rawDesc = "" +
 	"\n" +
 	"is_part_of\x18\x06 \x01(\v2\x18.external.ArticleProjectR\bisPartOf\x12:\n" +
 	"\vin_language\x18\a \x01(\v2\x19.external.ArticleLanguageR\n" +
-	"inLanguage\x128\n" +
-	"\vmain_entity\x18\b \x01(\v2\x17.external.ArticleEntityR\n" +
-	"mainEntity\x12H\n" +
-	"\x13additional_entities\x18\t \x03(\v2\x17.external.ArticleEntityR\x12additionalEntities\x122\n" +
+	"inLanguage\x12<\n" +
+	"\vmain_entity\x18\b \x01(\v2\x1b.external.ArticleMainEntityR\n" +
+	"mainEntity\x12R\n" +
+	"\x13additional_entities\x18\t \x03(\v2!.external.ArticleAdditionalEntityR\x12additionalEntities\x122\n" +
 	"\aversion\x18\n" +
 	" \x01(\v2\x18.external.ArticleVersionR\aversion\x12 \n" +
 	"\vdescription\x18\v \x01(\tR\vdescription\x12\x1a\n" +
@@ -1528,27 +1640,41 @@ const file_external_messages_proto_rawDesc = "" +
 	"\n" +
 	"identifier\x18\x01 \x01(\tR\n" +
 	"identifier\x12\x12\n" +
-	"\x04name\x18\x02 \x01(\tR\x04name\"E\n" +
+	"\x04name\x18\x02 \x01(\tR\x04name\"1\n" +
 	"\x0fArticleLanguage\x12\x1e\n" +
 	"\n" +
 	"identifier\x18\x01 \x01(\tR\n" +
-	"identifier\x12\x12\n" +
-	"\x04name\x18\x02 \x01(\tR\x04name\"A\n" +
-	"\rArticleEntity\x12\x1e\n" +
+	"identifier\"E\n" +
+	"\x11ArticleMainEntity\x12\x1e\n" +
 	"\n" +
 	"identifier\x18\x01 \x01(\tR\n" +
 	"identifier\x12\x10\n" +
-	"\x03url\x18\x02 \x01(\tR\x03url\"a\n" +
-	"\x0eArticleVersion\x12\x1e\n" +
+	"\x03url\x18\x02 \x01(\tR\x03url\"e\n" +
+	"\x17ArticleAdditionalEntity\x12\x1e\n" +
 	"\n" +
 	"identifier\x18\x01 \x01(\tR\n" +
-	"identifier\x12/\n" +
-	"\x06editor\x18\x02 \x01(\v2\x17.external.VersionEditorR\x06editor\"C\n" +
-	"\rVersionEditor\x12\x1e\n" +
+	"identifier\x12\x10\n" +
+	"\x03url\x18\x02 \x01(\tR\x03url\x12\x18\n" +
+	"\aaspects\x18\x03 \x03(\tR\aaspects\"\xe2\x03\n" +
+	"\x0eArticleVersion\x12\x18\n" +
+	"\acomment\x18\x01 \x01(\tR\acomment\x12\x16\n" +
+	"\x06editor\x18\x02 \x01(\tR\x06editor\x12\x1e\n" +
 	"\n" +
-	"identifier\x18\x01 \x01(\tR\n" +
-	"identifier\x12\x12\n" +
-	"\x04name\x18\x02 \x01(\tR\x04name\"]\n" +
+	"identifier\x18\x03 \x01(\x03R\n" +
+	"identifier\x12-\n" +
+	"\x10is_breaking_news\x18\x04 \x01(\bH\x00R\x0eisBreakingNews\x88\x01\x01\x121\n" +
+	"\x12is_flagged_stabble\x18\x05 \x01(\bH\x01R\x10isFlaggedStabble\x88\x01\x01\x12'\n" +
+	"\ris_minor_edit\x18\x06 \x01(\bH\x02R\visMinorEdit\x88\x01\x01\x12)\n" +
+	"\x10maintenance_tags\x18\a \x01(\tR\x0fmaintenanceTags\x12\x18\n" +
+	"\anoindex\x18\b \x01(\bR\anoindex\x120\n" +
+	"\x14number_of_characters\x18\t \x01(\x03R\x12numberOfCharacters\x12\x16\n" +
+	"\x06scores\x18\n" +
+	" \x01(\tR\x06scores\x12\x12\n" +
+	"\x04size\x18\v \x01(\tR\x04size\x12\x12\n" +
+	"\x04tags\x18\f \x03(\tR\x04tagsB\x13\n" +
+	"\x11_is_breaking_newsB\x15\n" +
+	"\x13_is_flagged_stabbleB\x10\n" +
+	"\x0e_is_minor_edit\"]\n" +
 	"\fArticleImage\x12\x1f\n" +
 	"\vcontent_url\x18\x01 \x01(\tR\n" +
 	"contentUrl\x12\x16\n" +
@@ -1559,22 +1685,26 @@ const file_external_messages_proto_rawDesc = "" +
 	"identifier\x18\x01 \x01(\tR\n" +
 	"identifier\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x10\n" +
-	"\x03url\x18\x03 \x01(\tR\x03url\"N\n" +
+	"\x03url\x18\x03 \x01(\tR\x03url\"\x8e\x01\n" +
 	"\x10ArticleReference\x12\x1e\n" +
 	"\n" +
 	"identifier\x18\x01 \x01(\tR\n" +
 	"identifier\x12\x1a\n" +
-	"\bmetadata\x18\x02 \x01(\tR\bmetadata\"\x87\x01\n" +
+	"\bmetadata\x18\x02 \x01(\tR\bmetadata\x12\x16\n" +
+	"\x06soruce\x18\x03 \x01(\tR\x06soruce\x12\x12\n" +
+	"\x04text\x18\x04 \x01(\tR\x04text\x12\x12\n" +
+	"\x04type\x18\x05 \x01(\tR\x04type\"\x87\x01\n" +
 	"\fArticleTable\x12\x1e\n" +
 	"\n" +
 	"identifier\x18\x01 \x01(\tR\n" +
 	"identifier\x12\x18\n" +
 	"\aheaders\x18\x02 \x03(\tR\aheaders\x12\x12\n" +
 	"\x04rows\x18\x03 \x03(\tR\x04rows\x12)\n" +
-	"\x10confidence_score\x18\x04 \x01(\x02R\x0fconfidenceScore\"5\n" +
+	"\x10confidence_score\x18\x04 \x01(\x02R\x0fconfidenceScore\"R\n" +
 	"\vArticleItem\x12\x12\n" +
 	"\x04type\x18\x01 \x01(\tR\x04type\x12\x12\n" +
-	"\x04name\x18\x02 \x01(\tR\x04name\"\v\n" +
+	"\x04name\x18\x02 \x01(\tR\x04name\x12\x1b\n" +
+	"\thas_parts\x18\x03 \x01(\tR\bhasParts\"\v\n" +
 	"\tEndOfFile\"\x05\n" +
 	"\x03ACK\"Y\n" +
 	"\vResultBatch\x12\x19\n" +
@@ -1623,29 +1753,29 @@ func file_external_messages_proto_rawDescGZIP() []byte {
 
 var file_external_messages_proto_msgTypes = make([]protoimpl.MessageInfo, 23)
 var file_external_messages_proto_goTypes = []any{
-	(*ExternalMessage)(nil),  // 0: external.ExternalMessage
-	(*Article)(nil),          // 1: external.Article
-	(*ArticleProject)(nil),   // 2: external.ArticleProject
-	(*ArticleLanguage)(nil),  // 3: external.ArticleLanguage
-	(*ArticleEntity)(nil),    // 4: external.ArticleEntity
-	(*ArticleVersion)(nil),   // 5: external.ArticleVersion
-	(*VersionEditor)(nil),    // 6: external.VersionEditor
-	(*ArticleImage)(nil),     // 7: external.ArticleImage
-	(*ArticleLicense)(nil),   // 8: external.ArticleLicense
-	(*ArticleReference)(nil), // 9: external.ArticleReference
-	(*ArticleTable)(nil),     // 10: external.ArticleTable
-	(*ArticleItem)(nil),      // 11: external.ArticleItem
-	(*EndOfFile)(nil),        // 12: external.EndOfFile
-	(*ACK)(nil),              // 13: external.ACK
-	(*ResultBatch)(nil),      // 14: external.ResultBatch
-	(*QueryResult)(nil),      // 15: external.QueryResult
-	(*Q1Result)(nil),         // 16: external.Q1Result
-	(*Q2Result)(nil),         // 17: external.Q2Result
-	(*Q3Result)(nil),         // 18: external.Q3Result
-	(*Q4Result)(nil),         // 19: external.Q4Result
-	(*WordAppearances)(nil),  // 20: external.WordAppearances
-	(*Q5Result)(nil),         // 21: external.Q5Result
-	(*AllFinished)(nil),      // 22: external.AllFinished
+	(*ExternalMessage)(nil),         // 0: external.ExternalMessage
+	(*Article)(nil),                 // 1: external.Article
+	(*ArticleProject)(nil),          // 2: external.ArticleProject
+	(*ArticleLanguage)(nil),         // 3: external.ArticleLanguage
+	(*ArticleMainEntity)(nil),       // 4: external.ArticleMainEntity
+	(*ArticleAdditionalEntity)(nil), // 5: external.ArticleAdditionalEntity
+	(*ArticleVersion)(nil),          // 6: external.ArticleVersion
+	(*ArticleImage)(nil),            // 7: external.ArticleImage
+	(*ArticleLicense)(nil),          // 8: external.ArticleLicense
+	(*ArticleReference)(nil),        // 9: external.ArticleReference
+	(*ArticleTable)(nil),            // 10: external.ArticleTable
+	(*ArticleItem)(nil),             // 11: external.ArticleItem
+	(*EndOfFile)(nil),               // 12: external.EndOfFile
+	(*ACK)(nil),                     // 13: external.ACK
+	(*ResultBatch)(nil),             // 14: external.ResultBatch
+	(*QueryResult)(nil),             // 15: external.QueryResult
+	(*Q1Result)(nil),                // 16: external.Q1Result
+	(*Q2Result)(nil),                // 17: external.Q2Result
+	(*Q3Result)(nil),                // 18: external.Q3Result
+	(*Q4Result)(nil),                // 19: external.Q4Result
+	(*WordAppearances)(nil),         // 20: external.WordAppearances
+	(*Q5Result)(nil),                // 21: external.Q5Result
+	(*AllFinished)(nil),             // 22: external.AllFinished
 }
 var file_external_messages_proto_depIdxs = []int32{
 	1,  // 0: external.ExternalMessage.article:type_name -> external.Article
@@ -1655,28 +1785,27 @@ var file_external_messages_proto_depIdxs = []int32{
 	22, // 4: external.ExternalMessage.all_finished:type_name -> external.AllFinished
 	2,  // 5: external.Article.is_part_of:type_name -> external.ArticleProject
 	3,  // 6: external.Article.in_language:type_name -> external.ArticleLanguage
-	4,  // 7: external.Article.main_entity:type_name -> external.ArticleEntity
-	4,  // 8: external.Article.additional_entities:type_name -> external.ArticleEntity
-	5,  // 9: external.Article.version:type_name -> external.ArticleVersion
+	4,  // 7: external.Article.main_entity:type_name -> external.ArticleMainEntity
+	5,  // 8: external.Article.additional_entities:type_name -> external.ArticleAdditionalEntity
+	6,  // 9: external.Article.version:type_name -> external.ArticleVersion
 	7,  // 10: external.Article.image:type_name -> external.ArticleImage
 	8,  // 11: external.Article.license:type_name -> external.ArticleLicense
 	11, // 12: external.Article.infoboxes:type_name -> external.ArticleItem
 	11, // 13: external.Article.sections:type_name -> external.ArticleItem
 	10, // 14: external.Article.tables:type_name -> external.ArticleTable
 	9,  // 15: external.Article.references:type_name -> external.ArticleReference
-	6,  // 16: external.ArticleVersion.editor:type_name -> external.VersionEditor
-	15, // 17: external.ResultBatch.results:type_name -> external.QueryResult
-	16, // 18: external.QueryResult.q1:type_name -> external.Q1Result
-	17, // 19: external.QueryResult.q2:type_name -> external.Q2Result
-	18, // 20: external.QueryResult.q3:type_name -> external.Q3Result
-	19, // 21: external.QueryResult.q4:type_name -> external.Q4Result
-	21, // 22: external.QueryResult.q5:type_name -> external.Q5Result
-	20, // 23: external.Q4Result.top:type_name -> external.WordAppearances
-	24, // [24:24] is the sub-list for method output_type
-	24, // [24:24] is the sub-list for method input_type
-	24, // [24:24] is the sub-list for extension type_name
-	24, // [24:24] is the sub-list for extension extendee
-	0,  // [0:24] is the sub-list for field type_name
+	15, // 16: external.ResultBatch.results:type_name -> external.QueryResult
+	16, // 17: external.QueryResult.q1:type_name -> external.Q1Result
+	17, // 18: external.QueryResult.q2:type_name -> external.Q2Result
+	18, // 19: external.QueryResult.q3:type_name -> external.Q3Result
+	19, // 20: external.QueryResult.q4:type_name -> external.Q4Result
+	21, // 21: external.QueryResult.q5:type_name -> external.Q5Result
+	20, // 22: external.Q4Result.top:type_name -> external.WordAppearances
+	23, // [23:23] is the sub-list for method output_type
+	23, // [23:23] is the sub-list for method input_type
+	23, // [23:23] is the sub-list for extension type_name
+	23, // [23:23] is the sub-list for extension extendee
+	0,  // [0:23] is the sub-list for field type_name
 }
 
 func init() { file_external_messages_proto_init() }
@@ -1691,6 +1820,7 @@ func file_external_messages_proto_init() {
 		(*ExternalMessage_ResultBatch)(nil),
 		(*ExternalMessage_AllFinished)(nil),
 	}
+	file_external_messages_proto_msgTypes[6].OneofWrappers = []any{}
 	file_external_messages_proto_msgTypes[15].OneofWrappers = []any{
 		(*QueryResult_Q1)(nil),
 		(*QueryResult_Q2)(nil),

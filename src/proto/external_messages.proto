@@ -22,8 +22,8 @@ message Article {
   string date_modified = 5;
   ArticleProject is_part_of = 6;
   ArticleLanguage in_language = 7;
-  ArticleEntity main_entity = 8;
-  repeated ArticleEntity additional_entities = 9;
+  ArticleMainEntity main_entity = 8;
+  repeated ArticleAdditionalEntity additional_entities = 9;
   ArticleVersion version = 10;
   string description = 11;
   string abstract = 12;
@@ -42,23 +42,32 @@ message ArticleProject {
 
 message ArticleLanguage {
   string identifier = 1;
-  string name = 2;
 }
 
-message ArticleEntity {
+message ArticleMainEntity {
   string identifier = 1;
   string url = 2;
 }
 
-message ArticleVersion {
+message ArticleAdditionalEntity {
   string identifier = 1;
-  VersionEditor editor = 2;
-  // TODO: Implement 'scores'
+  string url = 2;
+  repeated string aspects = 3;
 }
 
-message VersionEditor {
-  string identifier = 1;
-  string name = 2;
+message ArticleVersion {
+  string comment = 1;
+  string editor = 2;
+  int64 identifier = 3;
+  optional bool is_breaking_news = 4;
+  optional bool is_flagged_stabble = 5;
+  optional bool is_minor_edit = 6;
+  string maintenance_tags = 7;
+  bool noindex = 8;
+  int64 number_of_characters = 9;
+  string scores = 10;
+  string size = 11;
+  repeated string tags = 12;
 }
 
 message ArticleImage {
@@ -76,6 +85,9 @@ message ArticleLicense {
 message ArticleReference {
   string identifier = 1;
   string metadata = 2;
+  string soruce = 3;
+  string text = 4;
+  string type = 5;
 }
 
 message ArticleTable {
@@ -88,7 +100,7 @@ message ArticleTable {
 message ArticleItem {
   string type = 1;
   string name = 2;
-  // TODO: Implement 'has_parts'
+  string has_parts = 3;
 }
 
 message EndOfFile {}
