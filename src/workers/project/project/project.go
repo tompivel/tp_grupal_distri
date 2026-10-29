@@ -32,7 +32,7 @@ func NewProject(config ProjectConfig) (*Project, error) {
 	}
 
 	outputExchangeRouteKeys := []string{"dateFilter", "wordTokenizer"}
-	outputExchange, err := middleware.CreateExchangeMiddleware(config.ProjectPrefix, outputExchangeRouteKeys, connSettings)
+	outputExchange, err := middleware.CreateExchangeMiddleware("projected-input", outputExchangeRouteKeys, connSettings)
 	if err != nil {
 		inputQueue.Close()
 		return nil, err

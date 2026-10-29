@@ -30,7 +30,7 @@ func NewEnglishFilter(config EnglishFilterConfig) (*EnglishFilter, error) {
 	}
 
 	inputExchange, err := middleware.CreateExchangeMiddleware(
-		config.InputExchange,
+		"date-filtered",
 		[]string{"englishFilter"},
 		connSettings,
 	)

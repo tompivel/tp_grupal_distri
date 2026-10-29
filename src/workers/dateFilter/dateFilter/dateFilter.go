@@ -30,7 +30,7 @@ func NewDateFilter(config DateFilterConfig) (*DateFilter, error) {
 		Port:     config.MomPort,
 	}
 	inputExchange, err := middleware.CreateExchangeMiddleware(
-		config.InputExchange,
+		"projected-input",
 		[]string{"dateFilter"},
 		connSettings,
 	)
@@ -43,7 +43,7 @@ func NewDateFilter(config DateFilterConfig) (*DateFilter, error) {
 	}
 
 	outputExchange, err := middleware.CreateExchangeMiddleware(
-		config.DateFilterPrefix,
+		"date-filtered",
 		outputExchangeRouteKeys,
 		connSettings,
 	)
