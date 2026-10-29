@@ -65,3 +65,6 @@ __pycache__/
 # Capturas distribuidas por GitHub Releases; conservar metadatos y esquemas.
 /dist/dataset/
 /dataset/**/*.parquet
+
+# Última ejecución integral (resultados y logs locales).
+/tests/integration/last-run/

@@ -1,4 +1,12 @@
 {
+  "https://images.tiny.invalid/pixel.png": {
+    "source_url": "https://images.tiny.invalid/pixel.png",
+    "status": "available",
+    "path": "../images/4ff6ab670a58c14270e034e2090d9a432caa263a14e0a25785386b0c12f880b5.bin",
+    "sha256": "4ff6ab670a58c14270e034e2090d9a432caa263a14e0a25785386b0c12f880b5",
+    "bytes": 70,
+    "provenance": "synthetic_fixture"
+  },
   "https://upload.wikimedia.org/wikipedia/commons/0/00/Ahmad_Jassim_-_Feb_11%2C_2021.jpg": {
     "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Ahmad_Jassim_-_Feb_11%2C_2021.jpg",
     "status": "available",
