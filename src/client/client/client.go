@@ -153,18 +153,6 @@ func (client *Client) sendArticles() error {
 }
 
 func (client *Client) recvResults() error {
-	message, err := external.ReadMessage(client.conn, external.ResultBatch)
-	if err != nil {
-		return err
-	}
-
-	resultBatch := message.GetResultBatch()
-
-	if err := external.WriteAck(client.conn); err != nil {
-		slog.Debug("Error while writing ack message", "err", err)
-		return err
-	}
-
 	outputFile, err := os.Create(client.config.OutputFile)
 	if err != nil {
 		slog.Debug("Error while creating output file", "err", err)
@@ -173,16 +161,34 @@ func (client *Client) recvResults() error {
 	defer outputFile.Close()
 	outputFileWriter := csv.NewWriter(outputFile)
 
-	for _, result := range resultBatch.GetResults() {
-		q1Result := result.GetQ1()
-		if q1Result == nil {
-			return errors.New("result batch contains a non-Q1 result")
-		}
-		if err := outputFileWriter.Write([]string{q1Result.GetUrl(), q1Result.GetDateModified()}); err != nil {
-			slog.Debug("Error while writing output file", "err", err)
+	for {
+		message, err := external.ReadMessage(client.conn, external.Any)
+		if err != nil {
 			return err
 		}
+
+		if resultBatch := message.GetResultBatch(); resultBatch != nil {
+			for _, result := range resultBatch.GetResults() {
+				q1Result := result.GetQ1()
+				if q1Result == nil {
+					return errors.New("result batch contains a non-Q1 result")
+				}
+				if err := outputFileWriter.Write([]string{q1Result.GetUrl(), q1Result.GetDateModified()}); err != nil {
+					slog.Debug("Error while writing output file", "err", err)
+					return err
+				}
+			}
+			if err := outputFileWriter.Error(); err != nil {
+				return err
+			}
+			if err := external.WriteAck(client.conn); err != nil {
+				slog.Debug("Error while writing ack message", "err", err)
+				return err
+			}
+		} else if message.GetAllFinished() != nil {
+			return outputFileWriter.Error()
+		} else {
+			return errors.New("expected ResultBatch or AllFinished message")
+		}
 	}
-	outputFileWriter.Flush()
-	return outputFileWriter.Error()
 }
