@@ -59,7 +59,10 @@ func NewDateFilter(config DateFilterConfig) (*DateFilter, error) {
 }
 
 func (filter *DateFilter) Run() {
-	if err := filter.inputQueue.StartConsuming(func(
+	defer filter.inputQueue.Close()
+	defer filter.outputExchange.Close()
+
+	if err := middleware.Consume(filter.inputQueue, func(
 		msg middleware.Message,
 		ack func(),
 		nack func(),
@@ -120,7 +123,7 @@ func (filter *DateFilter) handleDataMessage(
 		return err
 	}
 
-	if year <= 2020 {
+	if year > 2020 {
 		return nil
 	}
 
@@ -172,7 +175,10 @@ func (filter *DateFilter) send(
 func articleYear(dateModified string) (int, error) {
 	parsedDate, err := time.Parse(time.RFC3339Nano, dateModified)
 	if err != nil {
-		return 0, errors.New("invalid date_modified: " + dateModified)
+		parsedDate, err = time.Parse("2006-01-02T15:04:05.999999999", dateModified)
+		if err != nil {
+			return 0, errors.New("invalid date_modified: " + dateModified)
+		}
 	}
 
 	return parsedDate.Year(), nil

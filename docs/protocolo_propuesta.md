@@ -156,6 +156,18 @@ Cada mensaje publicado debe incluir el contenido serializado correspondiente al 
 | `client_id` | Identificador del cleinte al que pertenece el mensaje, con el fin de separar mensajes entre distintos clientes. |
 | `payload` | Contenido específico del mensaje. Corresponde a otro mensaje de Protbuf representado mediante un campo `oneof`|
 
+El sobre `InternalMessage` se conserva también en el retorno
+`ResultCollector → RabbitMQ → Gateway`. Sus payloads `result_batch` y
+`all_finished` reutilizan las definiciones `ResultBatch` y `AllFinished` del
+protocolo externo, sin duplicar los esquemas. Gateway selecciona la conexión
+mediante `client_id` y coloca el mismo payload en `ExternalMessage` para TCP.
+El wrapper `middleware.Message` contiene únicamente el cuerpo serializado;
+la identidad del cliente permanece en Protobuf.
+
+La implementación actual de ese retorno está limitada al modo de pruebas
+`Q1_TEST_MODE=1`: el EOF de Q1 permite producir `AllFinished` sólo dentro de ese
+alcance. El cierre de las cinco consultas continúa pendiente.
+
 
 ### Tipos de mensajes
 Los tipos concretos de mensajes que se utilizan en el lugar del `payload` del mensaje base son los siguientes:
@@ -166,6 +178,8 @@ Los tipos concretos de mensajes que se utilizan en el lugar del `payload` del me
 | `ProjectedArticle` | Artículo con los campos necesarios para las consultas, generado por `Project`. |
 | `DateFiltered` | Artículo que cumple con los filtros de tiempo de los `DateFilter` y que solo contiene los campos necesarios para Q1 y Q2. |
 | `TokenizedAbstract` | Palabras obtenidas de tokenizar el abstract de los artículos mediante los `WordTokenizer` y que solo contiene los campos necesarios para Q3, Q4 y Q5. |
+| `ResultBatch` | Lote de resultados enviado por ResultCollector a Gateway, conservando `client_id` en el sobre interno. |
+| `AllFinished` | Finalización enviada por ResultCollector a Gateway dentro del mismo sobre interno. |
 
 ### Mensajes comunes entre queries
 
