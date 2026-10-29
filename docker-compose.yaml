@@ -1,7 +1,7 @@
-# Despliegue local de todos los nodos del TP:
-# RabbitMQ, un gateway, un cliente y una instancia de cada worker.
+# Despliegue mínimo: RabbitMQ, un gateway, un cliente y el pipeline inicial.
 #
-# Ejecutar desde este directorio:
+# Crear un archivo CSV en ./runtime/input/input.csv antes de iniciar el cliente.
+# Ejecutar:
 #   docker compose config
 #   docker compose build
 #   docker compose up
@@ -52,6 +52,10 @@ services:
     environment:
       SERVER_HOST: gateway
       SERVER_PORT: "5678"
+      INPUT_FILE: /runtime/input/input.csv
+      OUTPUT_FILE: /runtime/output/output.csv
+    volumes:
+      - ./runtime:/runtime
 
   project:
     build:
@@ -61,33 +65,13 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
-
-  shared-router:
-    build:
-      context: ./src
-      dockerfile: workers/sharedRouter/Dockerfile
-    container_name: tp-grupal-shared-router
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  english-filter:
-    build:
-      context: ./src
-      dockerfile: workers/englishFilter/Dockerfile
-    container_name: tp-grupal-english-filter
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  bio-filter:
-    build:
-      context: ./src
-      dockerfile: workers/bioFilter/Dockerfile
-    container_name: tp-grupal-bio-filter
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
+    environment:
+      ID: "0"
+      MOM_HOST: rabbitmq
+      MOM_PORT: "5672"
+      INPUT_QUEUE: input
+      PROJECT_AMOUNT: "1"
+      PROJECT_PREFIX: project
 
   date-filter:
     build:
@@ -97,84 +81,26 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
+    environment:
+      ID: "0"
+      MOM_HOST: rabbitmq
+      MOM_PORT: "5672"
+      PROJECT_PREFIX: project
+      DATE_FILTER_AMOUNT: "1"
+      DATE_FILTER_PREFIX: dateFilter
 
-  date-router:
+  english-filter:
     build:
       context: ./src
-      dockerfile: workers/dateRouter/Dockerfile
-    container_name: tp-grupal-date-router
+      dockerfile: workers/englishFilter/Dockerfile
+    container_name: tp-grupal-english-filter
     depends_on:
       rabbitmq:
         condition: service_healthy
-
-  image-fetcher:
-    build:
-      context: ./src
-      dockerfile: workers/imageFetcher/Dockerfile
-    container_name: tp-grupal-image-fetcher
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  word-tokenizer:
-    build:
-      context: ./src
-      dockerfile: workers/wordTokenizer/Dockerfile
-    container_name: tp-grupal-word-tokenizer
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  word-appearence-detector:
-    build:
-      context: ./src
-      dockerfile: workers/wordAppearenceDetector/Dockerfile
-    container_name: tp-grupal-word-appearence-detector
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  avarage-filter:
-    build:
-      context: ./src
-      dockerfile: workers/avarageFilter/Dockerfile
-    container_name: tp-grupal-avarage-filter
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  average-calculator:
-    build:
-      context: ./src
-      dockerfile: workers/averageCalculator/Dockerfile
-    container_name: tp-grupal-average-calculator
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  top-k-reducer:
-    build:
-      context: ./src
-      dockerfile: workers/topKReducer/Dockerfile
-    container_name: tp-grupal-top-k-reducer
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  wordcounter-reducer:
-    build:
-      context: ./src
-      dockerfile: workers/wordcounterReducer/Dockerfile
-    container_name: tp-grupal-wordcounter-reducer
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
-
-  result-collector:
-    build:
-      context: ./src
-      dockerfile: workers/resultCollector/Dockerfile
-    container_name: tp-grupal-result-collector
-    depends_on:
-      rabbitmq:
-        condition: service_healthy
+    environment:
+      ID: "0"
+      MOM_HOST: rabbitmq
+      MOM_PORT: "5672"
+      DATE_FILTER_PREFIX: dateFilter
+      ENGLISH_FILTER_AMOUNT: "1"
+      ENGLISH_FILTER_PREFIX: englishFilter

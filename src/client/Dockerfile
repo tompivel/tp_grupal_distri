@@ -10,6 +10,7 @@ RUN go mod download
 COPY gen ./gen
 COPY common ./common
 COPY sender-receiver-logic ./sender-receiver-logic
+COPY model ./model
 COPY client ./client
 # CGO_ENABLED must be disabled to run go binary in Alpine
 RUN CGO_ENABLED=0 GOOS=linux go build -o bin/client ./client
