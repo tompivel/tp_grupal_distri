@@ -6,7 +6,8 @@ import (
 	"io"
 
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
-	pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external"
+	common_pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/common"
+	external_pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external/safeio"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external/serializer"
 	"google.golang.org/protobuf/proto"
@@ -20,11 +21,12 @@ const (
 	Article
 	Ack
 	EndOfRecords
+	Any
 )
 
 const MaxFrameSize = 16 * 1024 * 1024
 
-func serializeArticle(article *pb.Article) []byte {
+func serializeArticle(article *common_pb.Article) []byte {
 	data, err := proto.Marshal(article) // TODO: use generics and move marshalling to serializer.go
 
 	if err != nil {
@@ -38,7 +40,7 @@ func serializeArticle(article *pb.Article) []byte {
 }
 
 func serializeACK() []byte {
-	ack := &pb.ACK{}
+	ack := &external_pb.ACK{}
 	data, err := proto.Marshal(ack)
 
 	if err != nil {
@@ -52,7 +54,7 @@ func serializeACK() []byte {
 }
 
 func serializeEOF() []byte {
-	eof := &pb.EndOfFile{}
+	eof := &external_pb.EndOfFile{}
 	data, err := proto.Marshal(eof)
 
 	if err != nil {
@@ -86,7 +88,7 @@ func ReadMsgType(reader io.Reader) (MsgType, error) {
 	return msgType, nil
 }
 
-func WriteArticle(writer io.Writer, article *pb.Article) error {
+func WriteArticle(writer io.Writer, article *common_pb.Article) error {
 	msg := serializeArticle(article)
 	return safeio.WriteAll(writer, msg)
 }
@@ -131,7 +133,7 @@ func WriteFruitTop(writer io.Writer, fruitItemRecords []fruititem.FruitItem) err
 	return safeio.WriteAll(writer, msg)
 }
 
-func ReadMessage(reader io.Reader, msgType MsgType) (*pb.ExternalMessage, error) {
+func ReadMessage(reader io.Reader, msgType MsgType) (*external_pb.ExternalMessage, error) {
 	serializedPayloadSize, err := safeio.ReadAll(reader, serializer.UINT32_SIZE)
 	if err != nil {
 		return nil, err
@@ -147,7 +149,7 @@ func ReadMessage(reader io.Reader, msgType MsgType) (*pb.ExternalMessage, error)
 		return nil, err
 	}
 
-	msg := new(pb.ExternalMessage)
+	msg := new(external_pb.ExternalMessage)
 	if err := proto.Unmarshal(serializedExternalMessage, msg); err != nil {
 		return nil, err
 	}
@@ -163,15 +165,19 @@ func ReadMessage(reader io.Reader, msgType MsgType) (*pb.ExternalMessage, error)
 	return msg, nil
 }
 
-func matchMsgType(msgType MsgType, msg *pb.ExternalMessage) bool {
+func matchMsgType(msgType MsgType, msg *external_pb.ExternalMessage) bool {
+	if msgType == Any {
+		return true
+	}
+
 	switch msg.Payload.(type) {
-	case *pb.ExternalMessage_Article:
+	case *external_pb.ExternalMessage_Article:
 		return msgType == Article
 
-	case *pb.ExternalMessage_Ack:
+	case *external_pb.ExternalMessage_Ack:
 		return msgType == Ack
 
-	case *pb.ExternalMessage_EndOfFile:
+	case *external_pb.ExternalMessage_EndOfFile:
 		return msgType == EndOfRecords
 	}
 

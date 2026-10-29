@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external"
+	pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/common"
 )
 
 type ParquetArticle struct {

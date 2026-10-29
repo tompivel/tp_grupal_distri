@@ -5,6 +5,7 @@ import (
 	"log/slog"
 
 	internalpb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto"
+	common_pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/common"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/middleware"
 	"google.golang.org/protobuf/proto"
 )
@@ -102,7 +103,7 @@ func (project *Project) handleEndOfRecordMessage(input *internalpb.InternalMessa
 	return nil
 }
 
-func (project *Project) handleDataMessage(input *internalpb.InternalMessage, article *internalpb.Article) error {
+func (project *Project) handleDataMessage(input *internalpb.InternalMessage, article *common_pb.Article) error {
 	if article == nil {
 		return errors.New("article payload is empty")
 	}

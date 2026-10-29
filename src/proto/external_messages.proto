@@ -2,105 +2,18 @@ syntax = "proto3";
 
 package external;
 
+import "common.proto";
+
 option go_package = "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external";
 
 message ExternalMessage {
   oneof payload {
-    Article article = 1;
+    common.Article article = 1;
     EndOfFile end_of_file = 2;
     ACK ack = 3;
     ResultBatch result_batch = 4;
     AllFinished all_finished = 5;
   }
-}
-
-message Article {
-  string name = 1; 
-  int64 identifier = 2; 
-  string url = 3; 
-  string date_created = 4; 
-  string date_modified = 5;
-  ArticleProject is_part_of = 6;
-  ArticleLanguage in_language = 7;
-  ArticleMainEntity main_entity = 8;
-  repeated ArticleAdditionalEntity additional_entities = 9;
-  ArticleVersion version = 10;
-  string description = 11;
-  string abstract = 12;
-  ArticleImage image = 13;
-  repeated ArticleLicense license = 14;
-  repeated ArticleItem infoboxes = 15;
-  repeated ArticleItem sections = 16;
-  repeated ArticleTable tables = 17; 
-  repeated ArticleReference references = 18;
-}
-
-message ArticleProject {
-  string identifier = 1;
-  string name = 2;
-}
-
-message ArticleLanguage {
-  string identifier = 1;
-}
-
-message ArticleMainEntity {
-  string identifier = 1;
-  string url = 2;
-}
-
-message ArticleAdditionalEntity {
-  string identifier = 1;
-  string url = 2;
-  repeated string aspects = 3;
-}
-
-message ArticleVersion {
-  string comment = 1;
-  string editor = 2;
-  int64 identifier = 3;
-  optional bool is_breaking_news = 4;
-  optional bool is_flagged_stabble = 5;
-  optional bool is_minor_edit = 6;
-  string maintenance_tags = 7;
-  bool noindex = 8;
-  int64 number_of_characters = 9;
-  string scores = 10;
-  string size = 11;
-  repeated string tags = 12;
-}
-
-message ArticleImage {
-  string content_url = 1;
-  int64 height = 2;
-  int64 width = 3;
-}
-
-message ArticleLicense {
-  string identifier = 1;
-  string name = 2;
-  string url = 3;
-}
-
-message ArticleReference {
-  string identifier = 1;
-  string metadata = 2;
-  string soruce = 3;
-  string text = 4;
-  string type = 5;
-}
-
-message ArticleTable {
-  string identifier = 1;
-  repeated string headers = 2;
-  repeated string rows = 3;
-  float confidence_score = 4;
-}
-
-message ArticleItem {
-  string type = 1;
-  string name = 2;
-  string has_parts = 3;
 }
 
 message EndOfFile {}
