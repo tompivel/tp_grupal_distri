@@ -47,6 +47,20 @@ func serializeACK() []byte {
 	return append(length, data...)
 }
 
+func serializeEOF() []byte {
+	eof := &pb.EndOfFile{}
+	data, err := proto.Marshal(eof)
+
+	if err != nil {
+		return nil
+	}
+
+	length := make([]byte, 4)
+	binary.BigEndian.PutUint32(length, uint32(len(data)))
+
+	return append(length, data...)
+}
+
 func serializeFruitRecord(fruit *fruititem.FruitItem) []byte {
 	msg := serializer.SerializeString(fruit.Fruit)
 	msg = append(msg, serializer.SerializeUint32(fruit.Amount)...)
@@ -138,5 +152,6 @@ func WriteAck(writer io.Writer) error {
 }
 
 func WriteEndOfRecords(writer io.Writer) error {
-	return writeMsgType(writer, EndOfRecords)
+	msg := serializeEOF()
+	return safeio.WriteAll(writer, msg)
 }
