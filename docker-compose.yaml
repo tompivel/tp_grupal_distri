@@ -1,6 +1,6 @@
 # Despliegue mínimo: RabbitMQ, un gateway, un cliente y el pipeline inicial.
 #
-# Crear un archivo CSV en ./runtime/input/input.csv antes de iniciar el cliente.
+# Crear un archivo parquet en ./runtime/input/input.parquet antes de iniciar el cliente.
 # Ejecutar:
 #   docker compose config
 #   docker compose build
@@ -32,7 +32,7 @@ services:
       rabbitmq:
         condition: service_healthy
     environment:
-      INPUT_QUEUE: results
+      INPUT_QUEUE: q1-results
       OUTPUT_QUEUE: input
       MOM_HOST: rabbitmq
       MOM_PORT: "5672"
@@ -52,8 +52,8 @@ services:
     environment:
       SERVER_HOST: gateway
       SERVER_PORT: "5678"
-      INPUT_FILE: /runtime/input/input.csv
-      OUTPUT_FILE: /runtime/output/output.csv
+      INPUT_FILE: /runtime/input/input.parquet
+      OUTPUT_FILE: /runtime/output.csv
     volumes:
       - ./runtime:/runtime
 
