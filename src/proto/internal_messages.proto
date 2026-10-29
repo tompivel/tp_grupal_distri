@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package internal;
 
+import "external_messages.proto";
+
 option go_package = "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto";
 
 message InternalMessage {
@@ -13,6 +15,8 @@ message InternalMessage {
     DateFiltered date_filtered = 4;
     TokenizedAbstract tokenized_abstract = 5;
     EndOfFile end_of_file = 6;
+    external.ResultBatch result_batch = 7;
+    external.AllFinished all_finished = 8;
   }
 }
 
