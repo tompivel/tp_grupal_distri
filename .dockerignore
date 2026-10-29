@@ -6,6 +6,6 @@ Informe.pdf
 wikipedia-article-analysis.ipynb
 tests/expected
 tests/oracle/.venv
-tests/q1/last-run
+tests/integration/last-run
 **/__pycache__
 dist
