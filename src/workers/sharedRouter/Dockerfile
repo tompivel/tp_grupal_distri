@@ -4,8 +4,8 @@ RUN mkdir -p /build
 WORKDIR /build/
 COPY go.mod .
 COPY go.sum .
-COPY common ./common
 RUN go mod download
+COPY common ./common
 COPY workers/sharedRouter ./workers/sharedRouter
 RUN CGO_ENABLED=0 GOOS=linux go build -o bin/sharedRouter ./workers/sharedRouter
 
