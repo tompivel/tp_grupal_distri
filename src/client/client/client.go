@@ -8,7 +8,6 @@ import (
 	"net"
 	"os"
 	"os/signal"
-	"strconv"
 	"sync/atomic"
 	"syscall"
 	"time"
@@ -73,7 +72,7 @@ func (client *Client) Run() error {
 		return nil
 	}
 
-	if err := client.recvFruitTop(); err != nil {
+	if err := client.recvResults(); err != nil {
 		if client.running.Load() {
 			return err
 		}
@@ -153,16 +152,14 @@ func (client *Client) sendArticles() error {
 	return nil
 }
 
-func (client *Client) recvFruitTop() error {
-	if err := client.expectMsgType(external.FruitTop); err != nil {
+func (client *Client) recvResults() error {
+	message, err := external.ReadMessage(client.conn, external.ResultBatch)
+	if err != nil {
 		return err
 	}
 
-	fruitTop, err := external.ReadFruitTop(client.conn)
-	if err != nil {
-		slog.Debug("Error while reading FruitTop message", "err", err)
-		return err
-	}
+	resultBatch := message.GetResultBatch()
+
 	if err := external.WriteAck(client.conn); err != nil {
 		slog.Debug("Error while writing ack message", "err", err)
 		return err
@@ -173,16 +170,19 @@ func (client *Client) recvFruitTop() error {
 		slog.Debug("Error while creating output file", "err", err)
 		return err
 	}
+	defer outputFile.Close()
 	outputFileWriter := csv.NewWriter(outputFile)
 
-	for _, fruitRecord := range fruitTop {
-		line := []string{fruitRecord.Fruit, strconv.Itoa(int(fruitRecord.Amount))}
-		if err := outputFileWriter.Write(line); err != nil {
+	for _, result := range resultBatch.GetResults() {
+		q1Result := result.GetQ1()
+		if q1Result == nil {
+			return errors.New("result batch contains a non-Q1 result")
+		}
+		if err := outputFileWriter.Write([]string{q1Result.GetUrl(), q1Result.GetDateModified()}); err != nil {
 			slog.Debug("Error while writing output file", "err", err)
 			return err
 		}
 	}
 	outputFileWriter.Flush()
-
-	return nil
+	return outputFileWriter.Error()
 }

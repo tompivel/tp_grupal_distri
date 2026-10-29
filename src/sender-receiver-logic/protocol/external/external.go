@@ -21,6 +21,7 @@ const (
 	Article
 	Ack
 	EndOfRecords
+	ResultBatch
 	Any
 )
 
@@ -164,6 +165,9 @@ func matchMsgType(msgType MsgType, msg *external_pb.ExternalMessage) bool {
 
 	case *external_pb.ExternalMessage_EndOfFile:
 		return msgType == EndOfRecords
+
+	case *external_pb.ExternalMessage_ResultBatch:
+		return msgType == ResultBatch
 	}
 
 	return false
