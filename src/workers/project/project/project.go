@@ -45,7 +45,10 @@ func NewProject(config ProjectConfig) (*Project, error) {
 }
 
 func (project *Project) Run() {
-	project.inputQueue.StartConsuming(func(msg middleware.Message, ack, nack func()) {
+	defer project.inputQueue.Close()
+	defer project.outputExchange.Close()
+
+	middleware.Consume(project.inputQueue, func(msg middleware.Message, ack, nack func()) {
 		project.handleMessage(msg, ack, nack)
 	})
 }
