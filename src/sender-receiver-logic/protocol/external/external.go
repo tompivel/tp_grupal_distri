@@ -68,6 +68,16 @@ func WriteArticle(writer io.Writer, article *common_pb.Article) error {
 	return safeio.WriteAll(writer, msg)
 }
 
+func WriteResultBatch(writer io.Writer, resultBatch *external_pb.ResultBatch) error {
+	msg, err := serializeMessage(&external_pb.ExternalMessage{
+		Payload: &external_pb.ExternalMessage_ResultBatch{ResultBatch: resultBatch},
+	})
+	if err != nil {
+		return err
+	}
+	return safeio.WriteAll(writer, msg)
+}
+
 func WriteFruitRecord(writer io.Writer, fruitItemRecord *fruititem.FruitItem) error {
 	msg := serializer.SerializeUint32(uint32(FruitRecord))
 	msg = append(msg, serializeFruitRecord(fruitItemRecord)...)

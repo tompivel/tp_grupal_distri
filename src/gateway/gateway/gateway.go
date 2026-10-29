@@ -138,45 +138,56 @@ func (gateway *Gateway) handleClientRequest(client clientregistry.ClientState) {
 }
 
 func (gateway *Gateway) handleClientResponse(msg middleware.Message, ack func(), nack func()) {
-	clientIndex := -1
+	var message internal_pb.InternalMessage
+	if err := proto.Unmarshal([]byte(msg.Body), &message); err != nil {
+		slog.Error("While deserializing internal response", "err", err)
+		return
+	}
 
-	gateway.registry.WithLock(func(clients []clientregistry.ClientState) {
-		for i, client := range clients {
-			fruitTop, err := client.Handler.DeserializeResultMessage(&msg)
-			if err != nil {
-				slog.Debug("While reading from output queue", "err", err)
-				nack()
-				gateway.outputQueue.StopConsuming()
-				return
-			}
-
-			if fruitTop == nil {
-				continue
-			}
-
-			if err := external.WriteFruitTop(client.Conn, fruitTop); err != nil {
-				slog.Debug("While writing FRUIT_TOP message", "err", err)
-				return
-			}
-			msgType, err := external.ReadMsgType(client.Conn)
-			if err != nil {
-				slog.Debug("While reading message type", "err", err)
-				return
-			}
-			if msgType != external.Ack {
-				slog.Debug("Expected ACK message")
-				return
-			}
-			clientIndex = i
+	switch payload := message.GetPayload().(type) {
+	case *internal_pb.InternalMessage_DateFiltered:
+		if payload.DateFiltered == nil {
+			slog.Error("Received empty DateFiltered response")
 			return
 		}
-		slog.Warn("No client handler could process this message")
-		nack()
-	})
 
-	if clientIndex >= 0 {
-		gateway.registry.Remove(clientIndex)
-		ack()
+		resultBatch := &external_pb.ResultBatch{
+			QueryId: 1,
+			Results: []*external_pb.QueryResult{
+				{
+					Result: &external_pb.QueryResult_Q1{
+						Q1: &external_pb.Q1Result{
+							Url:          payload.DateFiltered.GetUrl(),
+							DateModified: payload.DateFiltered.GetDateModified(),
+						},
+					},
+				},
+			},
+		}
+
+		var sendErr error
+		sent := false
+		gateway.registry.WithLock(func(clients []clientregistry.ClientState) {
+			if len(clients) == 0 {
+				return
+			}
+			sendErr = external.WriteResultBatch(clients[0].Conn, resultBatch)
+			sent = sendErr == nil
+		})
+		if !sent {
+			if sendErr != nil {
+				slog.Error("While sending Q1 result batch to client", "err", sendErr)
+			} else {
+				slog.Warn("No connected client for Q1 result batch")
+			}
+			return
+		}
+
+	case *internal_pb.InternalMessage_EndOfFile:
+		slog.Info("Received end of Q1 results")
+
+	default:
+		slog.Error("Received unsupported internal response")
 		return
 	}
 }
