@@ -1,0 +1,11 @@
+**/.*
+dataset
+docs
+Diagramas
+Informe.pdf
+wikipedia-article-analysis.ipynb
+tests/expected
+tests/oracle/.venv
+tests/q1/last-run
+**/__pycache__
+dist
