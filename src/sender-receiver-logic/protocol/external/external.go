@@ -26,45 +26,15 @@ const (
 
 const MaxFrameSize = 16 * 1024 * 1024
 
-func serializeArticle(article *common_pb.Article) []byte {
-	data, err := proto.Marshal(article) // TODO: use generics and move marshalling to serializer.go
-
+func serializeMessage(message *external_pb.ExternalMessage) ([]byte, error) {
+	data, err := proto.Marshal(message)
 	if err != nil {
-		return nil
+		return nil, err
 	}
 
-	length := make([]byte, 4)
+	length := make([]byte, serializer.UINT32_SIZE)
 	binary.BigEndian.PutUint32(length, uint32(len(data)))
-
-	return append(length, data...)
-}
-
-func serializeACK() []byte {
-	ack := &external_pb.ACK{}
-	data, err := proto.Marshal(ack)
-
-	if err != nil {
-		return nil
-	}
-
-	length := make([]byte, 4)
-	binary.BigEndian.PutUint32(length, uint32(len(data)))
-
-	return append(length, data...)
-}
-
-func serializeEOF() []byte {
-	eof := &external_pb.EndOfFile{}
-	data, err := proto.Marshal(eof)
-
-	if err != nil {
-		return nil
-	}
-
-	length := make([]byte, 4)
-	binary.BigEndian.PutUint32(length, uint32(len(data)))
-
-	return append(length, data...)
+	return append(length, data...), nil
 }
 
 func serializeFruitRecord(fruit *fruititem.FruitItem) []byte {
@@ -89,7 +59,12 @@ func ReadMsgType(reader io.Reader) (MsgType, error) {
 }
 
 func WriteArticle(writer io.Writer, article *common_pb.Article) error {
-	msg := serializeArticle(article)
+	msg, err := serializeMessage(&external_pb.ExternalMessage{
+		Payload: &external_pb.ExternalMessage_Article{Article: article},
+	})
+	if err != nil {
+		return err
+	}
 	return safeio.WriteAll(writer, msg)
 }
 
@@ -204,11 +179,21 @@ func ReadFruitTop(reader io.Reader) ([]fruititem.FruitItem, error) {
 }
 
 func WriteAck(writer io.Writer) error {
-	msg := serializeACK()
+	msg, err := serializeMessage(&external_pb.ExternalMessage{
+		Payload: &external_pb.ExternalMessage_Ack{Ack: &external_pb.ACK{}},
+	})
+	if err != nil {
+		return err
+	}
 	return safeio.WriteAll(writer, msg)
 }
 
 func WriteEndOfRecords(writer io.Writer) error {
-	msg := serializeEOF()
+	msg, err := serializeMessage(&external_pb.ExternalMessage{
+		Payload: &external_pb.ExternalMessage_EndOfFile{EndOfFile: &external_pb.EndOfFile{}},
+	})
+	if err != nil {
+		return err
+	}
 	return safeio.WriteAll(writer, msg)
 }

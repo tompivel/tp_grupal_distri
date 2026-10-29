@@ -10,9 +10,13 @@ import (
 
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/clientregistry"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
-	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external"
-	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/middleware"
+	internal_pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto"
+	common_pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/common"
+	external_pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/messagehandler"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/middleware"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external"
+	"google.golang.org/protobuf/proto"
 )
 
 type GatewayConfig struct {
@@ -105,30 +109,29 @@ func (gateway *Gateway) handleSignals() {
 }
 
 func (gateway *Gateway) handleClientRequest(client clientregistry.ClientState) {
-loop:
 	for {
-		msgType, err := external.ReadMsgType(client.Conn)
+		message, err := external.ReadMessage(client.Conn, external.Any)
 		if err != nil {
-			slog.Debug("While reading message type", "err", err)
+			slog.Debug("While reading client message", "err", err)
 			return
 		}
 
-		switch msgType {
-		case external.FruitRecord:
-			if err := gateway.handleFruitRecordMessage(client); err != nil {
-				slog.Debug("While handling record message", "err", err)
+		switch payload := message.GetPayload().(type) {
+		case *external_pb.ExternalMessage_Article:
+			if err := gateway.handleArticleMessage(client, payload.Article); err != nil {
+				slog.Debug("While handling article message", "err", err)
 				return
 			}
 
-		case external.EndOfRecords:
+		case *external_pb.ExternalMessage_EndOfFile:
 			if err := gateway.handleEndOfRecordsMessage(client); err != nil {
 				slog.Debug("While handling end of records message", "err", err)
 				return
 			}
-			break loop
+			return
 
 		default:
-			slog.Debug("Read unexpected message type")
+			slog.Debug("Received unexpected client message")
 			return
 		}
 	}
@@ -178,6 +181,31 @@ func (gateway *Gateway) handleClientResponse(msg middleware.Message, ack func(),
 	}
 }
 
+func (gateway *Gateway) handleArticleMessage(client clientregistry.ClientState, article *common_pb.Article) error {
+	msg := &internal_pb.InternalMessage{
+		ClientId: "client", // TODO: use unique id for each client
+		Payload: &internal_pb.InternalMessage_Article{
+			Article: article,
+		},
+	}
+
+	serializedMsg, err := proto.Marshal(msg)
+	if err != nil {
+		slog.Debug("While serializing data message", "err", err)
+		return err
+	}
+
+	if err := gateway.inputQueue.Send(middleware.Message{Body: string(serializedMsg)}); err != nil {
+		slog.Debug("While sending data message", "err", err)
+		return err
+	}
+	if err := external.WriteAck(client.Conn); err != nil {
+		slog.Debug("While writing ACK message", "err", err)
+		return err
+	}
+	return nil
+}
+
 func (gateway *Gateway) handleFruitRecordMessage(client clientregistry.ClientState) error {
 	fruitRecord, err := external.ReadFruitRecord(client.Conn)
 	if err != nil {
@@ -202,12 +230,18 @@ func (gateway *Gateway) handleFruitRecordMessage(client clientregistry.ClientSta
 
 func (gateway *Gateway) handleEndOfRecordsMessage(client clientregistry.ClientState) error {
 	slog.Info("Received END_OF_RECORDS message")
-	message, err := client.Handler.SerializeEOFMessage()
+	message := &internal_pb.InternalMessage{
+		ClientId: "client", // TODO: use unique id for each client
+		Payload: &internal_pb.InternalMessage_EndOfFile{
+			EndOfFile: &internal_pb.EndOfFile{},
+		},
+	}
+	serializedMessage, err := proto.Marshal(message)
 	if err != nil {
-		slog.Debug("While serializing END_OF_RECORDS  message", "err", err)
+		slog.Debug("While serializing END_OF_RECORDS message", "err", err)
 		return err
 	}
-	if err := gateway.inputQueue.Send(*message); err != nil {
+	if err := gateway.inputQueue.Send(middleware.Message{Body: string(serializedMessage)}); err != nil {
 		slog.Debug("While sending eof message", "err", err)
 		return err
 	}
