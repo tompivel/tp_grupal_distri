@@ -4,7 +4,6 @@ import (
 	"log/slog"
 
 	internalpb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto"
-	externalpb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/middleware"
 	"google.golang.org/protobuf/proto"
 )
@@ -39,7 +38,7 @@ func NewEnglishFilter(config EnglishFilterConfig) (*EnglishFilter, error) {
 	}
 
 	outputExchange, err := middleware.CreateQueueMiddleware(
-		"results", // @TO DO: No debería enviar directamente a la cola de resultados
+		"q1-results",
 		connSettings,
 	)
 	if err != nil {
@@ -54,7 +53,10 @@ func NewEnglishFilter(config EnglishFilterConfig) (*EnglishFilter, error) {
 }
 
 func (filter *EnglishFilter) Run() {
-	if err := filter.inputExchange.StartConsuming(func(
+	defer filter.inputExchange.Close()
+	defer filter.outputExchange.Close()
+
+	if err := middleware.Consume(filter.inputExchange, func(
 		msg middleware.Message,
 		ack func(),
 		nack func(),
@@ -87,7 +89,7 @@ func (filter *EnglishFilter) handleMessage(
 		}
 
 	case *internalpb.InternalMessage_EndOfFile:
-		if err := filter.handleEndOfFile(); err != nil {
+		if err := filter.handleEndOfFile(&message); err != nil {
 			slog.Error("While propagating EOF", "err", err)
 			nack()
 			return
@@ -124,23 +126,8 @@ func (filter *EnglishFilter) handleDataMessage(
 	return filter.send(output)
 }
 
-func (filter *EnglishFilter) handleEndOfFile() error {
-	// TODO: Move AllFinished generation to resultCollector once final aggregation
-	// is implemented.
-	output := &externalpb.ExternalMessage{
-		Payload: &externalpb.ExternalMessage_AllFinished{
-			AllFinished: &externalpb.AllFinished{},
-		},
-	}
-
-	data, err := proto.Marshal(output)
-	if err != nil {
-		return err
-	}
-
-	return filter.outputExchange.Send(middleware.Message{
-		Body: string(data),
-	})
+func (filter *EnglishFilter) handleEndOfFile(input *internalpb.InternalMessage) error {
+	return filter.send(&internalpb.InternalMessage{ClientId: input.GetClientId(), Payload: &internalpb.InternalMessage_EndOfFile{EndOfFile: &internalpb.EndOfFile{}}})
 }
 
 func (filter *EnglishFilter) send(
