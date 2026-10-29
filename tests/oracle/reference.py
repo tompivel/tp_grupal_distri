@@ -16,6 +16,7 @@ import platform
 import re
 import shutil
 import sys
+import tempfile
 import time
 import unicodedata
 from urllib.error import HTTPError
@@ -31,6 +32,51 @@ WORD_REGEX = r"\b\w+\b"
 NUMBER_REGEX = r"[+-]?((\d+\.?\d*)|(\.\d+))"
 FIELDS = ["name", "url", "identifier", "date_modified", "in_language",
           "abstract", "sections", "image"]
+MAX_IMAGE_BYTES = 64 * 1024 * 1024
+IMAGE_MODES = ("defer", "network", "fixture")
+
+
+def validate_image_mode(mode, image_file=None):
+    if mode not in IMAGE_MODES:
+        raise ValueError(f"Modo de imágenes inválido: {mode}")
+    if mode != "fixture":
+        if image_file is not None:
+            raise ValueError("image_file requiere image_mode=fixture")
+        return None
+    if image_file is None:
+        raise ValueError("image_mode=fixture requiere image_file")
+    path = Path(image_file).resolve()
+    if not path.is_file():
+        raise ValueError(f"Imagen fixture inexistente o no regular: {path}")
+    with path.open("rb"):
+        if not 0 < path.stat().st_size <= MAX_IMAGE_BYTES:
+            raise ValueError("La imagen fixture debe tener entre 1 byte y 64 MiB")
+    return path
+
+
+def notebook_config(root, env=None, **overrides):
+    """CLI explícita > entorno > defaults; configuración común con Jupyter."""
+    env = os.environ if env is None else env
+    if "WIKI_ORACLE_DOWNLOAD_IMAGES" in env:
+        raise ValueError("WIKI_ORACLE_DOWNLOAD_IMAGES fue retirado; usar WIKI_ORACLE_IMAGE_MODE")
+    root = Path(root)
+    defaults = {"dataset": root / "dataset", "clients": 5,
+                "output": root / "tests/expected/full-5clients-v1",
+                "rows_per_file": None, "image_mode": "defer", "image_file": None}
+    config = {key: overrides.get(key) if overrides.get(key) is not None else
+              env.get(f"WIKI_ORACLE_{key.upper()}") or default
+              for key, default in defaults.items()}
+    for key in ("clients", "rows_per_file"):
+        if config[key] is not None:
+            config[key] = int(config[key])
+            if config[key] < 1:
+                raise ValueError(f"{key} debe ser positivo")
+    for key in ("dataset", "output"):
+        config[key] = Path(config[key]).resolve()
+    if not config["dataset"].is_dir():
+        raise ValueError(f"Dataset inexistente: {config['dataset']}")
+    config["image_file"] = validate_image_mode(config["image_mode"], config["image_file"])
+    return config
 
 
 def digest(path):
@@ -385,7 +431,55 @@ def verify_bundle(output, dataset=None, require_images=True):
             "q2_not_found_records": not_found}
 
 
-def capture_images(output, timeout=30, max_bytes=64 * 1024 * 1024, interval=3):
+def handle_images(output, mode="defer", image_file=None):
+    """Resuelve Q2 con una política explícita, sin fallback entre modos."""
+    image_file = validate_image_mode(mode, image_file)
+    output = Path(output)
+    verify_bundle(output, require_images=False)
+    manifest = json.loads((output / "manifest.json").read_text())
+    if mode == "fixture":
+        # No sustituir capturas ni ocultar errores anteriores.
+        for client in manifest["clients"]:
+            for row in read_jsonl(output / client["queries"]["q2"]["path"]):
+                if row["image"] is not None and row["image"]["status"] != "pending":
+                    raise ValueError("fixture sólo puede completar imágenes pending")
+        blobs = output.parent / "images"
+        blobs.mkdir(exist_ok=True)
+        # store_image enlaza su fuente: usar una copia temporal independiente
+        # para que editar el fixture no modifique las referencias congeladas.
+        with tempfile.TemporaryDirectory(prefix=".fixture-", dir=blobs) as temporary:
+            source = Path(temporary) / "image"
+            shutil.copyfile(image_file, source)
+            validate_image_mode(mode, source)
+            image = store_image(output, source, {
+                "status": "available", "sha256": digest(source),
+                "bytes": source.stat().st_size, "provenance": "synthetic_fixture"})
+        for client in manifest["clients"]:
+            info = client["queries"]["q2"]
+            path = output / info["path"]
+            rows = read_jsonl(path)
+            for row in rows:
+                if row["image"] is not None:
+                    row["image"] = {**image, "source_url": row["image"]["source_url"]}
+            write_jsonl(path, rows)
+            info.update(sha256=digest(path), status="complete")
+        manifest["image_handling"] = {"mode": mode, "sha256": image["sha256"],
+                                      "bytes": image["bytes"]}
+        # No indexar URLs: estos bytes sintéticos no son capturas de red.
+    else:
+        manifest["image_handling"] = {"mode": mode}
+    finish_bundle(output, manifest)
+    if mode == "network":
+        return capture_images(output)
+    return verify_bundle(output, require_images=mode == "fixture")
+
+
+def require_network_image(image):
+    if image.get("provenance") == "synthetic_fixture":
+        raise ValueError("network no puede reutilizar bytes synthetic_fixture")
+
+
+def capture_images(output, timeout=30, max_bytes=MAX_IMAGE_BYTES, interval=3):
     """Captura serial: registra y salta 404; otros errores detienen, sin reintentos."""
     output = Path(output)
     verify_bundle(output, require_images=False)
@@ -414,6 +508,7 @@ def capture_images(output, timeout=30, max_bytes=64 * 1024 * 1024, interval=3):
         for row in read_jsonl(output / client["queries"]["q2"]["path"]):
             image = row["image"]
             if image and image["status"] == "available":
+                require_network_image(image)
                 captured[image["source_url"]] = image
             elif image and image["status"] == "not_found":
                 unavailable[image["source_url"]] = image
@@ -432,6 +527,7 @@ def capture_images(output, timeout=30, max_bytes=64 * 1024 * 1024, interval=3):
                 continue
             try:
                 if url not in captured and url in image_index:
+                    require_network_image(image_index[url])
                     verify_image(output, image_index[url])
                     captured[url] = image_index[url]
                     session["reused_from_store"] += 1
