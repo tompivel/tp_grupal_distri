@@ -210,10 +210,12 @@ func (gateway *Gateway) handleArticleMessage(client clientregistry.ClientState, 
 		slog.Debug("While sending data message", "err", err)
 		return err
 	}
-	if err := external.WriteAck(client.Conn); err != nil {
-		slog.Debug("While writing ACK message", "err", err)
-		return err
-	}
+	/*
+		if err := external.WriteAck(client.Conn); err != nil {
+			slog.Debug("While writing ACK message", "err", err)
+			return err
+		}
+	*/
 	return nil
 }
 
@@ -232,10 +234,12 @@ func (gateway *Gateway) handleFruitRecordMessage(client clientregistry.ClientSta
 		slog.Debug("While sending data message", "err", err)
 		return err
 	}
-	if err := external.WriteAck(client.Conn); err != nil {
-		slog.Debug("While writing ACK message", "err", err)
-		return err
-	}
+	/*
+		if err := external.WriteAck(client.Conn); err != nil {
+			slog.Debug("While writing ACK message", "err", err)
+			return err
+		}
+	*/
 	return nil
 }
 
@@ -256,9 +260,11 @@ func (gateway *Gateway) handleEndOfRecordsMessage(client clientregistry.ClientSt
 		slog.Debug("While sending eof message", "err", err)
 		return err
 	}
-	if err := external.WriteAck(client.Conn); err != nil {
-		slog.Debug("While writing ACK message", "err", err)
-		return err
-	}
+	/*
+		if err := external.WriteAck(client.Conn); err != nil {
+			slog.Debug("While writing ACK message", "err", err)
+			return err
+		}
+	*/
 	return nil
 }

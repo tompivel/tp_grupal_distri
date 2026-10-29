@@ -129,9 +129,13 @@ func (client *Client) sendArticles() error {
 				return err
 			}
 
-			if _, err := external.ReadMessage(client.conn, external.Ack); err != nil {
-				return err
-			}
+			/*
+				TODO: Implement id for messages to link them to ack
+
+				if _, err := external.ReadMessage(client.conn, external.Ack); err != nil {
+					return err
+				}
+			*/
 		}
 
 		if err != nil {
@@ -145,9 +149,11 @@ func (client *Client) sendArticles() error {
 	if err := external.WriteEndOfRecords(client.conn); err != nil {
 		return err
 	}
-	if _, err := external.ReadMessage(client.conn, external.Ack); err != nil {
-		return err
-	}
+	/*
+		if _, err := external.ReadMessage(client.conn, external.Ack); err != nil {
+			return err
+		}
+	*/
 
 	return nil
 }
@@ -181,10 +187,12 @@ func (client *Client) recvResults() error {
 			if err := outputFileWriter.Error(); err != nil {
 				return err
 			}
-			if err := external.WriteAck(client.conn); err != nil {
-				slog.Debug("Error while writing ack message", "err", err)
-				return err
-			}
+			/*
+				if err := external.WriteAck(client.conn); err != nil {
+					slog.Debug("Error while writing ack message", "err", err)
+					return err
+				}
+			*/
 		} else if message.GetAllFinished() != nil {
 			return outputFileWriter.Error()
 		} else {
