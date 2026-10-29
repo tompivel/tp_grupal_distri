@@ -27,6 +27,9 @@ func (b *baseMiddleware) isDisconnected() bool {
 }
 
 func (b *baseMiddleware) startConsuming(tag string, callbackFunc func(msg Message, ack func(), nack func())) error {
+	if err := b.channel.Qos(1, 0, false); err != nil {
+		return err
+	}
 	deliveries, err := b.channel.Consume(
 		b.queueName, tag,
 		false, false, false, false, nil,
