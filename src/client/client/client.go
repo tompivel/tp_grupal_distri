@@ -194,6 +194,7 @@ func (client *Client) recvResults() error {
 				}
 			*/
 		} else if message.GetAllFinished() != nil {
+			outputFileWriter.Flush()
 			return outputFileWriter.Error()
 		} else {
 			return errors.New("expected ResultBatch or AllFinished message")

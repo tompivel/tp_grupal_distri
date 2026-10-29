@@ -168,15 +168,20 @@ func (row ParquetArticle) ToProto() (*pb.Article, error) {
 		)
 	}
 
-	if err := decodeJSONList(row.Infoboxes, &article.Infoboxes); err != nil {
+	infoboxes, err := decodeJSONArticleItems(row.Infoboxes)
+	if err != nil {
 		return &article, fmt.Errorf("parse infoboxes: %w", err)
 	}
+	article.Infoboxes = infoboxes
 
-	if err := decodeJSONList(row.Sections, &article.Sections); err != nil {
+	sections, err := decodeJSONArticleItems(row.Sections)
+	if err != nil {
 		return &article, fmt.Errorf("parse sections: %w", err)
 	}
+	article.Sections = sections
 
-	if err := decodeJSONList(row.Tables, &article.Tables); err != nil {
+	article.Tables, err = decodeJSONArticleTables(row.Tables)
+	if err != nil {
 		return &article, fmt.Errorf("parse tables: %w", err)
 	}
 
@@ -201,4 +206,75 @@ func decodeJSONList[T any](raw string, dst *[]*T) error {
 		return nil
 	}
 	return json.Unmarshal([]byte(raw), dst)
+}
+
+func decodeJSONArticleItems(raw string) ([]*pb.ArticleItem, error) {
+	if raw == "" || raw == "null" {
+		return nil, nil
+	}
+
+	var items []struct {
+		Type     string          `json:"type"`
+		Name     string          `json:"name"`
+		HasParts json.RawMessage `json:"has_parts"`
+	}
+	if err := json.Unmarshal([]byte(raw), &items); err != nil {
+		return nil, err
+	}
+
+	articles := make([]*pb.ArticleItem, 0, len(items))
+	for _, item := range items {
+		hasParts := ""
+		if len(item.HasParts) > 0 && string(item.HasParts) != "null" {
+			if err := json.Unmarshal(item.HasParts, &hasParts); err != nil {
+				hasParts = string(item.HasParts)
+			}
+		}
+		articles = append(articles, &pb.ArticleItem{
+			Type:     item.Type,
+			Name:     item.Name,
+			HasParts: hasParts,
+		})
+	}
+	return articles, nil
+}
+
+func decodeJSONArticleTables(raw string) ([]*pb.ArticleTable, error) {
+	if raw == "" || raw == "null" {
+		return nil, nil
+	}
+
+	var tables []struct {
+		Identifier      string            `json:"identifier"`
+		Headers         []json.RawMessage `json:"headers"`
+		Rows            []json.RawMessage `json:"rows"`
+		ConfidenceScore float32           `json:"confidence_score"`
+	}
+	if err := json.Unmarshal([]byte(raw), &tables); err != nil {
+		return nil, err
+	}
+
+	articles := make([]*pb.ArticleTable, 0, len(tables))
+	for _, table := range tables {
+		articles = append(articles, &pb.ArticleTable{
+			Identifier:      table.Identifier,
+			Headers:         rawJSONStrings(table.Headers),
+			Rows:            rawJSONStrings(table.Rows),
+			ConfidenceScore: table.ConfidenceScore,
+		})
+	}
+	return articles, nil
+}
+
+func rawJSONStrings(values []json.RawMessage) []string {
+	result := make([]string, 0, len(values))
+	for _, value := range values {
+		var text string
+		if err := json.Unmarshal(value, &text); err == nil {
+			result = append(result, text)
+		} else {
+			result = append(result, string(value))
+		}
+	}
+	return result
 }
