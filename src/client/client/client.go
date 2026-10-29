@@ -120,12 +120,15 @@ func (client *Client) sendArticles() error {
 	for {
 		n, err := reader.Read(batch)
 		if n > 0 {
-			_, err := batch[0].ToProto()
+			article, err := batch[0].ToProto()
 
 			if err != nil {
 				return err
 			}
-			// TODO: WriteArticle
+
+			if err := external.WriteArticle(client.conn, article); err != nil {
+				return err
+			}
 
 			if err := client.expectMsgType(external.Ack); err != nil {
 				return err

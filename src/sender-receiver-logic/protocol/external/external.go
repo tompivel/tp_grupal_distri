@@ -1,11 +1,14 @@
 package external
 
 import (
+	"encoding/binary"
 	"io"
 
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
+	pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external/safeio"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external/serializer"
+	"google.golang.org/protobuf/proto"
 )
 
 type MsgType uint32
@@ -16,6 +19,19 @@ const (
 	Ack
 	EndOfRecords
 )
+
+func serializeArticle(article *pb.Article) []byte {
+	data, err := proto.Marshal(article) // TODO: use generics and move marshalling to serializer.go
+
+	if err != nil {
+		return nil
+	}
+
+	length := make([]byte, 4)
+	binary.BigEndian.PutUint32(length, uint32(len(data)))
+
+	return append(length, data...)
+}
 
 func serializeFruitRecord(fruit *fruititem.FruitItem) []byte {
 	msg := serializer.SerializeString(fruit.Fruit)
@@ -36,6 +52,11 @@ func ReadMsgType(reader io.Reader) (MsgType, error) {
 	msgType := MsgType(serializer.DeserializeUint32(msgTypeSerialized))
 
 	return msgType, nil
+}
+
+func WriteArticle(writer io.Writer, article *pb.Article) error {
+	msg := serializeArticle(article)
+	return safeio.WriteAll(writer, msg)
 }
 
 func WriteFruitRecord(writer io.Writer, fruitItemRecord *fruititem.FruitItem) error {
