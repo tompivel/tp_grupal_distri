@@ -1,7 +1,11 @@
 package model
 
 import (
+	"encoding/json"
+	"fmt"
 	"time"
+
+	pb "github.com/7574-sistemas-distribuidos/tp-grupal-distri/gen/proto/external"
 )
 
 type ParquetArticle struct {
@@ -78,4 +82,123 @@ type parquetReference struct {
 	Source     string `parquet:"source"`
 	Text       string `parquet:"text"`
 	Type       string `parquet:"type"`
+}
+
+func (row ParquetArticle) toProto() (*pb.Article, error) {
+	article := pb.Article{
+		Name:        row.Name,
+		Identifier:  row.Identifier,
+		Url:         row.URL,
+		Description: row.Description, Abstract: row.Abstract,
+	}
+
+	if row.DateCreated != nil {
+		article.DateCreated = row.DateCreated.Format(time.RFC3339Nano)
+	}
+
+	if row.DateModified != nil {
+		article.DateModified = row.DateModified.Format(time.RFC3339Nano)
+	}
+
+	if row.IsPartOf != nil {
+		article.IsPartOf = &pb.ArticleProject{
+			Identifier: row.IsPartOf.Identifier,
+			Name:       row.IsPartOf.URL,
+		}
+	}
+
+	if row.InLanguage != nil {
+		article.InLanguage = &pb.ArticleLanguage{
+			Identifier: row.InLanguage.Identifier,
+		}
+	}
+
+	if row.MainEntity != nil {
+		article.MainEntity = &pb.ArticleMainEntity{
+			Identifier: row.MainEntity.Identifier,
+			Url:        row.MainEntity.URL,
+		}
+	}
+
+	for _, entity := range row.AdditionalEntities {
+		article.AdditionalEntities = append(
+			article.AdditionalEntities,
+			&pb.ArticleAdditionalEntity{
+				Identifier: entity.Identifier,
+				Url:        entity.URL,
+				Aspects:    entity.Aspects,
+			},
+		)
+	}
+
+	if row.Version != nil {
+		v := row.Version
+		article.Version = &pb.ArticleVersion{
+			Comment:            v.Comment,
+			Editor:             v.Editor,
+			Identifier:         v.Identifier,
+			IsBreakingNews:     v.IsBreakingNews,
+			IsFlaggedStabble:   v.IsFlaggedStable,
+			IsMinorEdit:        v.IsMinorEdit,
+			MaintenanceTags:    v.MaintenanceTags,
+			Noindex:            v.Noindex,
+			NumberOfCharacters: v.NumberOfCharacters,
+			Scores:             v.Scores,
+			Size:               v.Size,
+			Tags:               v.Tags,
+		}
+	}
+
+	if row.Image != nil {
+		article.Image = &pb.ArticleImage{
+			ContentUrl: row.Image.ContentURL,
+			Height:     row.Image.Height,
+			Width:      row.Image.Width,
+		}
+	}
+
+	for _, item := range row.License {
+		article.License = append(
+			article.License,
+			&pb.ArticleLicense{
+				Identifier: item.Identifier,
+				Name:       item.Name,
+				Url:        item.URL,
+			},
+		)
+	}
+
+	if err := decodeJSONList(row.Infoboxes, &article.Infoboxes); err != nil {
+		return &article, fmt.Errorf("parse infoboxes: %w", err)
+	}
+
+	if err := decodeJSONList(row.Sections, &article.Sections); err != nil {
+		return &article, fmt.Errorf("parse sections: %w", err)
+	}
+
+	if err := decodeJSONList(row.Tables, &article.Tables); err != nil {
+		return &article, fmt.Errorf("parse tables: %w", err)
+	}
+
+	for _, ref := range row.References {
+		article.References = append(
+			article.References,
+			&pb.ArticleReference{
+				Identifier: ref.Identifier,
+				Metadata:   ref.Metadata,
+				Soruce:     ref.Source,
+				Text:       ref.Text,
+				Type:       ref.Type,
+			},
+		)
+	}
+
+	return &article, nil
+}
+
+func decodeJSONList[T any](raw string, dst *[]*T) error {
+	if raw == "" || raw == "null" {
+		return nil
+	}
+	return json.Unmarshal([]byte(raw), dst)
 }
