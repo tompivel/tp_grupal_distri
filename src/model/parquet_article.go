@@ -84,7 +84,7 @@ type parquetReference struct {
 	Type       string `parquet:"type"`
 }
 
-func (row ParquetArticle) toProto() (*pb.Article, error) {
+func (row ParquetArticle) ToProto() (*pb.Article, error) {
 	article := pb.Article{
 		Name:        row.Name,
 		Identifier:  row.Identifier,

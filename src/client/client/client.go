@@ -1,21 +1,21 @@
 package client
 
 import (
-	"bufio"
 	"encoding/csv"
 	"errors"
+	"io"
 	"log/slog"
 	"net"
 	"os"
 	"os/signal"
 	"strconv"
-	"strings"
 	"sync/atomic"
 	"syscall"
 	"time"
 
-	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
+	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/model"
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/sender-receiver-logic/protocol/external"
+	"github.com/parquet-go/parquet-go"
 )
 
 const connectionAttempts = 3
@@ -66,7 +66,7 @@ func (client *Client) Run() error {
 	defer client.conn.Close()
 	go client.handleSignals()
 
-	if err := client.sendFruitRecords(); err != nil {
+	if err := client.sendArticles(); err != nil {
 		if client.running.Load() {
 			return err
 		}
@@ -104,7 +104,7 @@ func (client *Client) expectMsgType(expectedMsgType external.MsgType) error {
 	return nil
 }
 
-func (client *Client) sendFruitRecords() error {
+func (client *Client) sendArticles() error {
 	file, err := os.Open(client.config.InputFile)
 	if err != nil {
 		slog.Debug("Error while runninging input file", "err", err)
@@ -112,22 +112,30 @@ func (client *Client) sendFruitRecords() error {
 	}
 	defer file.Close()
 
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		columns := strings.Split(scanner.Text(), ",")
-		fruit := columns[0]
-		amount, err := strconv.ParseInt(columns[1], 10, 32)
+	reader := parquet.NewGenericReader[model.ParquetArticle](file)
+	defer reader.Close()
+
+	batch := make([]model.ParquetArticle, 1)
+
+	for {
+		n, err := reader.Read(batch)
+		if n > 0 {
+			_, err := batch[0].ToProto()
+
+			if err != nil {
+				return err
+			}
+			// TODO: WriteArticle
+
+			if err := client.expectMsgType(external.Ack); err != nil {
+				return err
+			}
+		}
+
 		if err != nil {
-			slog.Debug("Error while parsing fruit record", "err", err)
-			return err
-		}
-
-		fruitRecord := fruititem.FruitItem{Fruit: fruit, Amount: uint32(amount)}
-		if err := external.WriteFruitRecord(client.conn, &fruitRecord); err != nil {
-			return err
-		}
-
-		if err := client.expectMsgType(external.Ack); err != nil {
+			if err == io.EOF {
+				break
+			}
 			return err
 		}
 	}
