@@ -184,12 +184,30 @@ func (gateway *Gateway) handleClientResponse(msg middleware.Message, ack func(),
 		}
 
 	case *internal_pb.InternalMessage_EndOfFile:
-		slog.Info("Received end of Q1 results")
+		var sendErr error
+		sent := false
+		gateway.registry.WithLock(func(clients []clientregistry.ClientState) {
+			if len(clients) == 0 {
+				return
+			}
+			sendErr = external.WriteAllFinished(clients[0].Conn)
+			sent = sendErr == nil
+		})
+		if !sent {
+			if sendErr != nil {
+				slog.Error("While sending all-finished message to client", "err", sendErr)
+			} else {
+				slog.Warn("No connected client for Q1 completion")
+			}
+			return
+		}
+		slog.Info("Sent all-finished message to client")
 
 	default:
 		slog.Error("Received unsupported internal response")
 		return
 	}
+	ack()
 }
 
 func (gateway *Gateway) handleArticleMessage(client clientregistry.ClientState, article *common_pb.Article) error {

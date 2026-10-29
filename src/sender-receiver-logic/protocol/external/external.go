@@ -79,6 +79,16 @@ func WriteResultBatch(writer io.Writer, resultBatch *external_pb.ResultBatch) er
 	return safeio.WriteAll(writer, msg)
 }
 
+func WriteAllFinished(writer io.Writer) error {
+	msg, err := serializeMessage(&external_pb.ExternalMessage{
+		Payload: &external_pb.ExternalMessage_AllFinished{AllFinished: &external_pb.AllFinished{}},
+	})
+	if err != nil {
+		return err
+	}
+	return safeio.WriteAll(writer, msg)
+}
+
 func WriteFruitRecord(writer io.Writer, fruitItemRecord *fruititem.FruitItem) error {
 	msg := serializer.SerializeUint32(uint32(FruitRecord))
 	msg = append(msg, serializeFruitRecord(fruitItemRecord)...)
