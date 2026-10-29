@@ -130,7 +130,7 @@ func (client *Client) sendArticles() error {
 				return err
 			}
 
-			if err := client.expectMsgType(external.Ack); err != nil {
+			if _, err := external.ReadMessage(client.conn, external.Ack); err != nil {
 				return err
 			}
 		}
@@ -146,7 +146,7 @@ func (client *Client) sendArticles() error {
 	if err := external.WriteEndOfRecords(client.conn); err != nil {
 		return err
 	}
-	if err := client.expectMsgType(external.Ack); err != nil {
+	if _, err := external.ReadMessage(client.conn, external.Ack); err != nil {
 		return err
 	}
 

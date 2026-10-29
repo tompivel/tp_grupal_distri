@@ -2,6 +2,7 @@ package external
 
 import (
 	"encoding/binary"
+	"fmt"
 	"io"
 
 	"github.com/7574-sistemas-distribuidos/tp-grupal-distri/common/fruititem"
@@ -16,9 +17,12 @@ type MsgType uint32
 const (
 	FruitRecord MsgType = iota + 1
 	FruitTop
+	Article
 	Ack
 	EndOfRecords
 )
+
+const MaxFrameSize = 16 * 1024 * 1024
 
 func serializeArticle(article *pb.Article) []byte {
 	data, err := proto.Marshal(article) // TODO: use generics and move marshalling to serializer.go
@@ -125,6 +129,53 @@ func WriteFruitTop(writer io.Writer, fruitItemRecords []fruititem.FruitItem) err
 	}
 
 	return safeio.WriteAll(writer, msg)
+}
+
+func ReadMessage(reader io.Reader, msgType MsgType) (*pb.ExternalMessage, error) {
+	serializedPayloadSize, err := safeio.ReadAll(reader, serializer.UINT32_SIZE)
+	if err != nil {
+		return nil, err
+	}
+	payloadSize := serializer.DeserializeUint32(serializedPayloadSize)
+
+	if payloadSize == 0 || payloadSize > MaxFrameSize {
+		return nil, fmt.Errorf("invalid frame size: %d", payloadSize)
+	}
+
+	serializedExternalMessage, err := safeio.ReadAll(reader, payloadSize)
+	if err != nil {
+		return nil, err
+	}
+
+	msg := new(pb.ExternalMessage)
+	if err := proto.Unmarshal(serializedExternalMessage, msg); err != nil {
+		return nil, err
+	}
+
+	if msg.Payload == nil {
+		return nil, fmt.Errorf("missing payload")
+	}
+
+	if !matchMsgType(msgType, msg) {
+		return nil, fmt.Errorf("unexpected message")
+	}
+
+	return msg, nil
+}
+
+func matchMsgType(msgType MsgType, msg *pb.ExternalMessage) bool {
+	switch msg.Payload.(type) {
+	case *pb.ExternalMessage_Article:
+		return msgType == Article
+
+	case *pb.ExternalMessage_Ack:
+		return msgType == Ack
+
+	case *pb.ExternalMessage_EndOfFile:
+		return msgType == EndOfRecords
+	}
+
+	return false
 }
 
 func ReadFruitTop(reader io.Reader) ([]fruititem.FruitItem, error) {
